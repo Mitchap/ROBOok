@@ -49,11 +49,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
-                <a class="nav-link text-light" href="index.html">HOME</a>
+                <a class="nav-link mx-3 fs-3 text-light" href="index.html">HOME</a>
               </li>
+
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-light"
+                  class="nav-link dropdown-toggle mx-3 fs-3 text-light"
                   href="topics.html"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -61,20 +62,20 @@
                 >
                   TOPICS
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-light text fw-semibold" href="topics.html">View Topics</a></li>
+                <ul class="dropdown-menu mx">
+                  <li><a class="dropdown-item text-light text fw-semibold fs-4" href="topics.html">View Topics</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-light" href="#">Electronics</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Mechanics</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Programming</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Types of Robots</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Construct a Robot Project</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Add Ons</a></li>
+                  <li><a class="dropdown-item text-light fs-4" href="#">Electronics</a></li>
+                  <li><a class="dropdown-item text-light fs-4" href="#">Mechanics</a></li>
+                  <li><a class="dropdown-item text-light fs-4" href="#">Programming</a></li>
+                  <li><a class="dropdown-item text-light fs-4" href="#">All About Robots</a></li>
+                  <li><a class="dropdown-item text-light fs-4" href="#">Construct a Robot Project</a></li>
+                  <li><a class="dropdown-item text-light fs-4" href="#">Add Ons</a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">ABOUT</a>
+                <a class="nav-link mx-3 fs-3 active" aria-current="page" href="about.html">ABOUT</a>
               </li>
             </ul>
           </div>
@@ -83,9 +84,9 @@
 
 
       <section id="main">
-        <div class="container mx-auto">
+        <div class="container">
           <h1 class="fw-bold about-header pb-5 text-center"><span class="about-underline">About</span></h1>
-          <div class="pt-5">
+          <div class="pt-5 about-content">
             <p><span class="p-first-word fw-semibold">ROBOok </span>
               <span class="about-paragraph">
               is a Robotics e-book for Junior High School Students. 
@@ -124,6 +125,7 @@
         </div>
         
         </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
     </section>
 
     <!-- Footer -->
@@ -144,4 +146,24 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
 </html>
