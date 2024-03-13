@@ -26,7 +26,7 @@
   
 body{
 	background:linear-gradient(rgba(0,0,0, 0.6),rgba(12,74,122,0.6)),
-	url(../images/background.png);
+	url(../images/background.PNG);
 	background-size:cover;
 	background-position: center;
   display: flex;
@@ -334,7 +334,7 @@ footer{
 @media screen and (max-width:  900px){
   body{
     background:linear-gradient(rgba(0,0,0, 0.6),rgba(12,74,122,0.6)),
-    url(../images/mobile-background.png);
+    url(../images/mobile-background.PNG);
     background-size:cover;
     background-position: center;
     display: flex;
