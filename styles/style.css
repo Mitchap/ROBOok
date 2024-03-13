@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
 *{
 	margin: 0;
 	padding: 0;
@@ -25,8 +27,8 @@
   } */
   
 body{
-	background:linear-gradient(rgba(0,0,0, 0.6),rgba(12,74,122,0.6)),
-	url(../images/background.PNG);
+	background:linear-gradient(rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.377)),
+	url(../images/mind.PNG);
 	background-size:cover;
 	background-position: center;
   display: flex;
@@ -34,8 +36,6 @@ body{
 	min-height: 100vh;
 }
 /* button */
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
 :root {
   --glow-color: hsl(186 100% 69%);
 }   
@@ -332,15 +332,15 @@ footer{
     color: #F8F8F8;
 }
 @media screen and (max-width:  900px){
-  body{
-    background:linear-gradient(rgba(0,0,0, 0.6),rgba(12,74,122,0.6)),
+/* body{
+	  background:linear-gradient(rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.377)),
     url(../images/mobile-background.PNG);
     background-size:cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+  } */
 .nav-link{
     font-size: 1rem !important;
 }
