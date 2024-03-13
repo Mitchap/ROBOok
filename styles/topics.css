@@ -100,7 +100,7 @@ body{
   
   #myBtn:hover {
     transition: 300ms;
-    background-color: #202020; /* Add a dark-grey background on hover */
+    background-color: #202020; 
   }
 
 
