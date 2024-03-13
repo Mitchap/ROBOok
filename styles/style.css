@@ -28,7 +28,7 @@
   
 body{
 	background:linear-gradient(rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.377)),
-	url(../images/mind.PNG);
+	url(../images/mind.png);
 	background-size:cover;
 	background-position: center;
   display: flex;
