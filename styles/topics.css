@@ -105,13 +105,14 @@ body{
 
 
 
-.btn{
+.btn-primary{
     background-color: #0C4A7A !important;
+    border: none !important;
     color: #F8F8F8 !important;
     font-weight: 500 !important;
     font-size: 1rem !important;
 }
-.btn:hover{
+.btn-primary:hover{
     transition: 300ms;
     background-color: #FD0066 !important;
 }

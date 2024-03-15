@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "KoHo", sans-serif;
+
+  }
+  body{
+	background: #f8f8f8;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar{
+    background-color: #0C4A7A;
+}
+.logo{
+    width: 5rem;
+}
+.fa-bars{
+    color: #F8F8F8;
+}
+.navbar-nav{
+    margin-left: 30px;
+}
+.active{
+    color: #FD0066 !important;
+}
+.nav-link{
+    font-style: normal;
+    font-size: 1.3rem !important;
+}
+.nav-link:hover{
+    color: #FD0066 !important;
+    transition: 800ms ease;
+
+}
+.dropdown-menu{
+    background-color: #5E748D !important;
+}
+.dropdown-item{
+    font-size: 1.2rem !important;
+}
+.dropdown-item:hover{
+    background-color: #013870 !important;
+    transition: 800ms ease;
+}
+#banner{
+	background:linear-gradient(rgba(0, 0, 0, 0.637),rgba(248, 248, 248, 0.233)),
+	url(../images/elex-banner.jpg);
+	background-size:cover;
+	background-position: center top;
+    background-repeat: no-repeat;
+	height: 30vh;
+}
+.banner-text{
+    font-size: 6rem;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #262626; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F8F8F8;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #FD0066;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+.contacts{
+    color: #0C4A7A;
+}
+
+footer{
+    margin-top: auto;
+    background-color: #0C4A7A;
+    font-size: 1.2rem;
+}
+.icons{
+    margin: 5px;
+    color: #F8F8F8;
+}
+@media screen and (max-height: 500px) {
+    #banner{
+        background:linear-gradient(rgba(0, 0, 0, 0.637),rgba(248, 248, 248, 0.233)),
+        url(../images/elex-banner.jpg);
+        background-size:cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+    .banner-text{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:  760px){
+.nav-link{
+    font-size: 1rem !important;
+}
+.dropdown-item{
+    font-size: 0.9rem !important;
+}
+#banner{
+	background:linear-gradient(rgba(0, 0, 0, 0.637),rgba(248, 248, 248, 0.233)),
+	url(../images/electronics.jpg);
+	background-size:cover;
+	background-position: center top;
+    background-repeat: no-repeat;
+	height: 20vh;
+}
+.banner-text{
+    font-size: 2rem;
+}
+footer{
+    font-size: 1rem;
+}
+}
