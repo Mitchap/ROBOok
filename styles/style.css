@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.377)),
+  background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.377)),
     url(../images/background1.png);
   background-size: cover;
   background-position: center;
@@ -38,7 +38,7 @@ body {
 
 .nav-link {
   font-style: normal;
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
 }
 
 .nav-link:hover {
@@ -51,7 +51,7 @@ body {
 }
 
 .dropdown-item {
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
 }
 
 .dropdown-item:hover {
@@ -68,7 +68,7 @@ body {
 }
 
 .school-students {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
 }
 
 .btn41-43 {
@@ -113,14 +113,10 @@ body {
   height: 100%;
 }
 
-.landing-page-content {
-  margin-top: 10%;
-}
-
 footer {
   margin-top: auto;
   background-color: #0C4A7A;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -136,7 +132,7 @@ footer {
   }
 
   .nav-link {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 
   .dropdown-item {
@@ -144,7 +140,7 @@ footer {
   }
 
   footer {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-top: 7px;
     padding-bottom: 7px;
   }
@@ -167,9 +163,7 @@ footer {
     font-size: 0.8rem;
   }
 
-    .landing-page-content {
-      margin-top: 27%;
-    }
+
 }
 
 @media screen and (max-height: 500px) {
@@ -178,7 +172,7 @@ footer {
   }
 
   .nav-link {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 
   .dropdown-item {
@@ -208,8 +202,5 @@ footer {
     font-size: 0.8rem;
   }
 
-  .landing-page-content {
-    margin-top: 4%;
-    margin-bottom: 2%;
-  } 
+
 }
