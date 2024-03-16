@@ -7,8 +7,10 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.377)),
-    url(../images/background1.png);
+  /*background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.377)),
+     url(../images/background1.png); */
+     background-color: #013870; /* For browsers that do not support gradients */
+     background-image: linear-gradient(to bottom right, #013870, #960b43);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -21,7 +23,7 @@ body {
 }
 
 .logo {
-  width: 10rem;
+  width: 75px;
 }
 
 .fa-bars {
@@ -126,9 +128,9 @@ footer {
   color: #F8F8F8;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 760px) {
   .logo {
-    width: 7rem;
+    width: 60px;
   }
 
   .nav-link {
@@ -168,7 +170,7 @@ footer {
 
 @media screen and (max-height: 500px) {
   .logo {
-    width: 7rem;
+    width: 60px;
   }
 
   .nav-link {

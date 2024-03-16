@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-    width: 10rem;
+    width: 76px;
 }
 
 .fa-bars {
@@ -153,12 +153,12 @@ footer {
     color: #F8F8F8;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 760px) {
     .nav-link {
         font-size: 0.9rem !important;
     }
     .logo {
-        width: 7rem;
+        width: 60px;
       }
     .dropdown-item {
         font-size: 0.9rem !important;

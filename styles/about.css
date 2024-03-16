@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-    width: 10rem;
+    width: 75px;
 }
 
 .fa-bars {
@@ -81,13 +81,13 @@ body {
     font-size: 1.8rem;
 }
 .card{
-    max-width: 600px;
+    max-width: 540px;
 }
 .card-title {
     color: #FD0066 !important;
 }
 .card-text{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .contacts {
@@ -131,7 +131,7 @@ footer {
     color: #F8F8F8;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 760px) {
     .nav-link {
         font-size: 0.9rem !important;
     }
@@ -171,7 +171,7 @@ footer {
 }
 @media screen and (max-height: 500px) {
     .logo {
-      width: 7rem;
+      width: 60px;
     }
   
     .nav-link {
