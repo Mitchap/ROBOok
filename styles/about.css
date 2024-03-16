@@ -80,7 +80,13 @@ body {
 .about-paragraph {
     font-size: 1.8rem;
 }
-
+.card{
+    max-width: 540px;
+}
+.card-image{
+    max-width: 100%;
+    height: auto;
+}
 .card-title {
     color: #FD0066 !important;
 }
@@ -152,6 +158,9 @@ footer {
     .about-content {
         margin-left: 30px;
         margin-right: 30px;
+    }
+    .card{
+        max-width: 300px;
     }
 
     footer {
