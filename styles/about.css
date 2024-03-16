@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-    width: 5rem;
+    width: 10rem;
 }
 
 .fa-bars {
@@ -36,7 +36,7 @@ body {
 
 .nav-link {
     font-style: normal;
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
 }
 
 .nav-link:hover {
@@ -83,10 +83,6 @@ body {
 .card{
     max-width: 540px;
 }
-.card-image{
-    max-width: 100%;
-    height: auto;
-}
 .card-title {
     color: #FD0066 !important;
 }
@@ -123,6 +119,8 @@ footer {
     margin-top: auto;
     background-color: #0C4A7A;
     font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .icons {
@@ -162,8 +160,27 @@ footer {
     .card{
         max-width: 300px;
     }
-
     footer {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 }
+@media screen and (max-height: 500px) {
+    .logo {
+      width: 7rem;
+    }
+  
+    .nav-link {
+      font-size: 1rem !important;
+    }
+  
+    .dropdown-item {
+      font-size: 0.9rem !important;
+    }
+  
+    .dropdown-item:hover {
+      background-color: #013870 !important;
+      transition: 800ms ease;
+    }
+}  

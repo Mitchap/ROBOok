@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-    width: 5rem;
+    width: 10rem;
 }
 
 .fa-bars {
@@ -36,7 +36,7 @@ body {
 
 .nav-link {
     font-style: normal;
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
 }
 
 .nav-link:hover {
@@ -186,7 +186,10 @@ footer {
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 7rem;
+      }
     .nav-link {
         font-size: 1rem !important;
     }
@@ -233,7 +236,9 @@ footer {
     }
 
     footer {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 }
 
