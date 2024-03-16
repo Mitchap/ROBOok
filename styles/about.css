@@ -64,7 +64,7 @@ body {
 }
 
 .about-header {
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: #0C4A7A;
 }
 
@@ -81,12 +81,15 @@ body {
     font-size: 1.8rem;
 }
 .card{
-    max-width: 540px;
+    max-width: 600px;
 }
 .card-title {
     color: #FD0066 !important;
 }
-
+.card-text{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 .contacts {
     color: #0C4A7A;
 }
