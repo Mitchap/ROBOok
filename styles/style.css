@@ -113,10 +113,6 @@ body {
   height: 100%;
 }
 
-.landing-page-content {
-  margin-top: 15%;
-  margin-bottom: 15%;
-}
 
 footer {
   margin-top: auto;
@@ -168,10 +164,6 @@ footer {
     font-size: 0.8rem;
   }
 
-    .landing-page-content {
-      margin-top: 27%;
-      margin-bottom: 0%;
-    }
 }
 
 @media screen and (max-height: 500px) {
@@ -210,8 +202,4 @@ footer {
     font-size: 0.8rem;
   }
 
-  .landing-page-content {
-    margin-top: 4%;
-    margin-bottom: 2%;
-  } 
 }
