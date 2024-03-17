@@ -59,8 +59,8 @@ body {
 }
 
 #banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(248, 248, 248, 0.233)),
-        url(../images/elex-banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.986), rgba(248, 248, 248, 0.089)),
+        url(../images/mech-banner.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -203,8 +203,8 @@ footer {
     }
 
     #banner {
-        background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(248, 248, 248, 0.233)),
-            url(../images/electronics.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.986), rgba(248, 248, 248, 0.089)),
+            url(../images/mechanics.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
@@ -248,8 +248,8 @@ footer {
 
 @media screen and (max-height: 500px) {
     #banner {
-        background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(248, 248, 248, 0.233)),
-            url(../images/elex-banner.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.986), rgba(248, 248, 248, 0.089)),
+            url(../images/mech-banner.jpg);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
