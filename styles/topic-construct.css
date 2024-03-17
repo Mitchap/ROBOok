@@ -68,7 +68,7 @@ body {
 }
 .topic-header {
     position: relative;
-    width: 13em;
+    width: 20em;
     padding: 10px 20px 10px 10px;
     position: relative;
     color: #FFF;
@@ -167,9 +167,8 @@ footer {
         font-size: 1rem;
     }
     .topic-header {
-        width: 10em;
+        width: 17em;
         padding: 10px 20px 5px 10px;
-        font-size: 15px;
     }
     .topic-list {
         margin-top: 15%;
