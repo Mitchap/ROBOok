@@ -144,7 +144,9 @@ footer {
     padding-top: 7px;
     padding-bottom: 7px;
   }
-
+  #main{
+    margin-top: -20%;
+  }
   .robook-text {
     width: 250px;
   }
