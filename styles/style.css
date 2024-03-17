@@ -7,10 +7,8 @@
 }
 
 body {
-  /*background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.377)),
-     url(../images/background1.png); */
-     background-color: #013870; /* For browsers that do not support gradients */
-     background-image: linear-gradient(to bottom right, #013870, #960b43);
+  background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.377)),
+    url(../images/background1.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -62,15 +60,15 @@ body {
 }
 
 .robook-text {
-  width: 500px;
+  width: 450px;
 }
 
 .e-book {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .school-students {
-  font-size: 3.4rem;
+  font-size: 3rem;
 }
 
 .btn41-43 {
@@ -118,7 +116,7 @@ body {
 footer {
   margin-top: auto;
   background-color: #0C4A7A;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -142,7 +140,7 @@ footer {
   }
 
   footer {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding-top: 7px;
     padding-bottom: 7px;
   }
@@ -185,7 +183,10 @@ footer {
     background-color: #013870 !important;
     transition: 800ms ease;
   }
-
+  #main{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
   .robook-text {
     width: 210px;
   }
@@ -203,6 +204,10 @@ footer {
     font-weight: 500;
     font-size: 0.8rem;
   }
-
+  footer {
+    font-size: 0.8rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
 
 }

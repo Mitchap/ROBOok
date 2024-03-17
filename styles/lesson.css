@@ -97,7 +97,7 @@ body {
 }
 
 .sidenav-title {
-    font-size: 28px;
+    font-size: 1.2rem;
     color: #F8F8F8;
     display: block;
     transition: 0.3s;
@@ -107,7 +107,7 @@ body {
 /* The navigation menu links */
 .sidenav a {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1rem;
     color: #F8F8F8;
     display: block;
     transition: 0.3s;
@@ -165,9 +165,11 @@ body {
     transition: 300ms;
     background-color: #202020;
 }
-
+.lesson-video, .lesson-image{
+max-width: 700px;
+}
 .lesson-paragraph {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 .contacts {
@@ -223,22 +225,22 @@ footer {
         margin-right: 30px;
     }
     .lesson-paragraph {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .sidenav {
         padding-top: 15px;
     }
 
     .sidenav-title {
-        font-size: 21px;
+        font-size: 1.2rem;
     }
 
     .sidenav a {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     footer {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -251,12 +253,15 @@ footer {
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
-        height: 30vh;
+        height: 40vh;
     }
     .banner-text {
-        font-size: 2rem;
+        font-size: 3rem;
     }
+    .lesson-video, .lesson-image{
+        max-width: 400px;
+        }
     .lesson-paragraph {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
