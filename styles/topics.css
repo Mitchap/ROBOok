@@ -171,6 +171,9 @@ footer {
         padding: 10px 20px 5px 10px;
         font-size: 15px;
     }
+    .btn-primary {
+        font-size: 0.6rem !important;
+    }
     .topic-list {
         margin-top: 15%;
         margin-bottom: 30%;
