@@ -63,9 +63,11 @@ body {
     border-bottom: 4px solid rgb(190, 190, 190);
     margin-top: 30px;
 }
-.topic-text{
+
+.topic-text {
     font-size: 1.2rem;
 }
+
 .topic-header {
     position: relative;
     width: 20em;
@@ -146,7 +148,7 @@ footer {
     font-size: 0.9rem;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+}
 
 .icons {
     margin: 5px;
@@ -157,20 +159,28 @@ footer {
     .nav-link {
         font-size: 0.9rem !important;
     }
+
     .logo {
         width: 60px;
-      }
+    }
+
     .dropdown-item {
         font-size: 0.9rem !important;
     }
-    .topic-text{
+
+    .topic-text {
         font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem !important;
     }
 
     .topic-header {
         width: 17em;
         padding: 10px 20px 5px 10px;
     }
+
     .topic-list {
         margin-top: 15%;
         margin-bottom: 30%;
@@ -180,6 +190,6 @@ footer {
         font-size: 0.8rem;
         padding-top: 7px;
         padding-bottom: 7px;
-      }
+    }
 
 }
