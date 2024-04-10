@@ -3,11 +3,10 @@ Web Technologies used
 HTML
 CSS
 JAVASCRIPT
-FontAwesome
 Google Fonts API
 
-
-Frameworks used
+Framework used
+FontAwesome
 Bootstrap CSS
 
 

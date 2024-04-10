@@ -166,9 +166,7 @@ footer {
     .topic-text{
         font-size: 1rem;
     }
-    .btn-primary {
-        font-size: 0.6rem !important;
-    }
+    
     .topic-header {
         width: 15em;
         padding: 10px 20px 5px 10px;
