@@ -11,6 +11,8 @@ Bootstrap CSS
 
 
 Version Control
+Git
+Repository
 GitHub
 
 
