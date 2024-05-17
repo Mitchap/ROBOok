@@ -90,50 +90,10 @@
       
       <section>  
         <div class="container topic-list">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            
-          <div class="col">
-            <div class="card my-4 h-100">
-              <img src="../images/add-ons.jpg" class="card-img-top" alt="circuit board">
-              <div class="card-body">
-                <h3 class="card-title">Sub Topic 1</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-                <div class="ms-4 mb-5">
-                  <a href="../topics/add-ons/add-ons-lesson1.html" class="btn btn-primary px-4">VIEW</a>
-                </div>
-              </div>
-            </div>
-  
-          <div class="col">
-            <div class="card my-4 h-100">
-              <img src="../images/add-ons.jpg" class="card-img-top" alt="mechanics image">
-              <div class="card-body">
-                <h3 class="card-title">Sub Topic 2</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-                <div class="ms-4 mb-5">
-                <a href="#" class="btn btn-primary px-4">VIEW</a>
-              </div>
-            </div>
-            </div>
-
-          <div class="col">
-            <div class="card my-4 h-100">
-              <img src="../images/add-ons.jpg" class="card-img-top" alt="programming image">
-              <div class="card-body">
-                <h3 class="card-title">Sub Topic 3</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="ms-4 mb-5">
-                  <a href="#" class="btn btn-primary px-4">VIEW</a>
-              </div>
-            </div>
-            </div>
-          
+          <div id="subTopic-cards" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Cards will be inserted here -->
+          </div>
         </div>
-      </div>
-
       
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
     </section>
@@ -158,6 +118,45 @@
 </script>
 
 <script>
+ const subTopics = [
+    {
+      image: "../images/add-ons.jpg",
+      title: "Sub Topic 1",
+      content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      route: "#"
+    },
+    {
+      image: "../images/add-ons.jpg",
+      title: "Sub Topic 2",
+      content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      route: "#"
+    },
+    {
+      image: "../images/add-ons.jpg",
+      title: "Sub Topic 3",
+      content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      route: "#"
+    }
+  ];
+
+  function returnCards(valuesCards) {
+    return valuesCards.map(valuesCard => `
+      <div class="col">
+        <div class="card my-4 h-100">
+          <img src="${valuesCard.image}" class="card-img-top" alt="${valuesCard.title}">
+          <div class="card-body">
+            <h3 class="card-title">${valuesCard.title}</h3>
+            <p class="card-text">${valuesCard.content}</p>
+          </div>
+          <div class="ms-4 mb-5">
+            <a href="${valuesCard.route}" class="btn btn-primary px-4">VIEW</a>
+          </div>
+        </div>
+      </div>`).join('');
+  }
+
+  document.getElementById('subTopic-cards').innerHTML = returnCards(subTopics);
+
   let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button

@@ -8,7 +8,7 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.377)),
-    url(../images/background1.png);
+    url(../images/background1.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
