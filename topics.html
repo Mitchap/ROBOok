@@ -29,9 +29,11 @@
   </head>
   <body>
     <!-- page loading animation -->
-    <div class="preloader mx-auto d-flex  justify-content-center align-items-center gap-3">
-       <div id="loader" class="loader"></div>
-        <div id="loader-text" class="loader-text"></div> 
+    <div
+      class="preloader d-flex justify-content-center align-items-center gap-2"
+    >
+      <div id="loader" class="loader"></div>
+      <div><h3 class="fw-bold mt-2">Loading...</h3></div>
     </div>
 
     <!-- NAVBAR -->
@@ -65,16 +67,59 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                TOPICS</a>
+                TOPICS</a
+              >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-light text fw-semibold" href="../topics.html">View Topics</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-light" href="../topics/electronics.html">Electronics</a></li>
-                <li><a class="dropdown-item text-light" href="../topics/mechanics.html">Mechanics</a></li>
-                <li><a class="dropdown-item text-light" href="../topics/programming.html">Programming</a></li>
-                <li><a class="dropdown-item text-light" href="../topics/about-robots.html">All About Robots</a></li>
-                <li><a class="dropdown-item text-light" href="../topics/construct-robot.html">Construct a Robot Project</a></li>
-                <li><a class="dropdown-item text-light" href="../topics/add-ons.html">Add Ons</a></li>
+                <li>
+                  <a
+                    class="dropdown-item text-light text fw-semibold"
+                    href="../topics.html"
+                    >View Topics</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../topics/electronics.html"
+                    >Electronics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../topics/mechanics.html"
+                    >Mechanics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../topics/programming.html"
+                    >Programming</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../topics/about-robots.html"
+                    >All About Robots</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../topics/construct-robot.html"
+                    >Construct a Robot Project</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../topics/add-ons.html"
+                    >Add Ons</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -107,8 +152,12 @@
       <div class="text-center text-light">
         ROBOok © 2024
         <div class="socials">
-          <a href="https://www.facebook.com/ryanjamesfconiendo" class="icons"><i class="fa-brands fa-facebook"></i></a>
-          <a href="mailto:ryan.coniendo@wvsu.edu.ph" class="icons"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.facebook.com/ryanjamesfconiendo" class="icons"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="mailto:ryan.coniendo@wvsu.edu.ph" class="icons"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
           <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
           <a href="#" class="icons"><i class="fa-brands fa-youtube"></i></a>
         </div>
@@ -116,19 +165,25 @@
     </footer>
   </body>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   <script src="topics.js"></script>
   <script>
-    
     // Scroll to top button functionality
     let mybutton = document.getElementById("myBtn");
 
-    window.onscroll = function() {
+    window.onscroll = function () {
       scrollFunction();
     };
 
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
         mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";
@@ -144,54 +199,40 @@
   <script>
     window.addEventListener("load", () => {
       const loader = document.querySelector(".preloader");
-      
+
       loader.classList.add("preloader--hidden");
-      
-      loader.addEventListener("transitionend" , () => {
+
+      loader.addEventListener("transitionend", () => {
         document.body.removeChild(loader);
       });
-    })
-
+    });
   </script>
-<style>
-
-.preloader{
-  background: #f8f8f8 center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-.preloader--hidden{
-  transition: ease-out 1s;
-  opacity: 0;
-  visibility: hidden;
-}
-.loader {
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid #0C4A7A;
-  border-right-color: #F20767 ;
-  animation: l2 1s infinite linear;
-}
-@keyframes l2 {to{transform: rotate(1turn)}}
-
-
-.loader-text {
-  width: fit-content;
-  font-weight: bold;
-  font-family: monospace;
-  font-size: 30px;
-  clip-path: inset(0 3ch 0 0);
-  animation: l4 1s steps(4) infinite;
-}
-.loader-text:before {
-  content:"Loading..."
-}
-@keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
-</style>
-
+  <style>
+    .preloader {
+      background: #f8f8f8 center;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .preloader--hidden {
+      transition: ease-out 300ms;
+      transition-delay: 400ms;
+      opacity: 0.5;
+      visibility: hidden;
+    }
+    .loader {
+      width: 50px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 8px solid #0c4a7a;
+      border-right-color: #f20767;
+      animation: l2 1s infinite linear;
+    }
+    @keyframes l2 {
+      to {
+        transform: rotate(1turn);
+      }
+    }
+  </style>
 </html>
-
-

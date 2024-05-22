@@ -28,7 +28,11 @@
     <title>ROBOok</title>
   </head>
   <body>
-
+    <!-- page loading animation -->
+    <div class="preloader d-flex justify-content-center align-items-center gap-2">
+      <div id="loader" class="loader"></div>
+      <div><h3 class="fw-bold mt-2">Loading...</h3></div>
+   </div>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -162,4 +166,44 @@
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
   </script>
+
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".preloader");
+
+    loader.classList.add("preloader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+</script>
+<style>
+  .preloader {
+    background: #f8f8f8 center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  .preloader--hidden {
+    transition: ease-out 300ms;
+    transition-delay: 400ms;
+    opacity: 0.5;
+    visibility: hidden;
+  }
+  .loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #0c4a7a;
+    border-right-color: #f20767;
+    animation: l2 1s infinite linear;
+  }
+  @keyframes l2 {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+</style>
 </html>
