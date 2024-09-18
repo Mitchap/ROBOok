@@ -34,12 +34,6 @@ const topics = [
       title: "Add Ons",
       content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
       route: "../topics/add-ons.html"
-    },
-    {
-      image: "../images/add-ons.jpg",
-      title: "New Ons",
-      content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      route: "../topics/add-ons.html"
     }
   ];
 
