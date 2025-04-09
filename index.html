@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Robotics e-book for Junior High School Students">
-    <link rel="shortcut icon" type="logo/png" href="../images/logo.png" alt="Robook Icon"/>
+    <meta
+      name="description"
+      content="Robotics e-book for Junior High School Students"
+    />
+    <link
+      rel="shortcut icon"
+      type="logo/png"
+      href="../images/logo.png"
+      alt="Robook Icon"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
     <link
       rel="stylesheet"
@@ -30,74 +38,55 @@
   </head>
   <body>
     <!-- page loading animation -->
-    <div class="preloader d-flex justify-content-center align-items-center gap-2">
+    <div
+      class="preloader d-flex justify-content-center align-items-center"
+    >
       <div id="loader" class="loader"></div>
       <div><h3 class="fw-bold mt-2">Loading...</h3></div>
-   </div>
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img src="../images/logo.png" class="logo" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link mx-3 active" aria-current="page" href="index.html">HOME</a>
-              </li>
+    </div>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle mx-3 text-light"
-                  href="topics.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >TOPICS</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-light text fw-semibold" href="../topics.html">View Topics</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-light" href="../topics/electronics.html">Electronics</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/mechanics.html">Mechanics</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/programming.html">Programming</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/about-robots.html">All About Robots</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/construct-robot.html">Construct a Robot Project</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/add-ons.html">Add Ons</a></li>
-                </ul>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link text-light mx-3" href="about.html">ABOUT</a>
-              </li>
-            </ul>
+    <div class="my-auto">
+      <section id="main">
+
+        <div class="container d-flex justify-content-center align-items-center" >
+          
+          <div class="row">
+            <!-- hidden at medium up screens, visible in sm -->
+            <div class="col-12 col-md-6 text-center d-block d-md-none" style="margin-bottom: 50px;">
+              <img
+                src="../images/hero-image.png"
+                alt="image of a robot with robot arm claws"
+                class="hero-image floating"
+              />
+            </div>
+              <!-- text centered on small screens -->
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <img
+                class="robook-text"
+                src="../images/robook.png"
+                alt="robook text"
+              />
+              <h1 class="text-dark">
+                <span class="e-book"> Robotics e-book <br />for Junior High</span>
+                <br /><span class="school-students">School Students</span>
+              </h1>
+              <a href="topics.html" class="btn41-43 btn-43 rounded">LEARN NOW</a>
+            </div>
+            <!-- hidden at small screens -->
+            <div class="col-12 col-md-6 text-center d-none d-md-block">
+              <img
+                src="../images/hero-image.png"
+                alt="image of a robot with robot arm claws"
+                class="hero-image floating"
+              />
+            </div>
           </div>
         </div>
-      </nav>
-
-      <div class="my-auto">
-      <section id="main">
-        <div class="container">
-          <img class="robook-text" src="../images/robook.png" alt="text">
-          <h1 class="text-light">
-            <span class="e-book"> Robotics e-book
-              <br>for Junior High</span>
-              <br><span class="school-students">School Students</span></h1>
-              <a href="topics.html" class="btn41-43 btn-43">LEARN NOW</a>
-          </div>
-          
-        </section>
-      </div>
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer class=" text-center">
@@ -112,46 +101,56 @@
         </div>
 
       </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-     
-      <script>
-        window.addEventListener("load", () => {
-          const loader = document.querySelector(".preloader");
-          
-          loader.classList.add("preloader--hidden");
-          
-          loader.addEventListener("transitionend" , () => {
-            document.body.removeChild(loader);
-          });
-        })
-    
-      </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      ></script>
+      <!-- navbar is generated dynamically based on topics.js -->
+      <script src="../js/topics.js"></script>
+      <script src="../js/navigation.js"></script>
 
-      <style>
 
-        .preloader{
-          background: #f8f8f8 center;
-          height: 100vh;
-          width: 100%;
-          position: fixed;
-          z-index: 100;
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".preloader");
+
+        loader.classList.add("preloader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+          document.body.removeChild(loader);
+        });
+      });
+    </script>
+
+    <style>
+      
+      .preloader {
+        background: #f8f8f8 center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+      }
+      .preloader--hidden {
+        transition: ease-out 300ms;
+        transition-delay: 400ms;
+        opacity: 0.5;
+        visibility: hidden;
+      }
+      .loader {
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid #0c4a7a;
+        border-right-color: #f20767;
+        animation: l2 1s infinite linear;
+      }
+      @keyframes l2 {
+        to {
+          transform: rotate(1turn);
         }
-        .preloader--hidden{
-          transition: ease-out 300ms;
-          transition-delay: 400ms;
-          opacity: 0.5;
-          visibility: hidden;
-        }
-        .loader {
-          width: 50px;
-          aspect-ratio: 1;
-          border-radius: 50%;
-          border: 8px solid #0C4A7A;
-          border-right-color: #F20767 ;
-          animation: l2 1s infinite linear;
-        }
-        @keyframes l2 {to{transform: rotate(1turn)}}
-        
-        </style>
-    </body>
-    </html>
+      }
+    </style>
+  </body>
+</html>

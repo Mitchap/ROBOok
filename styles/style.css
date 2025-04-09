@@ -3,12 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "KoHo", sans-serif;
-
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.377)),
-    url(../images/background1.jpg);
+  background-color: #f8f8f8 !important;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -17,15 +15,15 @@ body {
 }
 
 .navbar {
-  background-color: #0C4A7A;
+  background-color: #0c4a7a;
 }
 
 .logo {
-  width: 75px;
+  width: 50px;
 }
 
 .fa-bars {
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 
 .navbar-nav {
@@ -33,7 +31,7 @@ body {
 }
 
 .active {
-  color: #FD0066 !important;
+  color: #fd0066 !important;
 }
 
 .nav-link {
@@ -42,12 +40,12 @@ body {
 }
 
 .nav-link:hover {
-  color: #FD0066 !important;
+  color: #fd0066 !important;
   transition: 800ms ease;
 }
 
 .dropdown-menu {
-  background-color: #5E748D !important;
+  background-color: #5e748d !important;
 }
 
 .dropdown-item {
@@ -85,8 +83,8 @@ body {
 }
 
 .btn-43 {
-  border: 2px solid rgb(255, 255, 255);
-  color: #F8F8F8;
+  border: 2px solid #013870;
+  color: #013870;
   z-index: 1;
 }
 
@@ -99,12 +97,12 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  background: rgb(255, 255, 255);
+  background: #013870;
   transition: all 0.3s ease;
 }
 
 .btn-43:hover {
-  color: rgb(0, 0, 0);
+  color: #f5f5f5;
 }
 
 .btn-43:hover:after {
@@ -113,9 +111,32 @@ body {
   height: 100%;
 }
 
+.hero-image {
+  height: 400px;
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: -50px;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
 footer {
   margin-top: auto;
-  background-color: #0C4A7A;
+  background-color: #0c4a7a;
   font-size: 0.9rem;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -123,7 +144,7 @@ footer {
 
 .icons {
   margin: 5px;
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 
 @media screen and (max-width: 760px) {
@@ -138,34 +159,37 @@ footer {
   .dropdown-item {
     font-size: 0.9rem !important;
   }
-
+  .hero-image {
+    height: 150px;
+  }
+  .floating {
+    margin-top: 50px;
+  }
   footer {
     font-size: 0.8rem;
     padding-top: 7px;
     padding-bottom: 7px;
   }
-  #main{
+  #main {
     margin-top: -20%;
   }
   .robook-text {
-    width: 250px;
+    width: 200px;
   }
 
   .e-book {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .school-students {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 
   .btn41-43 {
-    padding: 10px 25px;
+    padding: 8px 20px;
     font-weight: 500;
     font-size: 0.8rem;
   }
-
-
 }
 
 @media screen and (max-height: 500px) {
@@ -185,7 +209,10 @@ footer {
     background-color: #013870 !important;
     transition: 800ms ease;
   }
-  #main{
+  .hero-image {
+    height: 100px;
+  }
+  #main {
     margin-top: 10%;
     margin-bottom: 10%;
   }
@@ -211,5 +238,4 @@ footer {
     padding-top: 7px;
     padding-bottom: 7px;
   }
-
 }
