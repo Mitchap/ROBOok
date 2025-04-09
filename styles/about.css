@@ -29,10 +29,6 @@ body {
   margin-left: 30px;
 }
 
-.active {
-  color: #fd0066 !important;
-}
-
 .nav-link {
   font-style: normal;
   font-size: 1rem !important;
@@ -201,5 +197,33 @@ footer {
   .dropdown-item:hover {
     background-color: #013870 !important;
     transition: 800ms ease;
+  }
+}
+/* loading animation */
+
+.preloader {
+  background: #f8f8f8 center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.preloader--hidden {
+  transition: ease-out 300ms;
+  transition-delay: 400ms;
+  opacity: 0.5;
+  visibility: hidden;
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #0c4a7a;
+  border-right-color: #f20767;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
   }
 }

@@ -72,54 +72,14 @@
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- navbar is generated dynamically based on topics.js -->
+    <script src="../js/topics.js"></script>
+    <script src="../js/navigation.js"></script>
   </body>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <!-- navbar is generated dynamically based on topics.js -->
-  <script src="../js/topics.js"></script>
-  <script src="../js/navigation.js"></script>
-
-  <script>
-    window.addEventListener("load", () => {
-      const loader = document.querySelector(".preloader");
-
-      loader.classList.add("preloader--hidden");
-
-      loader.addEventListener("transitionend", () => {
-        document.body.removeChild(loader);
-      });
-    });
-  </script>
-  <style>
-    .preloader {
-      background: #f8f8f8 center;
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      z-index: 100;
-    }
-    .preloader--hidden {
-      transition: ease-out 300ms;
-      transition-delay: 400ms;
-      opacity: 0.5;
-      visibility: hidden;
-    }
-    .loader {
-      width: 50px;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      border: 8px solid #0c4a7a;
-      border-right-color: #f20767;
-      animation: l2 1s infinite linear;
-    }
-    @keyframes l2 {
-      to {
-        transform: rotate(1turn);
-      }
-    }
-  </style>
 </html>

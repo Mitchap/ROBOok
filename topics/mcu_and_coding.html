@@ -28,62 +28,19 @@
     <title>ROBOok</title>
   </head>
   <body>
-
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"
-            ><img src="../images/logo.png" class="logo" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link text-light mx-3" href="../index.html">HOME</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle mx-3 active" aria-current="page"
-                  href="topics.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  TOPICS</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-light text fw-semibold" href="../topics.html">View Topics</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-light" href="../topics/electronics.html">Electronics</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/mechanics.html">Mechanics</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/programming.html">Programming</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/about-robots.html">All About Robots</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/construct-robot.html">Construct a Robot Project</a></li>
-                  <li><a class="dropdown-item text-light" href="../topics/add-ons.html">Add Ons</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link text-light mx-3" href="../about.html">ABOUT</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <!-- page loading animation -->
+    <div
+      class="preloader d-flex justify-content-center align-items-center"
+    >
+      <div id="loader" class="loader"></div>
+      <div><h3 class="fw-bold mt-2">Loading...</h3></div>
+    </div>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
 
       <div class="header-border">
   <div class="topic-header">
-    <h1 class="topic-text text-center">PROGRAMMING</h1>
+    <h1 class="topic-text text-center">MCU & CODING</h1>
   </div>
       </div>
 
@@ -118,7 +75,9 @@
     crossorigin="anonymous"
   >
 </script>
-
+<!-- navbar is generated dynamically based on topics.js -->
+<script src="../js/topics.js"></script>
+<script src="../js/navigation.js"></script>
 <script>
  const subTopics = [
     {
@@ -161,21 +120,5 @@
 
   let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
 </script>
 </html>

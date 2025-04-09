@@ -1,19 +1,32 @@
+// loading animation script
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".preloader");
+
+  loader.classList.add("preloader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+//end of loading animation script
+
 const navbarItems = [
   {
     type: "link",
     label: "HOME",
-    href: "index.html",
-    active: true,
+    href: "../../../index.html",
   },
   {
     type: "dropdown",
     label: "TOPICS",
-    href: "topics.html",
+    href: "",
     items: [
       {
         type: "link",
         label: "View Topics",
-        href: "../topics.html",
+        href: "../../../topics.html",
         bold: true,
       },
       { type: "divider" },
@@ -28,7 +41,7 @@ const navbarItems = [
   {
     type: "link",
     label: "ABOUT",
-    href: "about.html",
+    href: "../../../about.html",
   },
 ];
 
@@ -37,7 +50,7 @@ function returnNavbar(navItems) {
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="../images/logo.png" class="logo" alt="logo" />
+            <img src="../../images/logo.png" class="logo" alt="logo" />
           </a>
           <button
             class="navbar-toggler"

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="logo/png" href="../images/logo.png" />
-    <link rel="stylesheet" href="../styles/topics.css" />
+    <link rel="shortcut icon" type="logo/png" href="../../images/logo.png" />
+    <link rel="stylesheet" href="../../styles/subtopic.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -40,18 +40,17 @@
 
       <div class="header-border">
   <div class="topic-header">
-    <h1 class="topic-text text-center">MECHANICAL ASSEMBLY</h1>
+    <h1 class="topic-text text-center">What's a bot?</h1>
   </div>
       </div>
 
       
-      <section> 
+      <section>  
         <div class="container topic-list">
           <div id="subTopic-cards" class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Cards will be inserted here -->
           </div>
         </div> 
-
 
       
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
@@ -75,50 +74,9 @@
     crossorigin="anonymous"
   >
 </script>
-<!-- navbar is generated dynamically based on topics.js -->
-<script src="../js/topics.js"></script>
-<script src="../js/navigation.js"></script>
-<script>
- const subTopics = [
-    {
-      image: "../images/programming.jpg",
-      title: "Sub Topic 1",
-      content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      route: "../topics/programming/subtopic1.html"
-    },
-    {
-      image: "../images/programming.jpg",
-      title: "Sub Topic 2",
-      content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      route: "#"
-    },
-    {
-      image: "../images/programming.jpg",
-      title: "Sub Topic 3",
-      content: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      route: "#"
-    }
-  ];
 
-  function returnCards(valuesCards) {
-    return valuesCards.map(valuesCard => `
-      <div class="col">
-        <div class="card my-4 h-100">
-          <img src="${valuesCard.image}" class="card-img-top" alt="${valuesCard.title}">
-          <div class="card-body">
-            <h3 class="card-title">${valuesCard.title}</h3>
-            <p class="card-text">${valuesCard.content}</p>
-          </div>
-          <div class="ms-4 mb-5">
-            <a href="${valuesCard.route}" class="btn btn-primary px-4">VIEW</a>
-          </div>
-        </div>
-      </div>`).join('');
-  }
-
-  document.getElementById('subTopic-cards').innerHTML = returnCards(subTopics);
-
-  let mybutton = document.getElementById("myBtn");
-
-</script>
+      <!-- navbar is generated dynamically based on topics.js -->
+      <script src="../../js/topics.js"></script>
+      <script src="../../js/navigation.js"></script>
+      <script src="../../topics/understanding_robots/whats_a_bot.js"></script>
 </html>
