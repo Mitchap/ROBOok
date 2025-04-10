@@ -49,7 +49,7 @@ function returnNavbar(navItems) {
   return `
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="../../index.html">
             <img src="../../images/logo.png" class="logo" alt="logo" />
           </a>
           <button

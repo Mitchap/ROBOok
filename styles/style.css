@@ -61,8 +61,12 @@ body {
   font-size: 3.5rem;
 }
 
+.junior-high {
+  font-size: 3.2rem;
+}
+
 .school-students {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 .btn41-43 {
@@ -115,7 +119,6 @@ body {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-top: -50px;
 }
 
 @keyframes floating {
@@ -143,7 +146,7 @@ footer {
   color: #f8f8f8;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 850px) {
   .logo {
     width: 60px;
   }
@@ -176,9 +179,11 @@ footer {
   .e-book {
     font-size: 1.5rem;
   }
-
+  .junior-high {
+    font-size: 1.3rem;
+  }
   .school-students {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .btn41-43 {
@@ -206,7 +211,10 @@ footer {
     transition: 800ms ease;
   }
   .hero-image {
-    height: 100px;
+    height: 180px;
+  }
+  .floating {
+    align-items: center;
   }
   #main {
     margin-top: 10%;
@@ -219,9 +227,11 @@ footer {
   .e-book {
     font-size: 1.6rem;
   }
-
+  .junior-high {
+    font-size: 1.4rem;
+  }
   .school-students {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .btn41-43 {
