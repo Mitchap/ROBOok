@@ -1,24 +1,24 @@
 const subTopics = [
   {
-    image: "../images/understanding_robots.jpg",
-    title: "What's a Bot?",
+    image: "../images/powersupply.jpg",
+    title: "Robot Power Needs",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
-    route: "../topics/understanding_robots/whats_a_bot.html",
+      "Before plugging in, let's understand the fundamental language and needs of robot power.",
+    route: "../topics/power_supply/robot_power_needs.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Robot Components",
+    image: "../images/powersupply.jpg",
+    title: "Types of Power Sources",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/robot_components.html",
+      "From batteries to the sun, explore the diverse ways robots get their juice!",
+    route: "../topics/power_supply/types_of_power_sources.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Now & Next",
+    image: "../images/powersupply.jpg",
+    title: "Managing Robot Power",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/now_and_next.html",
+      "Making smart power choices for peak robot performance and safety!",
+    route: "../topics/power_supply/managing_robot_power.html",
   },
 ];
 

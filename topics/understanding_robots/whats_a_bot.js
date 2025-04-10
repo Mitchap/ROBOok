@@ -1,30 +1,30 @@
 const lessons = [
   {
     image: "../../images/understanding_robots.jpg",
-    title: "Lesson 1: Robot Defined",
+    title: "Robot Defined",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
+      "Think robots are just like in movies? Get ready to have your mind blown as we uncover the real meaning of what makes a machine a robot!",
     route: "#",
   },
   {
     image: "../../images/understanding_robots.jpg",
-    title: "Lesson 2: Bot History",
+    title: "Bot History",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
+      "From ancient inventions to the first electronic brains – take a quick and surprising trip through the amazing history that led to today's robots!",
     route: "#",
   },
   {
     image: "../../images/understanding_robots.jpg",
-    title: "Lesson 3: Robot Types",
+    title: "Robot Types",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
+      "Meet the robot family! From factory workers to space explorers, discover the incredible variety of bots and what unique jobs they do.",
     route: "#",
   },
   {
     image: "../../images/understanding_robots.jpg",
-    title: "Lesson 4: Sci-Fi & Ethics",
+    title: "Sci-Fi & Ethics",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
+      "Cool robots in movies vs. real life science! And as robots get smarter, what's right and wrong? Let's explore!",
     route: "#",
   },
 ];
@@ -35,7 +35,9 @@ function returnCards(valuesCards) {
       (valuesCard) => `
       <div class="col-6 col-md-4 col-lg-3">
         <div class="card my-2 h-100 shadow-sm custom-card">
-          <img src="${valuesCard.image}" class="card-img-top custom-img" alt="${valuesCard.title}">
+          <div class="custom-img-wrapper">
+            <img src="${valuesCard.image}" class="card-img-top custom-img" alt="${valuesCard.title}">
+          </div>
           <div class="card-body custom-body">
             <h3 class="card-title custom-title">${valuesCard.title}</h3>
             <p class="card-text custom-text">${valuesCard.content}</p>

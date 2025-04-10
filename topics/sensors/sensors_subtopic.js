@@ -1,24 +1,24 @@
 const subTopics = [
   {
-    image: "../images/understanding_robots.jpg",
-    title: "What's a Bot?",
+    image: "../images/sensors.jpg",
+    title: "Sense Input",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
-    route: "../topics/understanding_robots/whats_a_bot.html",
+      "How do robots 'see,' 'hear,' 'touch,' and even 'smell' their world? Discover the amazing input devices that give robots their senses!",
+    route: "../topics/sensors/sense_input.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Robot Components",
+    image: "../images/sensors.jpg",
+    title: "Sensor Types",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/robot_components.html",
+      "Time to get technical! Peek inside some of the coolest robot sensors and discover the clever ways they 'see,' 'measure,' and 'feel' the world around them.",
+    route: "../topics/sensors/sensor_types.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Now & Next",
+    image: "../images/sensors.jpg",
+    title: "Sensing to Action",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/now_and_next.html",
+      "From 'seeing' the world to actually doing something about it! Discover how robots use sensor information to make decisions and take action – the key to their smart moves!",
+    route: "../topics/sensors/sensing_to_action.html",
   },
 ];
 

@@ -1,24 +1,24 @@
 const subTopics = [
   {
-    image: "../images/understanding_robots.jpg",
-    title: "What's a Bot?",
+    image: "../images/assembly.jpg",
+    title: "Robot Building Blocks",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
-    route: "../topics/understanding_robots/whats_a_bot.html",
+      "From metal to plastic and wheels that roll! Discover the fundamental materials and rolling foundations that form a robot's physical presence.",
+    route: "../topics/mechanical_assembly/robot_building_blocks.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Robot Components",
+    image: "../images/assembly.jpg",
+    title: "Robot Design",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/robot_components.html",
+      "Dream it, draw it, build it! Journey through the steps of robot design, from initial sketches to digital blueprints.",
+    route: "../topics/mechanical_assembly/robot_design.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Now & Next",
+    image: "../images/assembly.jpg",
+    title: "Building the Physical Bot",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/now_and_next.html",
+      "Time to build! Explore the tools, techniques, and wiring skills needed to assemble your robot creation.",
+    route: "../topics/mechanical_assembly/building_the_physical_bot.html",
   },
 ];
 

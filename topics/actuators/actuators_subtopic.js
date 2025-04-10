@@ -1,24 +1,24 @@
 const subTopics = [
   {
-    image: "../images/understanding_robots.jpg",
-    title: "What's a Bot?",
+    image: "../images/actuators.jpg",
+    title: "Robot Motion",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
-    route: "../topics/understanding_robots/whats_a_bot.html",
+      "Unleash the power! Discover the 'muscles' and mechanisms that give robots the ability to move, grab, and interact with the world around them.",
+    route: "../topics/actuators/robot_motion.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Robot Components",
+    image: "../images/actuators.jpg",
+    title: "Actuator Types",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/robot_components.html",
+      "Meet the movers and shakers! Explore the amazing variety of electric motors, powerful fluid systems, and specialized mechanisms that power robot actions.",
+    route: "../topics/actuators/actuator_types.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Now & Next",
+    image: "../images/actuators.jpg",
+    title: "Actuators in Action",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/now_and_next.html",
+      "From pushing rivals to following lines and tackling missions! See how different actuators are used to give robots the 'oomph' they need to conquer challenges.",
+    route: "../topics/actuators/actuators_in_action.html",
   },
 ];
 

@@ -1,24 +1,24 @@
 const subTopics = [
   {
-    image: "../images/understanding_robots.jpg",
-    title: "What's a Bot?",
+    image: "../images/programming.jpg",
+    title: "Microcontrollers",
     content:
-      "Ever wondered what really makes a robot a robot? We'll explore the cool science and surprising history behind these amazing machines!",
-    route: "../topics/understanding_robots/whats_a_bot.html",
+      "Meet the masterminds! Discover the tiny computers called microcontrollers that act as the 'brains' behind every smart robot.",
+    route: "../topics/mcu_and_coding/microcontrollers.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Robot Components",
+    image: "../images/programming.jpg",
+    title: "Programming with Blocks and Text",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/robot_components.html",
+      "Give your robot a voice! Learn the basics of programming – the secret language that tells robots exactly what to do, from visual blocks to real code.",
+    route: "../topics/mcu_and_coding/programming_blocks_text.html",
   },
   {
-    image: "../images/understanding_robots.jpg",
-    title: "Now & Next",
+    image: "../images/programming.jpg",
+    title: "Code Actions",
     content:
-      "Beyond the 'brain' and 'muscles'! Discover the fascinating array of parts that allow robots to sense commands, show information, and connect with the world around them.",
-    route: "../topics/understanding_robots/now_and_next.html",
+      "Bring your robot to life in the virtual world! Discover how to write code that reads information from sensors and makes actuators move and react.",
+    route: "../topics/mcu_and_coding/code_actions.html",
   },
 ];
 
