@@ -1,20 +1,20 @@
 const lessons = [
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/pmcu_coding.jpg",
     title: "Language of Robots",
     content:
       "Talk to your bot! Discover the secret languages called programming that tell robots exactly what to do, from simple commands to complex actions.",
     route: "../modules/programming/language_of_robots.html",
   },
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Block-Based Coding",
     content:
       "Code without typing! Learn the basics of programming your virtual robot using colorful drag-and-drop blocks in Tinkercad.",
     route: "../modules/programming/block_based_coding.html",
   },
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Arduino Code",
     content:
       "See the code behind the blocks! Explore how visual programming translates into the real text language of Arduino, the same language you'll use in the official Arduino IDE!",

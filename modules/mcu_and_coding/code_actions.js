@@ -1,20 +1,20 @@
 const lessons = [
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Coding Digitals",
     content:
       "Virtual on or off! Code your simulated robot to react to digital inputs from the virtual world.",
     route: "../modules/programming/coding_digitals.html",
   },
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Coding Analogs",
     content:
       "Simulated shades of gray! Code your virtual robot to respond to a range of analog sensor values in the virtual environment.",
     route: "../modules/programming/coding_analogs.html",
   },
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Coding Actuators",
     content:
       "Simulated shades of gray! Code your virtual robot to respond to a range of analog sensor values in the virtual environment.",
