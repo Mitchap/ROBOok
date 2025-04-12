@@ -20,21 +20,21 @@ const navbarItems = [
   },
   {
     type: "dropdown",
-    label: "TOPICS",
+    label: "MODULES",
     href: "",
     items: [
       {
         type: "link",
-        label: "View Topics",
-        href: "../../../topics.html",
+        label: "View Modules",
+        href: "../../../modules.html",
         bold: true,
       },
       { type: "divider" },
       // We inject the topic-based links here dynamically below
-      ...topics.map((topic) => ({
+      ...modules.map((module) => ({
         type: "link",
-        label: topic.title,
-        href: topic.route,
+        label: module.title,
+        href: module.route,
       })),
     ],
   },

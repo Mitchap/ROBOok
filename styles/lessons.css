@@ -68,7 +68,7 @@ body {
   padding: 10px 20px 10px 10px;
   position: relative;
   color: #fff;
-  background: #0c4a7a;
+  background: #0a82de;
 }
 
 .topic-header:after {
@@ -80,7 +80,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  background: #0c4a7a;
+  background: #0a82de;
   transform-origin: bottom left;
   -ms-transform: skew(-30deg, 0deg);
   -webkit-transform: skew(-30deg, 0deg);
@@ -245,7 +245,7 @@ footer {
 @media (min-width: 768px) {
   .custom-card {
     font-size: 1rem;
-    max-width: 360px;
+    max-width: 320px;
     margin: auto;
   }
 
@@ -255,7 +255,7 @@ footer {
   }
 
   .custom-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .custom-text {
