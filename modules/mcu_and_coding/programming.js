@@ -1,6 +1,6 @@
 const lessons = [
   {
-    image: "../../images/pmcu_coding.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Language of Robots",
     content:
       "Talk to your bot! Discover the secret languages called programming that tell robots exactly what to do, from simple commands to complex actions.",
