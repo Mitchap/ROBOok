@@ -1,6 +1,6 @@
 const topics = [
   {
-    image: "../images/microcontrollers.png",
+    image: "../images/micro_controllers.png",
     title: "Microcontrollers",
     content:
       "Meet the masterminds! Discover the tiny computers called microcontrollers that act as the 'brains' behind every smart robot.",
