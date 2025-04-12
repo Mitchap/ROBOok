@@ -4,7 +4,7 @@ const lessons = [
     title: "Why Sensors Matter",
     content:
       "Ever wonder how robots can navigate, react, and even 'understand' their world? Discover why sensors are the must-have tools for any smart robot!",
-    route: "../topics/understanding_robots/whats_a_bot.html",
+    route: "../../../../lessons/sensors/sense_input/why_sensors_matter.html",
   },
   {
     image: "../../images/sensors.jpg",

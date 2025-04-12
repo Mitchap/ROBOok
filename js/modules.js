@@ -4,42 +4,42 @@ const modules = [
     title: "Understanding Robots",
     content:
       "Dive into the exciting world of robots! Discover what they are, explore their amazing parts and how they work, and see the incredible things they do today and might do tomorrow!",
-    route: "../../modules/understanding_robots.html",
+    route: "../../../modules/understanding_robots.html",
   },
   {
     image: "../images/sensors.jpg",
     title: "Sensors",
     content:
       "Robot Senses Activated! Learn how robots 'see,' 'hear,' and 'feel' their surroundings using different types of sensors – their crucial link to the real world.",
-    route: "../../modules/sensors.html",
+    route: "../../../modules/sensors.html",
   },
   {
     image: "../images/actuators.jpg",
     title: "Actuators",
     content:
       "Making Robots Move! Explore the muscles and motors that power robot motion, from spinning wheels to intricate robotic arms. See how they bring actions to life!",
-    route: "../../modules/actuators.html",
+    route: "../../../modules/actuators.html",
   },
   {
     image: "../images/mcu_coding.jpg",
     title: "MCU & Coding",
     content:
       "Meet the Robot's Mind! Uncover the secrets of microcontrollers – the 'brains' of robots – and see how programming tells them what to do.",
-    route: "../../modules/mcu_and_coding.html",
+    route: "../../../modules/mcu_and_coding.html",
   },
   {
     image: "../images/powersupply.jpg",
     title: "Power Supply",
     content:
       "Fueling the Future! Discover the different ways robots get their energy, from batteries to solar power, and why a reliable power source is essential for their tasks.",
-    route: "../../modules/power_supply.html",
+    route: "../../../modules/power_supply.html",
   },
   {
     image: "../images/assembly.jpg",
     title: "Mechanical Assembly",
     content:
       "Building the Bots! Explore the materials and methods used to construct the physical body of a robot. Learn how design, CAD, and even 3D printing bring robot ideas into reality.",
-    route: "../../modules/mechanical_assembly.html",
+    route: "../../../modules/mechanical_assembly.html",
   },
 ];
 

@@ -16,7 +16,7 @@ const navbarItems = [
   {
     type: "link",
     label: "HOME",
-    href: "../../../index.html",
+    href: "../../../../index.html",
   },
   {
     type: "dropdown",
@@ -26,7 +26,7 @@ const navbarItems = [
       {
         type: "link",
         label: "View Modules",
-        href: "../../../modules.html",
+        href: "../../../../modules.html",
         bold: true,
       },
       { type: "divider" },
@@ -41,7 +41,7 @@ const navbarItems = [
   {
     type: "link",
     label: "ABOUT",
-    href: "../../../about.html",
+    href: "../../../../about.html",
   },
 ];
 
@@ -49,8 +49,8 @@ function returnNavbar(navItems) {
   return `
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../../index.html">
-            <img src="../../images/logo.png" class="logo" alt="logo" />
+          <a class="navbar-brand" href="../../../index.html">
+            <img src="../../../images/logo.png" class="logo" alt="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -136,4 +136,13 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+// SIDE NAV SCRIPT
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
