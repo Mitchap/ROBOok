@@ -1,20 +1,20 @@
 const topics = [
   {
-    image: "../images/programming.jpg",
+    image: "../images/microcontrollers.png",
     title: "Microcontrollers",
     content:
       "Meet the masterminds! Discover the tiny computers called microcontrollers that act as the 'brains' behind every smart robot.",
     route: "../modules/mcu_and_coding/microcontrollers.html",
   },
   {
-    image: "../images/programming.jpg",
+    image: "../images/programming.png",
     title: "Programming",
     content:
       "Give your robot a voice! Learn the basics of programming – the secret language that tells robots exactly what to do, from visual blocks to real code.",
     route: "../modules/mcu_and_coding/programming.html",
   },
   {
-    image: "../images/programming.jpg",
+    image: "../images/code_actions.png",
     title: "Code Actions",
     content:
       "Bring your robot to life in the virtual world! Discover how to write code that reads information from sensors and makes actuators move and react.",

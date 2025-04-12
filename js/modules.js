@@ -21,7 +21,7 @@ const modules = [
     route: "../../modules/actuators.html",
   },
   {
-    image: "../images/programming.jpg",
+    image: "../images/mcu_coding.jpg",
     title: "MCU & Coding",
     content:
       "Meet the Robot's Mind! Uncover the secrets of microcontrollers – the 'brains' of robots – and see how programming tells them what to do.",

@@ -33,7 +33,7 @@ function returnCards(valuesCards) {
   return valuesCards
     .map(
       (valuesCard) => `
-      <div class="col-6 col-md-4">
+      <div class="col-6 col-md-4 col-lg-3">
         <div class="card my-2 h-100 shadow-sm custom-card">
           <div class="custom-img-wrapper">
             <img src="${valuesCard.image}" class="card-img-top custom-img" alt="${valuesCard.title}">
