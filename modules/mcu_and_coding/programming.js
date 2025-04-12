@@ -21,7 +21,7 @@ const lessons = [
     route: "../modules/programming/arduino_code.html",
   },
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Variables and Control",
     content:
       "Making choices and repeating tasks, your way! Program your virtual robot's behavior using both visual blocks and text commands.",

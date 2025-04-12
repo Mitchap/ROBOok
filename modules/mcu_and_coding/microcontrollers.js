@@ -1,6 +1,6 @@
 const lessons = [
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "The Mighty Microchip",
     content:
       "Tiny chip, HUGE power! Discover the incredible microcontrollers that are the brains behind all the smartest robots and gadgets.",

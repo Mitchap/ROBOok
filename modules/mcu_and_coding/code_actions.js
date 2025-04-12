@@ -21,7 +21,7 @@ const lessons = [
     route: "../modules/programming/coding_actuators.html",
   },
   {
-    image: "../../images/programming.jpg",
+    image: "../../images/mcu_coding.jpg",
     title: "Coding with Libraries",
     content:
       "Unlock virtual superpowers! See how libraries can add pre-built functions to your simulated robot projects in Tinkercad.",
