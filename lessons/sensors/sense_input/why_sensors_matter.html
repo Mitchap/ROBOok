@@ -46,9 +46,12 @@
     </section>
 
     <div class="mt-5 ms-3 ms-md-5">
-      <button class="btn btn-primary" onclick="history.back()">
+      <a
+        class="btn btn-primary"
+        href="../../../modules/sensors/sense_input.html"
+      >
         <i class="fa-solid fa-chevron-left"></i> Back
-      </button>
+      </a>
     </div>
 
     <!-- This section has the page content -->
@@ -62,16 +65,16 @@
           <!-- An underscore with 0 opacity is added to give space
                 and not cause layout issues -->
           <p class="sidenav-title">LESSONS</p>
-          <!-- Horizontal line with inline styling -->
           <hr style="border-bottom: 2px solid #f8f8f8" />
           <!-- Lessons -->
           <a
+            class="my-1 active"
             href="../../../../lessons/sensors/sense_input/why_sensors_matter.html"
             >Lesson<span class="opacity-0">_</span>1</a
           >
-          <a href="#">Lesson<span class="opacity-0">_</span>2</a>
-          <a href="#">Lesson<span class="opacity-0">_</span>3</a>
-          <a href="#">Lesson<span class="opacity-0">_</span>4</a>
+          <a class="my-1" href="#">Lesson<span class="opacity-0">_</span>2</a>
+          <a class="my-1" href="#">Lesson<span class="opacity-0">_</span>3</a>
+          <a class="my-1" href="#">Lesson<span class="opacity-0">_</span>4</a>
         </div>
 
         <div class="mt-5 lesson-content">
@@ -79,238 +82,245 @@
           <h5 class="fw-medium">
             Introducing Robot Senses: The Importance of Sensors
           </h5>
-          <div class="my-5">
-            <p class="my-5 lesson-paragraph">
-              Ever wonder how robots can navigate, react, and even 'understand'
-              their world? Discover why sensors are the must-have tools for any
-              smart robot!
-            </p>
+          <p class="my-5 lesson-paragraph">
+            Ever wonder how robots can navigate, react, and even 'understand'
+            their world? Discover why sensors are the must-have tools for any
+            smart robot!
+          </p>
 
-            <!-- Suggested Image/GIF: Split view or GIF - robot using sensors vs. robot bumping blindly -->
-            <div class="text-center my-4">
-              <iframe
-                src="https://gifer.com/embed/9SPk"
-                width="480"
-                height="270.000"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
-              <p>Sample GIF <a href="https://gifer.com">via GIFER</a></p>
-            </div>
+          <div class="text-center my-4"></div>
 
-            <h5 class="fw-medium">What You'll Learn in This Lesson:</h5>
-            <ul class="my-3">
-              <li>
-                Understand the fundamental role of sensors in enabling robots to
-                interact with their environment.
-              </li>
-              <li>
-                Explain why sensors are crucial for robots to make decisions and
-                perform tasks effectively.
-              </li>
-              <li>
-                Recognize how a lack of adequate sensing can lead to robot
-                malfunction or failure.
-              </li>
-            </ul>
+          <h5 class="fw-medium">What You'll Learn in This Lesson:</h5>
+          <ul class="my-3">
+            <li>
+              Understand the fundamental role of sensors in enabling robots to
+              interact with their environment.
+            </li>
+            <li>
+              Explain why sensors are crucial for robots to make decisions and
+              perform tasks effectively.
+            </li>
+            <li>
+              Recognize how a lack of adequate sensing can lead to robot
+              malfunction or failure.
+            </li>
+          </ul>
 
-            <h5 class="fw-medium mt-5">
-              Why Do Robots Need to 'Sense' the World?
-            </h5>
-            <p class="lesson-paragraph">
-              Think about how you interact with the world around you right here
-              in Sagay City, or anywhere else! You use your eyes to see the
-              vibrant colors of the sugarcane fields, your ears to hear the
-              bustling sounds of the market, your skin to feel the warmth of the
-              sun. These are your senses, and they provide you with vital
-              information that helps you navigate, make decisions, and stay
-              safe.
-              <br /><br />
-              Robots are similar! They need ways to gather information about
-              their surroundings to operate intelligently. This is where sensors
-              come in. Sensors are like the robot's eyes, ears, nose, and skin –
-              they detect different aspects of the environment (like light,
-              sound, distance, touch, temperature) and convert them into
-              electrical signals that the robot's "brain" (the microcontroller)
-              can understand.
-              <br /><br />
-              Imagine a self-driving vehicle trying to navigate the busy streets
-              without sensors. It wouldn't be able to see the road, detect other
-              vehicles, pedestrians, or even the stop signs! It would be a very
-              dangerous and ineffective machine.
-            </p>
-
-            <!-- Suggested Short Video: Robot failing due to missing sensor -->
-            <div class="mx-auto ratio ratio-16x9 lesson-video my-4">
-              <iframe
-                class="rounded-4"
-                src="https://www.youtube.com/embed/yAV5aZ0unag?si=LBvGPAQtWnTZZRMf"
-              ></iframe>
-            </div>
-
-            <h5 class="fw-medium mt-5">Making Decisions and Taking Action:</h5>
-            <p class="lesson-paragraph">
-              The information gathered by sensors allows robots to:
-            </p>
-            <ul class="my-3">
-              <li>
-                <strong>Navigate:</strong> Detect obstacles (like that
-                tricycle!), follow paths, and move around their environment
-                without bumping into things.
-              </li>
-              <li>
-                <strong>React:</strong> Respond to changes, like a robot arm
-                adjusting its grip when it senses a ripe tomato is about to
-                slip.
-              </li>
-              <li>
-                <strong>Perform Tasks:</strong> Gather data for their specific
-                jobs, such as a light sensor helping a solar-powered robot find
-                the sun, or a camera inspecting the quality of a manufactured
-                part.
-              </li>
-              <li>
-                <strong>Maintain Safety:</strong> Avoid collisions with people
-                or objects, detect dangerous conditions (like a gas leak
-                sensor), and operate within safe parameters.
-              </li>
-            </ul>
-
-            <h5 class="fw-medium mt-5">What Happens Without Sensors?</h5>
-            <p class="lesson-paragraph">
-              Without adequate sensing, robots are essentially blind, deaf, and
-              numb. They can only follow pre-programmed instructions blindly,
-              without the ability to adapt to the real world. This can lead to:
-            </p>
-            <ul class="my-3">
-              <li>
-                <strong>Inefficient Performance:</strong> Robots might take
-                longer to complete tasks, like a robotic harvester moving too
-                slowly because it can't "see" the ripe crops efficiently.
-              </li>
-              <li>
-                <strong>Damage to the Robot or its Environment:</strong> Without
-                collision detection, robots can crash into delicate equipment or
-                harm themselves.
-              </li>
-              <li>
-                <strong>Inability to Handle Unexpected Situations:</strong>
-                Robots won't be able to respond to changes like a sudden
-                downpour affecting their outdoor operation if they lack weather
-                sensors.
-              </li>
-              <li>
-                <strong>Limited Functionality:</strong> The range of tasks a
-                sensor-less robot can perform is severely restricted, making
-                them much less useful.
-              </li>
-            </ul>
-
-            <!-- Suggested Interactive Element: Drag-and-drop sensor match activity -->
-            <!-- Commented placeholder for future activity integration -->
-            <!-- 
-              <div class="interactive-element my-5">
-                [Drag-and-drop activity: Match robot task with sensor type]
-              </div>
-              -->
-
-            <p class="lesson-paragraph my-5">
-              In short, sensors are not just optional add-ons; they are
-              fundamental to creating smart, capable, and reliable robots that
-              can truly interact with and be useful in the real world, whether
-              they're helping in agriculture here in Sagay or exploring distant
-              planets.
-            </p>
-
-            <h5 class="fw-medium mt-4">Concise Summary:</h5>
-            <ul>
-              <li>
-                Sensors are the key to a robot's ability to perceive its
-                environment.
-              </li>
-              <li>
-                They are essential for navigation, reaction, task performance,
-                and safety.
-              </li>
-              <li>
-                Robots without sensors are limited, inefficient, and prone to
-                failure.
-              </li>
-            </ul>
-
+          <h5 class="fw-medium mt-5">
+            Why Do Robots Need to 'Sense' the World?
+          </h5>
+          <p class="lesson-paragraph">
+            Think about how you interact with the world around you right here in
+            Sagay City, or anywhere else! You use your eyes to see the vibrant
+            colors of the sugarcane fields, your ears to hear the bustling
+            sounds of the market, your skin to feel the warmth of the sun. These
+            are your senses, and they provide you with vital information that
+            helps you navigate, make decisions, and stay safe.
             <br /><br />
+            Robots are similar! They need ways to gather information about their
+            surroundings to operate intelligently. This is where sensors come
+            in. Sensors are like the robot's eyes, ears, nose, and skin – they
+            detect different aspects of the environment (like light, sound,
+            distance, touch, temperature) and convert them into electrical
+            signals that the robot's "brain" (the microcontroller) can
+            understand.
+            <br /><br />
+            Imagine a self-driving vehicle trying to navigate the busy streets
+            without sensors. It wouldn't be able to see the road, detect other
+            vehicles, pedestrians, or even the stop signs! It would be a very
+            dangerous and ineffective machine.
+          </p>
 
-            <section>
-              <div class="d-inline-flex gap-1">
-                <button
-                  class="btn btn-outline-dark"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
-                  Sources and related content
-                  <i class="fa-solid fa-chevron-down"></i>
-                </button>
+          <!-- Suggested Short Video: Robot failing due to missing sensor -->
+          <div class="mx-auto my-4"></div>
+
+          <h5 class="fw-medium mt-5">Making Decisions and Taking Action:</h5>
+          <p class="lesson-paragraph">
+            The information gathered by sensors allows robots to:
+          </p>
+          <ul class="my-3">
+            <li>
+              <strong>Navigate:</strong> Detect obstacles (like that tricycle!),
+              follow paths, and move around their environment without bumping
+              into things.
+            </li>
+            <li>
+              <strong>React:</strong> Respond to changes, like a robot arm
+              adjusting its grip when it senses a ripe tomato is about to slip.
+            </li>
+            <li>
+              <strong>Perform Tasks:</strong> Gather data for their specific
+              jobs, such as a light sensor helping a solar-powered robot find
+              the sun, or a camera inspecting the quality of a manufactured
+              part.
+            </li>
+            <li>
+              <strong>Maintain Safety:</strong> Avoid collisions with people or
+              objects, detect dangerous conditions (like a gas leak sensor), and
+              operate within safe parameters.
+            </li>
+          </ul>
+
+          <h5 class="fw-medium mt-5">What Happens Without Sensors?</h5>
+          <p class="lesson-paragraph">
+            Without adequate sensing, robots are essentially blind, deaf, and
+            numb. They can only follow pre-programmed instructions blindly,
+            without the ability to adapt to the real world. This can lead to:
+          </p>
+          <ul class="my-3">
+            <li>
+              <strong>Inefficient Performance:</strong> Robots might take longer
+              to complete tasks, like a robotic harvester moving too slowly
+              because it can't "see" the ripe crops efficiently.
+            </li>
+            <li>
+              <strong>Damage to the Robot or its Environment:</strong> Without
+              collision detection, robots can crash into delicate equipment or
+              harm themselves.
+            </li>
+            <li>
+              <strong>Inability to Handle Unexpected Situations:</strong>
+              Robots won't be able to respond to changes like a sudden downpour
+              affecting their outdoor operation if they lack weather sensors.
+            </li>
+            <li>
+              <strong>Limited Functionality:</strong> The range of tasks a
+              sensor-less robot can perform is severely restricted, making them
+              much less useful.
+            </li>
+          </ul>
+
+          <p class="lesson-paragraph my-5">
+            In short, sensors are not just optional add-ons; they are
+            fundamental to creating smart, capable, and reliable robots that can
+            truly interact with and be useful in the real world, whether they're
+            helping in agriculture here in Sagay or exploring distant planets.
+          </p>
+
+          <h5 class="fw-medium mt-4">Concise Summary:</h5>
+          <ul>
+            <li>
+              Sensors are the key to a robot's ability to perceive its
+              environment.
+            </li>
+            <li>
+              They are essential for navigation, reaction, task performance, and
+              safety.
+            </li>
+            <li>
+              Robots without sensors are limited, inefficient, and prone to
+              failure.
+            </li>
+          </ul>
+
+          <br /><br />
+
+          <section>
+            <div class="d-inline-flex gap-1">
+              <button
+                class="btn btn-outline-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Sources and related content
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <ul class="list-unstyled">
+                  <li>
+                    Fan, Xiaoran, Lee, Daewon, Chen, Yuan, Prepscius, Colin,
+                    Isler, Volkan, Jackel, Larry, Seung, Hyunjune, & Lee,
+                    Daniel. (2020).
+                    <em
+                      >Acoustic Collision Detection and Localization for Robot
+                      Manipulators</em
+                    >.
+                    <a
+                      href="https://doi.org/10.1109/IROS45743.2020.9341719"
+                      target="_blank"
+                      >https://doi.org/10.1109/IROS45743.2020.9341719</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <em
+                      >Friction-Scaled Vibrotactile Feedback for Real-Time Slip
+                      Detection in Manipulation using Robotic Sixth Finger</em
+                    >. (n.d.).
+                    <a
+                      href="https://arxiv.org/html/2503.15447v1"
+                      target="_blank"
+                      >https://arxiv.org/html/2503.15447v1</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <em
+                      >How do robots use sensors for autonomous navigation?</em
+                    >
+                    (n.d.).
+                    <a
+                      href="https://milvus.io/ai-quick-reference/how-do-robots-use-sensors-for-autonomous-navigation"
+                      target="_blank"
+                      >milvus.io</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <em
+                      >Robotic sensors: The interface between robots and the
+                      world</em
+                    >. (n.d.). HowToRobot.
+                    <a
+                      href="https://howtorobot.com/expert-insight/robotic-sensors-interface-between-robots-and-world"
+                      target="_blank"
+                      >howtorobot.com</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <ul class="list-unstyled">
-                    <li>
-                      Fan, Xiaoran, Lee, Daewon, Chen, Yuan, Prepscius, Colin,
-                      Isler, Volkan, Jackel, Larry, Seung, Hyunjune, & Lee,
-                      Daniel. (2020).
-                      <em
-                        >Acoustic Collision Detection and Localization for Robot
-                        Manipulators</em
-                      >.
-                      <a
-                        href="https://doi.org/10.1109/IROS45743.2020.9341719"
-                        target="_blank"
-                        >https://doi.org/10.1109/IROS45743.2020.9341719</a
-                      >
-                    </li>
-                    <li class="mt-2">
-                      <em
-                        >Friction-Scaled Vibrotactile Feedback for Real-Time
-                        Slip Detection in Manipulation using Robotic Sixth
-                        Finger</em
-                      >. (n.d.).
-                      <a
-                        href="https://arxiv.org/html/2503.15447v1"
-                        target="_blank"
-                        >https://arxiv.org/html/2503.15447v1</a
-                      >
-                    </li>
-                    <li class="mt-2">
-                      <em
-                        >How do robots use sensors for autonomous
-                        navigation?</em
-                      >
-                      (n.d.).
-                      <a
-                        href="https://milvus.io/ai-quick-reference/how-do-robots-use-sensors-for-autonomous-navigation"
-                        target="_blank"
-                        >milvus.io</a
-                      >
-                    </li>
-                    <li class="mt-2">
-                      <em
-                        >Robotic sensors: The interface between robots and the
-                        world</em
-                      >. (n.d.). HowToRobot.
-                      <a
-                        href="https://howtorobot.com/expert-insight/robotic-sensors-interface-between-robots-and-world"
-                        target="_blank"
-                        >howtorobot.com</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+            </div>
+          </section>
+          <!-- quiz -->
+          <hr />
+          <div class="mt-5 lesson-content">
+            <h3 class="fw-bold">Sensor Quiz</h3>
           </div>
+          <div id="quiz-intro">
+            <h2>Think You Got It? Let's Find Out!</h2>
+            <p>Test your skills and see how much you’ve mastered.</p>
+            <button id="start-quiz">
+              Launch the Interactive Quiz Challenge
+            </button>
+          </div>
+
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+              <h2 id="question">Tech Stack Quiz</h2>
+              <ul class="quiz-ul">
+                <li class="quiz-li">
+                  <input type="radio" id="a" name="answer" class="answer" />
+                  <label id="a_text" for="a">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="b" name="answer" class="answer" />
+                  <label id="b_text" for="b">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="c" name="answer" class="answer" />
+                  <label id="c_text" for="c">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="d" name="answer" class="answer" />
+                  <label id="d_text" for="d">Question</label>
+                </li>
+              </ul>
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+
           <h5>Check out the other lessons here</h5>
           <button class="btn btn-primary" onclick="openNav()">Lessons</button>
         </div>
@@ -355,3 +365,197 @@
     }
   }
 </style>
+
+<!-- quiz script -->
+
+<script>
+  const quizData = [
+    {
+      question: "Why are sensors important for robots?",
+      a: "They make robots look more advanced.",
+      b: "They allow robots to follow pre-programmed instructions.",
+      c: "They enable robots to gather information and respond to their environment.",
+      d: "They help robots move faster.",
+      correct: "c",
+      explanation:
+        "Sensors allow robots to gather information and make decisions, which is crucial for smart operation.",
+    },
+    {
+      question: "What might happen if a robot lacks adequate sensors?",
+      a: "It will still function normally but more slowly.",
+      b: "It can adapt to any situation using its pre-installed code.",
+      c: "It may malfunction, become inefficient, or even damage its surroundings.",
+      d: "It will automatically install new programs to compensate.",
+      correct: "c",
+      explanation:
+        "Without sensors, robots become 'blind' and can malfunction or even cause accidents.",
+    },
+    {
+      question:
+        "Which of the following is an example of a robot using a sensor to maintain safety?",
+      a: "A robot arm lifting a box in a warehouse.",
+      b: "A robot detecting a gas leak in a factory.",
+      c: "A robot programmed to turn off at 5 PM.",
+      d: "A robot that paints walls in a fixed pattern.",
+      correct: "b",
+      explanation:
+        "Detecting a gas leak is a perfect example of how sensors help robots maintain safety.",
+    },
+    {
+      question: "Which human sense is most similar to a robot’s touch sensor?",
+      a: "Vision",
+      b: "Hearing",
+      c: "Smell",
+      d: "Skin",
+      correct: "d",
+      explanation:
+        "Skin allows humans to feel pressure or temperature, just like a touch sensor does for robots.",
+    },
+    {
+      question:
+        "Which of the following BEST explains how sensors help robots perform tasks more effectively?",
+      a: "They store memory for the robot.",
+      b: "They allow robots to 'sense' and adapt to their environment.",
+      c: "They replace the robot’s microcontroller.",
+      d: "They make the robot aesthetically pleasing.",
+      correct: "b",
+      explanation:
+        "Sensors help robots gather data and adapt in real-time, improving task performance.",
+    },
+  ];
+  const intro = document.getElementById("quiz-intro");
+  const quizContainer = document.getElementById("quiz");
+  const startBtn = document.getElementById("start-quiz");
+
+  startBtn.addEventListener("click", () => {
+    intro.style.display = "none";
+    quizContainer.style.display = "block";
+  });
+
+  const quiz = document.getElementById("quiz");
+  const answerEls = document.querySelectorAll(".answer");
+  const questionEl = document.getElementById("question");
+  const a_text = document.getElementById("a_text");
+  const b_text = document.getElementById("b_text");
+  const c_text = document.getElementById("c_text");
+  const d_text = document.getElementById("d_text");
+  const submitBtn = document.getElementById("submit");
+
+  let currentQuiz = 0;
+  let score = 0;
+  let answered = false;
+
+  loadQuiz();
+
+  function loadQuiz() {
+    deselectAnswers();
+    resetStyles();
+    answered = false;
+
+    const currentQuizData = quizData[currentQuiz];
+    questionEl.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+    submitBtn.innerText = "Submit";
+  }
+
+  function getSelected() {
+    let answer = undefined;
+    answerEls.forEach((answerEl) => {
+      if (answerEl.checked) {
+        answer = answerEl.id;
+      }
+    });
+    return answer;
+  }
+
+  function deselectAnswers() {
+    answerEls.forEach((answerEl) => {
+      answerEl.checked = false;
+    });
+  }
+
+  function resetStyles() {
+    document.querySelectorAll("label").forEach((label) => {
+      label.style.backgroundColor = "";
+      label.style.color = "";
+    });
+  }
+
+  function disableAnswers() {
+    answerEls.forEach((el) => {
+      el.disabled = true;
+    });
+  }
+
+  function enableAnswers() {
+    answerEls.forEach((el) => {
+      el.disabled = false;
+    });
+  }
+
+  submitBtn.addEventListener("click", () => {
+    const answer = getSelected();
+
+    if (!answered) {
+      if (answer) {
+        answered = true;
+
+        const currentData = quizData[currentQuiz];
+        const explanation = currentData.explanation;
+        const correct = currentData.correct;
+
+        disableAnswers();
+
+        if (answer === correct) {
+          document.getElementById(`${answer}_text`).style.backgroundColor =
+            "#4CAF50"; // Green
+          score++;
+          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
+        } else {
+          document.getElementById(`${answer}_text`).style.backgroundColor =
+            "#F44336"; // Red
+          document.getElementById(`${correct}_text`).style.backgroundColor =
+            "#4CAF50"; // Highlight correct
+          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${explanation}</p>`;
+        }
+
+        submitBtn.innerText =
+          currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
+      }
+    } else {
+      currentQuiz++;
+      if (currentQuiz < quizData.length) {
+        enableAnswers();
+        loadQuiz();
+      } else {
+        showFinalScore();
+      }
+    }
+  });
+
+  function showFinalScore() {
+    const percent = (score / quizData.length) * 100;
+
+    quiz.innerHTML = `
+    <h2>You got ${score} out of ${quizData.length} correct (${percent}%).</h2>
+    <div id="quiz-feedback" class="quiz-feedback"></div>
+    <button class="quiz-retry" onclick="location.reload()">Try Again</button>
+  `;
+
+    // show feedback based on score
+    const feedbackEl = document.getElementById("quiz-feedback");
+
+    if (score === quizData.length) {
+      feedbackEl.textContent =
+        "Awesome work! You really get how sensors make robots smart. Keep it up!";
+      feedbackEl.className = "quiz-feedback perfect-score";
+    } else {
+      feedbackEl.textContent =
+        "Nice try! Review what you missed — you're learning and improving!";
+      feedbackEl.className = "quiz-feedback review-needed";
+    }
+  }
+</script>
