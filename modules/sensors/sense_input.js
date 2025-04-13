@@ -1,27 +1,27 @@
 const lessons = [
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/why_sensors_matter.png",
     title: "Why Sensors Matter",
     content:
       "Ever wonder how robots can navigate, react, and even 'understand' their world? Discover why sensors are the must-have tools for any smart robot!",
     route: "../../../../lessons/sensors/sense_input/why_sensors_matter.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/human_vs_bot_senses.png",
     title: "Human vs. Bot Senses",
     content:
       "From your eyes to a robot's camera! Explore the cool similarities (and some surprising differences) between how we sense the world and how robots do it.",
     route: "../topics/understanding_robots/robot_components.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/sensor_signals.png",
     title: "Sensor Signals",
     content:
       "Secret messages from the environment! Uncover how sensors detect changes and send tiny signals that a robot's brain can understand and use.",
     route: "../topics/understanding_robots/now_and_next.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/explore_sensors.png",
     title: "Explore Sensors",
     content:
       "Robots can 'see,' 'touch,' 'smell,' 'feel' movement, and more! Discover the amazing variety of sensors that give robots their diverse abilities.",

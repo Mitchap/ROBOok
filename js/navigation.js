@@ -146,3 +146,30 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+// FOOTER
+
+function returnFooter() {
+  return `
+    <footer class="text-center">
+      <div class="text-center text-light">
+        ROBOok © 2024
+        <div class="socials">
+        <a href="mailto:ryan.coniendo@wvsu.edu.ph" class="icons text-decoration-none">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+          <a href=https://www.facebook.com/profile.php?id=61575307944666" class="icons text-decoration-none">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.youtube.com/@lighteach918" class="icons text-decoration-none">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" class="icons text-decoration-none">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>`;
+}
+
+document.getElementById("footer").innerHTML = returnFooter();

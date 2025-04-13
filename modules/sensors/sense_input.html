@@ -29,57 +29,47 @@
   </head>
   <body>
     <!-- page loading animation -->
-    <div
-      class="preloader d-flex justify-content-center align-items-center"
-    >
+    <div class="preloader d-flex justify-content-center align-items-center">
       <div id="loader" class="loader"></div>
       <div><h3 class="fw-bold mt-2">Loading...</h3></div>
     </div>
     <!-- NAVBAR -->
     <div id="navbar"></div>
 
-      <div class="header-border">
-  <div class="topic-header">
-    <h1 class="topic-text text-center">Sense Input</h1>
-  </div>
+    <div class="header-border">
+      <div class="topic-header">
+        <h1 class="topic-text text-center">Sense Input</h1>
+      </div>
+    </div>
+
+    <section>
+      <div class="mt-5 ms-3 ms-md-5">
+        <button class="btn btn-primary" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i> Back
+        </button>
+      </div>
+      <div class="container topic-list">
+        <div id="subTopic-cards" class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Cards will be inserted here -->
+        </div>
       </div>
 
-      
-      <section>  
-        <div class="mt-5  ms-3 ms-md-5">
-          <button class="btn btn-primary" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i> Back</button>
-          </div>
-        <div class="container topic-list">
-          <div id="subTopic-cards" class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Cards will be inserted here -->
-          </div>
-        </div> 
-
-      
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
     </section>
 
     <!-- Footer -->
-    <footer class=" text-center">
-      <div class="text-center text-light">
-        ROBOok © 2024
-        <div class="socials">
-          <a href="https://www.facebook.com/ryanjamesfconiendo" class="icons"><i class="fa-brands fa-facebook"></i></a>
-          <a href=mailto:"ryan.coniendo@wvsu.edu.ph" class="icons"><i class="fa-regular fa-envelope"></i></a>
-          <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
-          <a href="#" class="icons"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      </footer>
+    <div id="footer"></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
-  >
-</script>
+  ></script>
 
-      <!-- navbar is generated dynamically based on modules.js -->
-      <script src="../../js/modules.js"></script>
-      <script src="../../js/navigation.js"></script>
-      <script src="../../modules/sensors/sense_input.js"></script>
+  <!-- navbar is generated dynamically based on modules.js -->
+  <script src="../../js/modules.js"></script>
+  <script src="../../js/navigation.js"></script>
+  <script src="../../modules/sensors/sense_input.js"></script>
 </html>

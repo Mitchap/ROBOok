@@ -1,27 +1,27 @@
 const lessons = [
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/seeing_with_sound.png",
     title: "Seeing with Sound",
     content:
       "Like a bat in the night! Uncover how ultrasonic sensors use echoes to 'see' distance and help robots navigate without bumping into things.",
     route: "../topics/sensors/ultrasonic.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/sensing_light_color.png",
     title: "Sensing Light & Color",
     content:
       "From detecting day and night to sorting colorful blocks! Explore how light sensors, including those that see in color, give robots 'eyes' for their environment.",
     route: "../topics/sensors/light_color.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/the_power_of_robot_touch.png",
     title: "The Power of Robot Touch",
     content:
       "More than just a tap! Discover how robots use touch sensors to feel their way, grip objects gently, and even know when they've bumped into something.",
     route: "../topics/sensors/touch.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/motion_balance_masters.png",
     title: "Motion & Balance Masters",
     content:
       "Tilt, shake, and roll! Learn how accelerometers and gyroscopes help robots sense movement and keep their balance, just like the inner ear!",

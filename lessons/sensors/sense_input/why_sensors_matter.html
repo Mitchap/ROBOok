@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="logo/png" href="../../images/logo.png" />
+    <link rel="shortcut icon" type="logo/png" href="../../../images/logo.png" />
     <link rel="stylesheet" href="../../../styles/lessons_page.css" />
     <link
       rel="stylesheet"
@@ -29,175 +29,329 @@
   </head>
   <body>
     <!-- page loading animation -->
-    <div
-      class="preloader d-flex justify-content-center align-items-center"
-    >
+    <div class="preloader d-flex justify-content-center align-items-center">
       <div id="loader" class="loader"></div>
       <div><h3 class="fw-bold mt-2">Loading...</h3></div>
     </div>
     <!-- NAVBAR -->
     <div id="navbar"></div>
-      
-      <section>  
-          <section id="banner">
-            <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
-              <h1 class="text-light banner-text">Sense Input</h1>
-            </div>
-          </section>
-    
-          <div class="mt-5  ms-3 ms-md-5">
-            <button class="btn btn-primary" onclick="history.back()"><i class="fa-solid fa-chevron-left"></i> Back</button>
-            </div>
-    
-          <!-- This section has the page content -->
-          <section id="main">
-            <div class="container my-5">
-          
-              <!-- Contents of Side Nav -->
-          <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <!-- An underscore with 0 opacity is added to give space
+
+    <section id="banner">
+      <div
+        class="d-flex align-items-center justify-content-center"
+        style="height: 100%"
+      >
+        <h1 class="text-light banner-text">Sense Input</h1>
+      </div>
+    </section>
+
+    <div class="mt-5 ms-3 ms-md-5">
+      <button class="btn btn-primary" onclick="history.back()">
+        <i class="fa-solid fa-chevron-left"></i> Back
+      </button>
+    </div>
+
+    <!-- This section has the page content -->
+    <section id="main">
+      <div class="container my-5">
+        <!-- Contents of Side Nav -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <!-- An underscore with 0 opacity is added to give space
                 and not cause layout issues -->
-            <p class="sidenav-title">LESSONS</p>
-            <!-- Horizontal line with inline styling -->
-            <hr style="border-bottom: 2px solid #F8F8F8;">
-            <!-- Lessons -->
-            <a href="../../../../lessons/sensors/sense_input/why_sensors_matter.html">Lesson<span class="opacity-0">_</span>1</a>
-            <a href="#">Lesson<span class="opacity-0">_</span>2</a>
-            <a href="#">Lesson<span class="opacity-0">_</span>3</a>
-            <a href="#">Lesson<span class="opacity-0">_</span>4</a>
-          </div>     
-          
-          <div class="mt-5 lesson-content">
-            <h3 class="fw-bold">Lesson 1</h3>
-            <h5 class="fw-medium">Introducing Robot Senses: The Importance of Sensors</h5>
-            <div class="my-5">
-          
-              <p class="my-5 lesson-paragraph">
-                Ever wonder how robots can navigate, react, and even 'understand' their world? Discover why sensors are the must-have tools for any smart robot!
-              </p>
-          
-              <!-- Suggested Image/GIF: Split view or GIF - robot using sensors vs. robot bumping blindly -->
-              <div class="text-center my-4">
-                <img src="../../images/electronics.jpg" class="mx-auto ratio ratio-16x9 rounded-4 lesson-image" alt="robot sensors comparison">
-              </div>
-          
-              <h5 class="fw-medium">What You'll Learn in This Lesson:</h5>
-              <ul class="my-3">
-                <li>Understand the fundamental role of sensors in enabling robots to interact with their environment.</li>
-                <li>Explain why sensors are crucial for robots to make decisions and perform tasks effectively.</li>
-                <li>Recognize how a lack of adequate sensing can lead to robot malfunction or failure.</li>
-              </ul>
-          
-              <h5 class="fw-medium mt-5">Why Do Robots Need to 'Sense' the World?</h5>
-              <p class="lesson-paragraph">
-                Think about how you interact with the world around you right here in Sagay City, or anywhere else! You use your eyes to see the vibrant colors of the sugarcane fields, your ears to hear the bustling sounds of the market, your skin to feel the warmth of the sun. These are your senses, and they provide you with vital information that helps you navigate, make decisions, and stay safe.
-                <br><br>
-                Robots are similar! They need ways to gather information about their surroundings to operate intelligently. This is where sensors come in. Sensors are like the robot's eyes, ears, nose, and skin – they detect different aspects of the environment (like light, sound, distance, touch, temperature) and convert them into electrical signals that the robot's "brain" (the microcontroller) can understand.
-                <br><br>
-                Imagine a self-driving vehicle trying to navigate the busy streets without sensors. It wouldn't be able to see the road, detect other vehicles, pedestrians, or even the stop signs! It would be a very dangerous and ineffective machine.
-              </p>
-          
-              <!-- Suggested Short Video: Robot failing due to missing sensor -->
-              <div class="mx-auto ratio ratio-16x9 lesson-video my-4">
-                <iframe class="rounded-4" src="https://www.youtube.com/embed/yAV5aZ0unag?si=LBvGPAQtWnTZZRMf"></iframe>
-              </div>
-          
-              <h5 class="fw-medium mt-5">Making Decisions and Taking Action:</h5>
-              <p class="lesson-paragraph">
-                The information gathered by sensors allows robots to:
-              </p>
-              <ul class="my-3">
-                <li><strong>Navigate:</strong> Detect obstacles (like that tricycle!), follow paths, and move around their environment without bumping into things.</li>
-                <li><strong>React:</strong> Respond to changes, like a robot arm adjusting its grip when it senses a ripe tomato is about to slip.</li>
-                <li><strong>Perform Tasks:</strong> Gather data for their specific jobs, such as a light sensor helping a solar-powered robot find the sun, or a camera inspecting the quality of a manufactured part.</li>
-                <li><strong>Maintain Safety:</strong> Avoid collisions with people or objects, detect dangerous conditions (like a gas leak sensor), and operate within safe parameters.</li>
-              </ul>
-          
-              <h5 class="fw-medium mt-5">What Happens Without Sensors?</h5>
-              <p class="lesson-paragraph">
-                Without adequate sensing, robots are essentially blind, deaf, and numb. They can only follow pre-programmed instructions blindly, without the ability to adapt to the real world. This can lead to:
-              </p>
-              <ul class="my-3">
-                <li><strong>Inefficient Performance:</strong> Robots might take longer to complete tasks, like a robotic harvester moving too slowly because it can't "see" the ripe crops efficiently.</li>
-                <li><strong>Damage to the Robot or its Environment:</strong> Without collision detection, robots can crash into delicate equipment or harm themselves.</li>
-                <li><strong>Inability to Handle Unexpected Situations:</strong> Robots won't be able to respond to changes like a sudden downpour affecting their outdoor operation if they lack weather sensors.</li>
-                <li><strong>Limited Functionality:</strong> The range of tasks a sensor-less robot can perform is severely restricted, making them much less useful.</li>
-              </ul>
-          
-              <!-- Suggested Interactive Element: Drag-and-drop sensor match activity -->
-              <!-- Commented placeholder for future activity integration -->
-              <!-- 
+          <p class="sidenav-title">LESSONS</p>
+          <!-- Horizontal line with inline styling -->
+          <hr style="border-bottom: 2px solid #f8f8f8" />
+          <!-- Lessons -->
+          <a
+            href="../../../../lessons/sensors/sense_input/why_sensors_matter.html"
+            >Lesson<span class="opacity-0">_</span>1</a
+          >
+          <a href="#">Lesson<span class="opacity-0">_</span>2</a>
+          <a href="#">Lesson<span class="opacity-0">_</span>3</a>
+          <a href="#">Lesson<span class="opacity-0">_</span>4</a>
+        </div>
+
+        <div class="mt-5 lesson-content">
+          <h3 class="fw-bold">Lesson 1</h3>
+          <h5 class="fw-medium">
+            Introducing Robot Senses: The Importance of Sensors
+          </h5>
+          <div class="my-5">
+            <p class="my-5 lesson-paragraph">
+              Ever wonder how robots can navigate, react, and even 'understand'
+              their world? Discover why sensors are the must-have tools for any
+              smart robot!
+            </p>
+
+            <!-- Suggested Image/GIF: Split view or GIF - robot using sensors vs. robot bumping blindly -->
+            <div class="text-center my-4">
+              <iframe
+                src="https://gifer.com/embed/9SPk"
+                width="480"
+                height="270.000"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <p>Sample GIF <a href="https://gifer.com">via GIFER</a></p>
+            </div>
+
+            <h5 class="fw-medium">What You'll Learn in This Lesson:</h5>
+            <ul class="my-3">
+              <li>
+                Understand the fundamental role of sensors in enabling robots to
+                interact with their environment.
+              </li>
+              <li>
+                Explain why sensors are crucial for robots to make decisions and
+                perform tasks effectively.
+              </li>
+              <li>
+                Recognize how a lack of adequate sensing can lead to robot
+                malfunction or failure.
+              </li>
+            </ul>
+
+            <h5 class="fw-medium mt-5">
+              Why Do Robots Need to 'Sense' the World?
+            </h5>
+            <p class="lesson-paragraph">
+              Think about how you interact with the world around you right here
+              in Sagay City, or anywhere else! You use your eyes to see the
+              vibrant colors of the sugarcane fields, your ears to hear the
+              bustling sounds of the market, your skin to feel the warmth of the
+              sun. These are your senses, and they provide you with vital
+              information that helps you navigate, make decisions, and stay
+              safe.
+              <br /><br />
+              Robots are similar! They need ways to gather information about
+              their surroundings to operate intelligently. This is where sensors
+              come in. Sensors are like the robot's eyes, ears, nose, and skin –
+              they detect different aspects of the environment (like light,
+              sound, distance, touch, temperature) and convert them into
+              electrical signals that the robot's "brain" (the microcontroller)
+              can understand.
+              <br /><br />
+              Imagine a self-driving vehicle trying to navigate the busy streets
+              without sensors. It wouldn't be able to see the road, detect other
+              vehicles, pedestrians, or even the stop signs! It would be a very
+              dangerous and ineffective machine.
+            </p>
+
+            <!-- Suggested Short Video: Robot failing due to missing sensor -->
+            <div class="mx-auto ratio ratio-16x9 lesson-video my-4">
+              <iframe
+                class="rounded-4"
+                src="https://www.youtube.com/embed/yAV5aZ0unag?si=LBvGPAQtWnTZZRMf"
+              ></iframe>
+            </div>
+
+            <h5 class="fw-medium mt-5">Making Decisions and Taking Action:</h5>
+            <p class="lesson-paragraph">
+              The information gathered by sensors allows robots to:
+            </p>
+            <ul class="my-3">
+              <li>
+                <strong>Navigate:</strong> Detect obstacles (like that
+                tricycle!), follow paths, and move around their environment
+                without bumping into things.
+              </li>
+              <li>
+                <strong>React:</strong> Respond to changes, like a robot arm
+                adjusting its grip when it senses a ripe tomato is about to
+                slip.
+              </li>
+              <li>
+                <strong>Perform Tasks:</strong> Gather data for their specific
+                jobs, such as a light sensor helping a solar-powered robot find
+                the sun, or a camera inspecting the quality of a manufactured
+                part.
+              </li>
+              <li>
+                <strong>Maintain Safety:</strong> Avoid collisions with people
+                or objects, detect dangerous conditions (like a gas leak
+                sensor), and operate within safe parameters.
+              </li>
+            </ul>
+
+            <h5 class="fw-medium mt-5">What Happens Without Sensors?</h5>
+            <p class="lesson-paragraph">
+              Without adequate sensing, robots are essentially blind, deaf, and
+              numb. They can only follow pre-programmed instructions blindly,
+              without the ability to adapt to the real world. This can lead to:
+            </p>
+            <ul class="my-3">
+              <li>
+                <strong>Inefficient Performance:</strong> Robots might take
+                longer to complete tasks, like a robotic harvester moving too
+                slowly because it can't "see" the ripe crops efficiently.
+              </li>
+              <li>
+                <strong>Damage to the Robot or its Environment:</strong> Without
+                collision detection, robots can crash into delicate equipment or
+                harm themselves.
+              </li>
+              <li>
+                <strong>Inability to Handle Unexpected Situations:</strong>
+                Robots won't be able to respond to changes like a sudden
+                downpour affecting their outdoor operation if they lack weather
+                sensors.
+              </li>
+              <li>
+                <strong>Limited Functionality:</strong> The range of tasks a
+                sensor-less robot can perform is severely restricted, making
+                them much less useful.
+              </li>
+            </ul>
+
+            <!-- Suggested Interactive Element: Drag-and-drop sensor match activity -->
+            <!-- Commented placeholder for future activity integration -->
+            <!-- 
               <div class="interactive-element my-5">
                 [Drag-and-drop activity: Match robot task with sensor type]
               </div>
               -->
-          
-              <p class="lesson-paragraph my-5">
-                In short, sensors are not just optional add-ons; they are fundamental to creating smart, capable, and reliable robots that can truly interact with and be useful in the real world, whether they're helping in agriculture here in Sagay or exploring distant planets.
-              </p>
-          
-              <h5 class="fw-medium mt-4">Concise Summary:</h5>
-              <ul>
-                <li>Sensors are the key to a robot's ability to perceive its environment.</li>
-                <li>They are essential for navigation, reaction, task performance, and safety.</li>
-                <li>Robots without sensors are limited, inefficient, and prone to failure.</li>
-              </ul>
-          
-              <br><br>
-            </div>
-          
-            <h5>Check out the other lessons here</h5>
-            <button class="btn btn-primary" onclick="openNav()">Lessons</button>
-          </div>
-          
-        </div> 
 
-      
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+            <p class="lesson-paragraph my-5">
+              In short, sensors are not just optional add-ons; they are
+              fundamental to creating smart, capable, and reliable robots that
+              can truly interact with and be useful in the real world, whether
+              they're helping in agriculture here in Sagay or exploring distant
+              planets.
+            </p>
+
+            <h5 class="fw-medium mt-4">Concise Summary:</h5>
+            <ul>
+              <li>
+                Sensors are the key to a robot's ability to perceive its
+                environment.
+              </li>
+              <li>
+                They are essential for navigation, reaction, task performance,
+                and safety.
+              </li>
+              <li>
+                Robots without sensors are limited, inefficient, and prone to
+                failure.
+              </li>
+            </ul>
+
+            <br /><br />
+
+            <section>
+              <div class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-outline-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Sources and related content
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <ul class="list-unstyled">
+                    <li>
+                      Fan, Xiaoran, Lee, Daewon, Chen, Yuan, Prepscius, Colin,
+                      Isler, Volkan, Jackel, Larry, Seung, Hyunjune, & Lee,
+                      Daniel. (2020).
+                      <em
+                        >Acoustic Collision Detection and Localization for Robot
+                        Manipulators</em
+                      >.
+                      <a
+                        href="https://doi.org/10.1109/IROS45743.2020.9341719"
+                        target="_blank"
+                        >https://doi.org/10.1109/IROS45743.2020.9341719</a
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <em
+                        >Friction-Scaled Vibrotactile Feedback for Real-Time
+                        Slip Detection in Manipulation using Robotic Sixth
+                        Finger</em
+                      >. (n.d.).
+                      <a
+                        href="https://arxiv.org/html/2503.15447v1"
+                        target="_blank"
+                        >https://arxiv.org/html/2503.15447v1</a
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <em
+                        >How do robots use sensors for autonomous
+                        navigation?</em
+                      >
+                      (n.d.).
+                      <a
+                        href="https://milvus.io/ai-quick-reference/how-do-robots-use-sensors-for-autonomous-navigation"
+                        target="_blank"
+                        >milvus.io</a
+                      >
+                    </li>
+                    <li class="mt-2">
+                      <em
+                        >Robotic sensors: The interface between robots and the
+                        world</em
+                      >. (n.d.). HowToRobot.
+                      <a
+                        href="https://howtorobot.com/expert-insight/robotic-sensors-interface-between-robots-and-world"
+                        target="_blank"
+                        >howtorobot.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <h5>Check out the other lessons here</h5>
+          <button class="btn btn-primary" onclick="openNav()">Lessons</button>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
     </section>
 
     <!-- Footer -->
-    <footer class=" text-center">
-      <div class="text-center text-light">
-        ROBOok © 2024
-        <div class="socials">
-          <a href="https://www.facebook.com/ryanjamesfconiendo" class="icons"><i class="fa-brands fa-facebook"></i></a>
-          <a href=mailto:"ryan.coniendo@wvsu.edu.ph" class="icons"><i class="fa-regular fa-envelope"></i></a>
-          <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
-          <a href="#" class="icons"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-      </footer>
+    <div id="footer"></div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
-  >
-</script>
+  ></script>
 
-      <!-- navbar is generated dynamically based on modules.js -->
-      <script src="../../../js/modules.js"></script>
-      <script src="../../../js/navigation.js"></script>
-
-      
+  <!-- navbar is generated dynamically based on modules.js -->
+  <script src="../../../js/modules.js"></script>
+  <script src="../../../js/navigation.js"></script>
 </html>
 
 <!-- banner of image -->
 <style>
   #banner {
-  background: linear-gradient(rgba(23, 23, 23, 0.986), rgba(107, 107, 107, 0.87)),
-    url(../../../images/sensors.jpg);
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  height: 30vh;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 760px) {
-  #banner {
-    height: 12vh;
+    background: linear-gradient(
+        rgba(23, 23, 23, 0.986),
+        rgba(107, 107, 107, 0.87)
+      ),
+      url(../../../images/sensors.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin-bottom: 50px;
   }
-}	
+
+  @media screen and (max-width: 760px) {
+    #banner {
+      height: 12vh;
+    }
+  }
 </style>

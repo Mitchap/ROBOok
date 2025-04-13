@@ -1,27 +1,27 @@
 const lessons = [
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/sensors_in_sumobot.png",
     title: "Sensors in Sumobot",
     content:
       "RoboRumble! See how 'eyes' and 'feelers' help Sumobots locate rivals and stay inside the battle zone for victory!",
     route: "../topics/sensors/sumobot.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/sensors_in_line_following.png",
     title: "Sensors in Line Following",
     content:
       "Stay on track! Discover how tiny sensors guide robots along a winding path with amazing precision.",
     route: "../topics/sensors/line_following.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/sensors_for_mission_challenges.png",
     title: "Sensors for Mission Challenges",
     content:
       "Task masters! Explore how robots use a variety of sensors to 'see,' 'touch,' and 'know' objects to complete challenging missions.",
     route: "../topics/sensors/mission_challenges.html",
   },
   {
-    image: "../../images/sensors.jpg",
+    image: "../../images/smart_sensor_choices.png",
     title: "Smart Sensor Choices",
     content:
       "More brains than brawn! Learn how combining different sensor inputs lets robots make clever decisions and react intelligently to their surroundings.",
