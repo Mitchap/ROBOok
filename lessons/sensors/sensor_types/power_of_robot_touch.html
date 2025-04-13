@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="logo/png" href="../../../images/logo.png" />
+    <link rel="stylesheet" href="../../../styles/lessons_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ROBOok</title>
+  </head>
+  <body>
+    <!-- page loading animation -->
+    <div class="preloader d-flex justify-content-center align-items-center">
+      <div id="loader" class="loader"></div>
+      <div><h3 class="fw-bold mt-2">Loading...</h3></div>
+    </div>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <section id="banner">
+      <div
+        class="d-flex align-items-center justify-content-center"
+        style="height: 100%"
+      >
+        <h1 class="text-light banner-text">Sensor Types</h1>
+      </div>
+    </section>
+
+    <div class="mt-5 ms-3 ms-md-5">
+      <a
+        class="btn btn-primary"
+        href="../../../modules/sensors/sensor_types.html"
+      >
+        <i class="fa-solid fa-chevron-left"></i> Back
+      </a>
+    </div>
+
+    <!-- This section has the page content -->
+    <section id="main">
+      <div class="container my-5">
+        <!-- Contents of Side Nav -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <!-- An underscore with 0 opacity is added to give space
+                and not cause layout issues -->
+          <p class="sidenav-title">LESSONS</p>
+          <hr style="border-bottom: 2px solid #f8f8f8" />
+          <!-- Lessons -->
+          <a
+            class="my-1 "
+            href="../../../lessons/sensors/sensor_types/seeing_with_sound.html"
+            >Lesson<span class="opacity-0">_</span>1</a
+          >
+          <a class="my-1" href="../../../lessons/sensors/sensor_types/sensing_light_color.html">Lesson<span class="opacity-0">_</span>2</a>
+          <a class="my-1 active" href="../../../lessons/sensors/sensor_types/power_of_robot_touch.html">Lesson<span class="opacity-0">_</span>3</a>
+          <a class="my-1" href="../../../lessons/sensors/sensor_types/motion_balance_masters.html">Lesson<span class="opacity-0">_</span>4</a>
+        </div>
+
+        <div class="mt-5 lesson-content">
+          <section class="lesson">
+            <h2>Lesson 3: The Power of Robot Touch: Understanding Tactile and Force Sensors</h2>
+          
+            <div class="lesson-section">
+              <p>Have you ever tried picking up a fragile egg or adjusting your grip on a slippery glass? Your sense of touch tells you how hard to squeeze or when you’ve made contact. Robots can do the same thing—with the help of touch and force sensors! These clever tools allow robots to "feel" their world, making them smarter, safer, and more precise in tasks like gripping, sorting, or avoiding collisions.</p>
+              <p><strong>Watch:</strong> Robot Hand with Force Feedback – See how robots use sensors to feel pressure and adjust grip like a human hand!</p>
+            </div>
+          
+            <div class="lesson-section">
+              <h4>1. Learning Objectives</h4>
+              <ul>
+                <li>Describe what tactile and force sensors do in robots.</li>
+                <li>Differentiate between bump sensors, tactile pads, and force sensors.</li>
+                <li>Explain real-world applications of touch sensors in robotic tasks.</li>
+                <li>Understand the importance of touch sensing for safety and control in robotics.</li>
+              </ul>
+            </div>
+          
+            <div class="lesson-section">
+              <h4>2. Content</h4>
+          
+              <h5>What Are Tactile and Force Sensors?</h5>
+              <p>Touch sensors allow robots to detect physical contact. Just like your skin tells your brain when you touch something, robots use sensors to know when and how much they're touching.</p>
+              <p>There are two main types:</p>
+              <ul>
+                <li><strong>Tactile Sensors</strong> – detect touch, pressure, or surface texture. These include:
+                  <ul>
+                    <li>Bump sensors (simple switches that detect collisions)</li>
+                    <li>Pressure-sensitive pads (sense how hard something is pressing)</li>
+                  </ul>
+                </li>
+                <li><strong>Force Sensors</strong> – measure the force applied in multiple directions. These are more advanced and allow for controlled gripping or pushing.</li>
+              </ul>
+          
+              <h5>How Do They Work?</h5>
+              <p>Bump sensors are simple switches—when pressed, they signal the robot that it hit something.</p>
+              <p>Tactile sensors often use materials like piezoelectric films or resistive layers that change their electrical resistance based on pressure.</p>
+              <p>Force sensors (like Force Sensing Resistors or strain gauges) measure force magnitude and sometimes direction.</p>
+          
+              <h5>Real-World Applications</h5>
+              <ul>
+                <li><strong>Safe Robot-Human Interaction:</strong> Robots equipped with touch sensors can slow down or stop when they sense a person nearby.</li>
+                <li><strong>Gripping and Handling:</strong> Robotic arms in factories use tactile sensors to handle delicate items like eggs or electronics.</li>
+                <li><strong>Cleaning Robots:</strong> Touch sensors help vacuums know when they’ve bumped into a wall or obstacle.</li>
+                <li><strong>Medical Robotics:</strong> Surgical robots use force feedback to ensure delicate precision during operations.</li>
+              </ul>
+            </div>
+          
+            <div class="lesson-section">
+              <h4>3. Explore & Engage Zone</h4>
+              <ul>
+                <li><strong>Try it Yourself in Tinkercad:</strong> Bump Sensor Simulation – See how a robot can react to collisions using a bump sensor circuit.</li>
+                <li><strong>Watch:</strong> Robot Hand with Force Feedback (YouTube) – Watch how a robotic hand senses force and adjusts its grip on fragile objects!</li>
+              </ul>
+            </div>
+          
+            <div class="lesson-section">
+              <h4>4. Summary and Key Takeaways</h4>
+              <ul>
+                <li>Robots can “feel” their surroundings using tactile and force sensors.</li>
+                <li>Tactile sensors detect simple touches or pressure.</li>
+                <li>Force sensors measure more complex pressure forces for precision.</li>
+                <li>These sensors are crucial for safety, precision gripping, and responsive interaction.</li>
+              </ul>
+            </div>
+          </section>
+          
+        </div>
+
+          <br /><br />
+
+          <section>
+            <div class="d-inline-flex gap-1">
+              <button
+                class="btn btn-outline-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseRelatedTouch"
+                aria-expanded="false"
+                aria-controls="collapseRelatedTouch"
+              >
+                Sources and related content
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="collapse" id="collapseRelatedTouch">
+              <div class="card card-body">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.arduino.cc/en/Tutorial/LibraryExamples/Forcesensor" target="_blank">Arduino: Force Sensitive Resistor</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="https://learn.adafruit.com/" target="_blank">Adafruit: Tactile Sensors Overview</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="https://biomimetics.mit.edu" target="_blank">MIT Biomimetic Robotics Lab: Tactile Sensor Research</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" target="_blank">Arduino Tactile Sensor Tutorial (YouTube)</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" target="_blank">Datasheet: Force Sensing Resistor (FSR)</a>
+                  </li>
+                  <li class="mt-2">
+                    <a href="#" target="_blank">Blog: How Touch Helps Robots Pick Up a Strawberry</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </section>
+          
+          <!-- quiz -->
+          <hr />
+          <div class="mt-5 lesson-content">
+            <h3 class="fw-bold">Quick Quiz: Test What You’ve Learned</h3>
+          </div>
+          <div id="quiz-intro">
+            <h2 class="">Think You Got It? Let's Find Out!</h2>
+            <p>Test your Understanding of Ultrasonic Sensors!</p>
+            <button id="start-quiz">
+              Launch the Interactive Quiz Challenge
+            </button>
+          </div>
+
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+              <h2 id="question">Tech Stack Quiz</h2>
+              <ul class="quiz-ul">
+                <li class="quiz-li">
+                  <input type="radio" id="a" name="answer" class="answer" />
+                  <label id="a_text" for="a">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="b" name="answer" class="answer" />
+                  <label id="b_text" for="b">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="c" name="answer" class="answer" />
+                  <label id="c_text" for="c">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="d" name="answer" class="answer" />
+                  <label id="d_text" for="d">Question</label>
+                </li>
+              </ul>
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+
+          <h5>Check out the other lessons here</h5>
+          <button class="btn btn-primary" onclick="openNav()">Lessons</button>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- navbar is generated dynamically based on modules.js -->
+  <script src="../../../js/modules.js"></script>
+  <script src="../../../js/navigation.js"></script>
+</html>
+
+<!-- banner of image -->
+<style>
+  #banner {
+    background: linear-gradient(
+        rgba(23, 23, 23, 0.986),
+        rgba(107, 107, 107, 0.87)
+      ),
+      url(../../../images/sensors.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 760px) {
+    #banner {
+      height: 12vh;
+    }
+  }
+</style>
+
+<!-- quiz script -->
+
+<script>
+const quizData = [
+  {
+    question: "What is the main function of a bump sensor in a robot?",
+    a: "Measure distance to an object.",
+    b: "Detect when the robot has made contact with something.",
+    c: "Sense the color of nearby objects.",
+    d: "Determine the speed of the robot's wheels.",
+    correct: "b",
+    explanation: "Bump sensors detect contact, helping robots recognize collisions or obstacles.",
+  },
+  {
+    question: "Which sensor helps a robot determine how tightly it is gripping an object?",
+    a: "Color sensor",
+    b: "Ultrasonic sensor",
+    c: "Force sensor",
+    d: "Light sensor",
+    correct: "c",
+    explanation: "Force sensors measure applied pressure, useful in tasks like gripping.",
+  },
+  {
+    question: "Why are touch sensors important for robots interacting with humans?",
+    a: "To play music.",
+    b: "To avoid touching any object.",
+    c: "To ensure safe and responsive physical interaction.",
+    d: "To increase processing speed.",
+    correct: "c",
+    explanation: "Touch sensors help robots interact safely and appropriately with humans.",
+  },
+  {
+    question: "Which of the following best describes a tactile sensor?",
+    a: "It detects ambient temperature.",
+    b: "It tracks location using GPS.",
+    c: "It detects physical contact or pressure.",
+    d: "It senses magnetic fields.",
+    correct: "c",
+    explanation: "Tactile sensors detect touch or pressure, allowing physical interaction.",
+  },
+  {
+    question: "What would likely happen if a robot arm had no force sensor?",
+    a: "It would be able to speak more clearly.",
+    b: "It might crush fragile objects it tries to pick up.",
+    c: "It would navigate faster.",
+    d: "It would sense colors more accurately.",
+    correct: "b",
+    explanation: "Without a force sensor, a robot cannot adjust grip strength properly, risking damage.",
+  },
+];
+
+
+  const intro = document.getElementById("quiz-intro");
+  const quizContainer = document.getElementById("quiz");
+  const startBtn = document.getElementById("start-quiz");
+
+  startBtn.addEventListener("click", () => {
+    intro.style.display = "none";
+    quizContainer.style.display = "block";
+  });
+
+  const quiz = document.getElementById("quiz");
+  const answerEls = document.querySelectorAll(".answer");
+  const questionEl = document.getElementById("question");
+  const a_text = document.getElementById("a_text");
+  const b_text = document.getElementById("b_text");
+  const c_text = document.getElementById("c_text");
+  const d_text = document.getElementById("d_text");
+  const submitBtn = document.getElementById("submit");
+
+  let currentQuiz = 0;
+  let score = 0;
+  let answered = false;
+
+  loadQuiz();
+
+  function loadQuiz() {
+    deselectAnswers();
+    resetStyles();
+    answered = false;
+
+    const currentQuizData = quizData[currentQuiz];
+    questionEl.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+    submitBtn.innerText = "Submit";
+  }
+
+  function getSelected() {
+    let answer = undefined;
+    answerEls.forEach((answerEl) => {
+      if (answerEl.checked) {
+        answer = answerEl.id;
+      }
+    });
+    return answer;
+  }
+
+  function deselectAnswers() {
+    answerEls.forEach((answerEl) => {
+      answerEl.checked = false;
+    });
+  }
+
+  function resetStyles() {
+    document.querySelectorAll("label").forEach((label) => {
+      label.style.backgroundColor = "";
+      label.style.color = "";
+    });
+  }
+
+  function disableAnswers() {
+    answerEls.forEach((el) => {
+      el.disabled = true;
+    });
+  }
+
+  function enableAnswers() {
+    answerEls.forEach((el) => {
+      el.disabled = false;
+    });
+  }
+
+  submitBtn.addEventListener("click", () => {
+    const answer = getSelected();
+
+    if (!answered) {
+      if (answer) {
+        answered = true;
+
+        const currentData = quizData[currentQuiz];
+        const explanation = currentData.explanation;
+        const correct = currentData.correct;
+
+        disableAnswers();
+
+        if (answer === correct) {
+          document.getElementById(`${answer}_text`).style.backgroundColor =
+            "#4CAF50"; // Green
+          score++;
+          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
+        } else {
+          document.getElementById(`${answer}_text`).style.backgroundColor =
+            "#F44336"; // Red
+          document.getElementById(`${correct}_text`).style.backgroundColor =
+            "#4CAF50"; // Highlight correct
+          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${explanation}</p>`;
+        }
+
+        submitBtn.innerText =
+          currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
+      }
+    } else {
+      currentQuiz++;
+      if (currentQuiz < quizData.length) {
+        enableAnswers();
+        loadQuiz();
+      } else {
+        showFinalScore();
+      }
+    }
+  });
+
+  function showFinalScore() {
+    const percent = (score / quizData.length) * 100;
+
+    quiz.innerHTML = `
+    <h2>You got ${score} out of ${quizData.length} correct (${percent}%).</h2>
+    <div id="quiz-feedback" class="quiz-feedback"></div>
+    <button class="quiz-retry" onclick="location.reload()">Try Again</button>
+  `;
+
+    // show feedback based on score
+    const feedbackEl = document.getElementById("quiz-feedback");
+
+    if (score === quizData.length) {
+      feedbackEl.textContent =
+        "Great job! Your robotic sensor knowledge is on point – you’ve got the touch!";
+      feedbackEl.className = "quiz-feedback perfect-score";
+    } else {
+      feedbackEl.textContent =
+        "Awesome effort! Every mistake is a chance to learn. Revisit the key points and try again!";
+      feedbackEl.className = "quiz-feedback review-needed";
+    }
+  }
+</script>

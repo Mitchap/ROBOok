@@ -273,6 +273,9 @@ footer {
   font-weight: bold;
   font-size: 1rem;
 }
+#question {
+  font-size: 2rem;
+}
 
 .perfect-score {
   background-color: #e0ffe0;
@@ -405,12 +408,18 @@ footer {
 #quiz {
   display: none;
 }
-
+.lesson-media {
+  max-width: 400px;
+  max-height: 300px;
+}
 @media screen and (max-width: 480px) {
   .quiz-container {
     padding: 1.5rem;
   }
-
+  .lesson-media {
+    max-width: 250px;
+    max-height: 150px;
+  }
   .quiz-header h2 {
     font-size: 1.5rem;
   }
@@ -419,6 +428,9 @@ footer {
     font-size: 1rem;
   }
 
+  #question {
+    font-size: 1.2rem;
+  }
   #submit,
   #start-quiz,
   .quiz-retry {
