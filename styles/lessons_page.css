@@ -416,6 +416,7 @@ footer {
 .lesson-video {
   width: 600px;
   height: 350px;
+  margin: 50px auto;
 }
 @media screen and (max-width: 480px) {
   .quiz-container {
