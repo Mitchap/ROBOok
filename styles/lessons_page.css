@@ -412,6 +412,11 @@ footer {
   max-width: 400px;
   max-height: 300px;
 }
+
+.lesson-video {
+  width: 600px;
+  height: 350px;
+}
 @media screen and (max-width: 480px) {
   .quiz-container {
     padding: 1.5rem;
@@ -419,6 +424,10 @@ footer {
   .lesson-media {
     max-width: 250px;
     max-height: 150px;
+  }
+  .lesson-video {
+    width: 300px;
+    height: 155px;
   }
   .quiz-header h2 {
     font-size: 1.5rem;
