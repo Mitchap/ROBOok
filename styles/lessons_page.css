@@ -418,6 +418,14 @@ footer {
   height: 350px;
   margin: 50px auto;
 }
+
+.quiz-progress {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
 @media screen and (max-width: 480px) {
   .quiz-container {
     padding: 1.5rem;

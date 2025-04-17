@@ -227,6 +227,8 @@
               </ul>
             </div>
             <button id="submit">Submit</button>
+            <div id="quiz-progress" class="quiz-progress mt-2">Question 1 / 5</div>
+
           </div>
 
           <h5>Check out the other lessons here</h5>
@@ -351,127 +353,153 @@ const quizData = [
 ];
 
 
-  const intro = document.getElementById("quiz-intro");
-  const quizContainer = document.getElementById("quiz");
-  const startBtn = document.getElementById("start-quiz");
+const intro = document.getElementById("quiz-intro");
+const quizContainer = document.getElementById("quiz");
+const startBtn = document.getElementById("start-quiz");
 
-  startBtn.addEventListener("click", () => {
-    intro.style.display = "none";
-    quizContainer.style.display = "block";
+startBtn.addEventListener("click", () => {
+  intro.style.display = "none";
+  quizContainer.style.display = "block";
+});
+
+const quiz = document.getElementById("quiz");
+const answerEls = document.querySelectorAll(".answer");
+const questionEl = document.getElementById("question");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const submitBtn = document.getElementById("submit");
+const progressEl = document.getElementById("quiz-progress");
+
+let currentQuiz = 0;
+let score = 0;
+let hasAnsweredCorrectly = false;
+let firstAttempt = true;
+
+loadQuiz();
+
+function loadQuiz() {
+  deselectAnswers();
+  resetStyles();
+  enableAnswers();
+  hasAnsweredCorrectly = false;
+  firstAttempt = true;
+
+  const currentQuizData = quizData[currentQuiz];
+  questionEl.innerText = currentQuizData.question;
+  a_text.innerText = currentQuizData.a;
+  b_text.innerText = currentQuizData.b;
+  c_text.innerText = currentQuizData.c;
+  d_text.innerText = currentQuizData.d;
+  submitBtn.innerText = "Submit";
+
+  updateProgress();
+}
+
+function getSelected() {
+  let answer;
+  answerEls.forEach((el) => {
+    if (el.checked) answer = el.id;
   });
+  return answer;
+}
 
-  const quiz = document.getElementById("quiz");
-  const answerEls = document.querySelectorAll(".answer");
-  const questionEl = document.getElementById("question");
-  const a_text = document.getElementById("a_text");
-  const b_text = document.getElementById("b_text");
-  const c_text = document.getElementById("c_text");
-  const d_text = document.getElementById("d_text");
-  const submitBtn = document.getElementById("submit");
+function deselectAnswers() {
+  answerEls.forEach((el) => {
+    el.checked = false;
+  });
+}
 
+function resetStyles() {
+  document.querySelectorAll("label").forEach((label) => {
+    label.style.backgroundColor = "";
+    label.style.color = "";
+  });
+}
 
-  let currentQuiz = 0;
-  let score = 0;
-  let answered = false;
+function disableAnswers() {
+  answerEls.forEach((el) => el.disabled = true);
+}
 
-  loadQuiz();
+function enableAnswers() {
+  answerEls.forEach((el) => el.disabled = false);
+}
 
-  function loadQuiz() {
-    deselectAnswers();
+let tryAgainMode = false;
+
+submitBtn.addEventListener("click", () => {
+  if (tryAgainMode) {
+    // Reset questions on button click
     resetStyles();
-    answered = false;
-
-    const currentQuizData = quizData[currentQuiz];
-    questionEl.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
+    deselectAnswers();
+    enableAnswers();
+    removeFeedback();
     submitBtn.innerText = "Submit";
+    tryAgainMode = false;
+    return;
   }
 
-  function getSelected() {
-    let answer = undefined;
-    answerEls.forEach((answerEl) => {
-      if (answerEl.checked) {
-        answer = answerEl.id;
-      }
-    });
-    return answer;
-  }
-
-  function deselectAnswers() {
-    answerEls.forEach((answerEl) => {
-      answerEl.checked = false;
-    });
-  }
-
-  function resetStyles() {
-    document.querySelectorAll("label").forEach((label) => {
-      label.style.backgroundColor = "";
-      label.style.color = "";
-    });
-  }
-
-  function disableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = true;
-    });
-  }
-
-  function enableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = false;
-    });
-  }
-
-  submitBtn.addEventListener("click", () => {
   const answer = getSelected();
+  if (!hasAnsweredCorrectly && answer) {
+    const currentData = quizData[currentQuiz];
+    const correct = currentData.correct;
+    const explanation = currentData.explanation;
+    const wrongExplanation = currentData.wrongExplanations[answer];
 
-  if (!answered) {
-    if (answer) {
-      answered = true;
+    if (answer === correct) {
+      document.getElementById(`${answer}_text`).style.backgroundColor = "#4CAF50";
+      showFeedback(`Correct! ${explanation}`, "green");
+      hasAnsweredCorrectly = true;
 
-      const currentData = quizData[currentQuiz];
-      const explanation = currentData.explanation;
-      const correct = currentData.correct;
-
-      disableAnswers();
-
-      if (answer === correct) {
-        document.getElementById(`${answer}_text`).style.backgroundColor = "#4CAF50"; // Green
-        score++;
-        questionEl.innerHTML += `<p class="h6 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
-      } else {
-        document.getElementById(`${answer}_text`).style.backgroundColor = "#F44336"; // Red
-        document.getElementById(`${correct}_text`).style.backgroundColor = "#4CAF50"; // Highlight correct
-
-        const wrongExplanation = currentData.wrongExplanations[answer];
-        questionEl.innerHTML += `
-          <p class="h6 h4-md mt-2" style="color: red;">Incorrect! ${wrongExplanation}</p>
-          <p class="h6 h4-md" style="color: green;">${explanation}</p>
-        `;
-      }
+      if (firstAttempt) score++;
 
       submitBtn.innerText =
         currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
+      disableAnswers();
+    } else {
+      document.getElementById(`${answer}_text`).style.backgroundColor = "#F44336";
+      showFeedback(`Incorrect! ${wrongExplanation}`, "red");
+      firstAttempt = false;
+      disableAnswers();
+
+      submitBtn.innerText = "Try Again";
+      tryAgainMode = true;
     }
-  } else {
+  } else if (hasAnsweredCorrectly) {
+    // Move to next question
     currentQuiz++;
     if (currentQuiz < quizData.length) {
-      enableAnswers();
       loadQuiz();
     } else {
       showFinalScore();
     }
   }
 });
+function showFeedback(text, color) {
+  removeFeedback();
+  const feedback = document.createElement("p");
+  feedback.className = "h5 h4-md mt-2";
+  feedback.style.color = color;
+  feedback.id = "feedback-msg";
+  feedback.innerText = text;
+  questionEl.appendChild(feedback);
+}
+
+function removeFeedback() {
+  const existing = document.getElementById("feedback-msg");
+  if (existing) existing.remove();
+}
 
 
-  function showFinalScore() {
-    const percent = (score / quizData.length) * 100;
+function updateProgress() {
+  progressEl.textContent = `Question ${currentQuiz + 1} / ${quizData.length}`;
+}
 
-    quiz.innerHTML = `
+function showFinalScore() {
+  const percent = (score / quizData.length) * 100;
+
+  quiz.innerHTML = `
     <h2>You got ${score} out of ${quizData.length} correct (${percent}%).</h2>
     <div id="quiz-feedback" class="quiz-feedback"></div>
     <button class="quiz-retry" onclick="location.reload()">Try Again</button>
