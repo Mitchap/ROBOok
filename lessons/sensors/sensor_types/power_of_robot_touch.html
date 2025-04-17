@@ -441,15 +441,15 @@ const quizData = [
       if (answer === correct) {
         document.getElementById(`${answer}_text`).style.backgroundColor = "#4CAF50"; // Green
         score++;
-        questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
+        questionEl.innerHTML += `<p class="h6 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
       } else {
         document.getElementById(`${answer}_text`).style.backgroundColor = "#F44336"; // Red
         document.getElementById(`${correct}_text`).style.backgroundColor = "#4CAF50"; // Highlight correct
 
         const wrongExplanation = currentData.wrongExplanations[answer];
         questionEl.innerHTML += `
-          <p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${wrongExplanation}</p>
-          <p class="h5 h4-md" style="color: green;">${explanation}</p>
+          <p class="h6 h4-md mt-2" style="color: red;">Incorrect! ${wrongExplanation}</p>
+          <p class="h6 h4-md" style="color: green;">${explanation}</p>
         `;
       }
 
