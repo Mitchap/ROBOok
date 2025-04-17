@@ -286,6 +286,11 @@ const quizData = [
     d: "Determine the speed of the robot's wheels.",
     correct: "b",
     explanation: "Bump sensors detect contact, helping robots recognize collisions or obstacles.",
+    wrongExplanations: {
+      a: "Distance measurement is typically done using ultrasonic or infrared sensors.",
+      c: "Color sensors are used for identifying colors, not for detecting contact.",
+      d: "Speed detection is managed by encoders or motion sensors, not bump sensors.",
+    },
   },
   {
     question: "Which sensor helps a robot determine how tightly it is gripping an object?",
@@ -295,6 +300,11 @@ const quizData = [
     d: "Light sensor",
     correct: "c",
     explanation: "Force sensors measure applied pressure, useful in tasks like gripping.",
+    wrongExplanations: {
+      a: "Color sensors are used to detect surface colors, not pressure.",
+      b: "Ultrasonic sensors measure distance using sound waves, not grip strength.",
+      d: "Light sensors detect brightness, not how tightly something is held.",
+    },
   },
   {
     question: "Why are touch sensors important for robots interacting with humans?",
@@ -304,6 +314,11 @@ const quizData = [
     d: "To increase processing speed.",
     correct: "c",
     explanation: "Touch sensors help robots interact safely and appropriately with humans.",
+    wrongExplanations: {
+      a: "Playing music is unrelated to touch sensor functionality.",
+      b: "Touch sensors allow interaction, not avoidance.",
+      d: "Processing speed is handled by the processor, not touch sensors.",
+    },
   },
   {
     question: "Which of the following best describes a tactile sensor?",
@@ -313,6 +328,11 @@ const quizData = [
     d: "It senses magnetic fields.",
     correct: "c",
     explanation: "Tactile sensors detect touch or pressure, allowing physical interaction.",
+    wrongExplanations: {
+      a: "Temperature sensors are used to detect heat or cold, not touch.",
+      b: "GPS sensors determine position, not physical contact.",
+      d: "Magnetic field detection is done by magnetometers, not tactile sensors.",
+    },
   },
   {
     question: "What would likely happen if a robot arm had no force sensor?",
@@ -322,6 +342,11 @@ const quizData = [
     d: "It would sense colors more accurately.",
     correct: "b",
     explanation: "Without a force sensor, a robot cannot adjust grip strength properly, risking damage.",
+    wrongExplanations: {
+      a: "Speaking ability is unrelated to robotic grip force.",
+      c: "Navigation speed is not directly affected by the lack of a force sensor.",
+      d: "Color sensing involves vision systems, not grip control.",
+    },
   },
 ];
 
@@ -343,6 +368,7 @@ const quizData = [
   const c_text = document.getElementById("c_text");
   const d_text = document.getElementById("d_text");
   const submitBtn = document.getElementById("submit");
+
 
   let currentQuiz = 0;
   let score = 0;
@@ -400,44 +426,47 @@ const quizData = [
   }
 
   submitBtn.addEventListener("click", () => {
-    const answer = getSelected();
+  const answer = getSelected();
 
-    if (!answered) {
-      if (answer) {
-        answered = true;
+  if (!answered) {
+    if (answer) {
+      answered = true;
 
-        const currentData = quizData[currentQuiz];
-        const explanation = currentData.explanation;
-        const correct = currentData.correct;
+      const currentData = quizData[currentQuiz];
+      const explanation = currentData.explanation;
+      const correct = currentData.correct;
 
-        disableAnswers();
+      disableAnswers();
 
-        if (answer === correct) {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#4CAF50"; // Green
-          score++;
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
-        } else {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#F44336"; // Red
-          document.getElementById(`${correct}_text`).style.backgroundColor =
-            "#4CAF50"; // Highlight correct
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${explanation}</p>`;
-        }
-
-        submitBtn.innerText =
-          currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
-      }
-    } else {
-      currentQuiz++;
-      if (currentQuiz < quizData.length) {
-        enableAnswers();
-        loadQuiz();
+      if (answer === correct) {
+        document.getElementById(`${answer}_text`).style.backgroundColor = "#4CAF50"; // Green
+        score++;
+        questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
       } else {
-        showFinalScore();
+        document.getElementById(`${answer}_text`).style.backgroundColor = "#F44336"; // Red
+        document.getElementById(`${correct}_text`).style.backgroundColor = "#4CAF50"; // Highlight correct
+
+        const wrongExplanation = currentData.wrongExplanations[answer];
+        questionEl.innerHTML += `
+          <p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${wrongExplanation}</p>
+          <p class="h5 h4-md" style="color: green;">${explanation}</p>
+        `;
       }
+
+      submitBtn.innerText =
+        currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
     }
-  });
+  } else {
+    currentQuiz++;
+    if (currentQuiz < quizData.length) {
+      enableAnswers();
+      loadQuiz();
+    } else {
+      showFinalScore();
+    }
+  }
+});
+
 
   function showFinalScore() {
     const percent = (score / quizData.length) * 100;
