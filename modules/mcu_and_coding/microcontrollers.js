@@ -4,28 +4,31 @@ const lessons = [
     title: "The Mighty Microchip",
     content:
       "Tiny chip, HUGE power! Discover the incredible microcontrollers that are the brains behind all the smartest robots and gadgets.",
-    route: "../modules/microcontrollers/mighty_microchip.html",
+    route:
+      "../../../lessons/mcu_and_coding/microcontrollers/the_mighty_microchip.html",
   },
   {
     image: "../../images/mcu_coding.jpg",
     title: "Meet the MCU Family",
     content:
       "It takes a village of brains! Meet the diverse family of microcontrollers powering robots big and small, from Arduinos to ESP32s.",
-    route: "../modules/microcontrollers/mcu_family.html",
+    route: "../../../lessons/mcu_and_coding/microcontrollers/mcu_family.html",
   },
   {
     image: "../../images/mcu_coding.jpg",
     title: "The Arduino Board",
     content:
       "Unlocking the Uno! Take a tour inside the popular Arduino Uno and learn what all those pins and parts actually do.",
-    route: "../modules/microcontrollers/arduino_board.html",
+    route:
+      "../../../lessons/mcu_and_coding/microcontrollers/arduino_board.html",
   },
   {
     image: "../../images/mcu_coding.jpg",
     title: "Simulating with Tinkercad",
     content:
       "Build it virtually first! Discover how Tinkercad lets you experiment with Arduino circuits and code without needing physical parts, and how your virtual code works with the real Arduino!",
-    route: "../modules/microcontrollers/simulating_tinkercad.html",
+    route:
+      "../../../lessons/mcu_and_coding/microcontrollers/simulating_tinkercad.html",
   },
 ];
 
