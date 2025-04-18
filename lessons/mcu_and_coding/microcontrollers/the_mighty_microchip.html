@@ -41,7 +41,7 @@
         class="d-flex align-items-center justify-content-center"
         style="height: 100%"
       >
-        <h1 class="text-light banner-text">Sensor Types</h1>
+        <h1 class="text-light banner-text">Microcontrollers</h1>
       </div>
     </section>
 
@@ -80,13 +80,13 @@
 
         <div class="mt-5 lesson-content">
           <section class="lesson">
-            <h2>Lesson 3: The Power of Robot Touch: Understanding Tactile and Force Sensors</h2>
+            <h3 class="fw-bold">Lesson 1</h3>
+            <h5 class="fw-medium">The Power of Robot Touch: Understanding Tactile and Force Sensors</h5>
           
             <div class="lesson-section">
               <p>Have you ever tried picking up a fragile egg or adjusting your grip on a slippery glass? Your sense of touch tells you how hard to squeeze or when you’ve made contact. Robots can do the same thing—with the help of touch and force sensors! These clever tools allow robots to "feel" their world, making them smarter, safer, and more precise in tasks like gripping, sorting, or avoiding collisions.</p>
               <p><strong>Watch:</strong> Robot Hand with Force Feedback – See how robots use sensors to feel pressure and adjust grip like a human hand!</p>
             </div>
-          
             <div class="lesson-section">
               <h4>What You'll Learn in This Lesson:</h4>
               <ul>
@@ -160,7 +160,7 @@
                 aria-expanded="false"
                 aria-controls="collapseRelatedTouch"
               >
-                Sources and related content
+              <i class="fa-solid fa-link"></i> Sources and Related Content
                 <i class="fa-solid fa-chevron-down"></i>
               </button>
             </div>
@@ -197,7 +197,7 @@
             <h3 class="fw-bold">Quick Quiz: Test What You’ve Learned</h3>
           </div>
           <div id="quiz-intro">
-            <h2 class="">Think You Got It? Let's Find Out!</h2>
+            <h2>Think You Got It? Let's Find Out!</h2>
             <p>Test your Understanding of Ultrasonic Sensors!</p>
             <button id="start-quiz">
               Launch the Interactive Quiz Challenge
@@ -261,7 +261,7 @@
         rgba(23, 23, 23, 0.986),
         rgba(107, 107, 107, 0.87)
       ),
-      url(../../../images/sensors.jpg);
+      url(../../../images/mcu_coding.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -280,77 +280,80 @@
 <script>
 const quizData = [
   {
-    question: "What is the main function of a bump sensor in a robot?",
-    a: "Measure distance to an object.",
-    b: "Detect when the robot has made contact with something.",
-    c: "Sense the color of nearby objects.",
-    d: "Determine the speed of the robot's wheels.",
+    question: "What is the primary role of a microcontroller in a robot?",
+    a: "To display images and animations",
+    b: "To power the robot’s motors",
+    c: "To act as the robot’s brain, processing and controlling actions",
+    d: "To store large amounts of media files",
+    correct: "c",
+    explanation: "Microcontrollers function as the “brain” of a robot—processing input data and controlling output actions.",
+    wrongExplanations: {
+      a: "This is typically the job of a graphics processor.",
+      b: "Powering motors is handled by drivers, not microcontrollers alone.",
+      d: "Microcontrollers don’t store large media files like microprocessors can.",
+    },
+  },
+  {
+    question: "Which of the following is a key feature of microcontrollers?",
+    a: "Large screen display",
+    b: "High power consumption",
+    c: "Small size and integrated peripherals",
+    d: "Ability to run complex video games",
+    correct: "c",
+    explanation: "Microcontrollers are small, efficient, and include built-in peripherals—making them ideal for embedded systems.",
+    wrongExplanations: {
+      a: "Microcontrollers rarely interact with large screens.",
+      b: "They are known for low power consumption.",
+      d: "That’s a job for more powerful microprocessors.",
+    },
+  },
+  {
+    question: "What makes microcontrollers different from microprocessors?",
+    a: "Microcontrollers are used for general computing",
+    b: "Microcontrollers are designed for specific control tasks",
+    c: "Microprocessors are cheaper and simpler",
+    d: "Microcontrollers have separate CPUs and memory chips",
     correct: "b",
-    explanation: "Bump sensors detect contact, helping robots recognize collisions or obstacles.",
+    explanation: "Microcontrollers are built for specific, repetitive control tasks.",
     wrongExplanations: {
-      a: "Distance measurement is typically done using ultrasonic or infrared sensors.",
-      c: "Color sensors are used for identifying colors, not for detecting contact.",
-      d: "Speed detection is managed by encoders or motion sensors, not bump sensors.",
+      a: "General-purpose computing is for microprocessors.",
+      c: "Microcontrollers are usually more cost-effective for embedded tasks.",
+      d: "Microcontrollers integrate CPU, memory, and I/O on a single chip.",
     },
   },
   {
-    question: "Which sensor helps a robot determine how tightly it is gripping an object?",
-    a: "Color sensor",
-    b: "Ultrasonic sensor",
-    c: "Force sensor",
-    d: "Light sensor",
+    question: "Which device most likely contains a microcontroller?",
+    a: "Washing machine",
+    b: "Desktop computer",
+    c: "Projector screen",
+    d: "External hard drive",
+    correct: "a",
+    explanation: "Washing machines use microcontrollers to control cycles and functions.",
+    wrongExplanations: {
+      b: "Desktops typically use microprocessors.",
+      c: "Screens may not need internal processing.",
+      d: "External drives don’t require programmable control systems.",
+    },
+  },
+  {
+    question: "What is one reason microcontrollers are ideal for robotics?",
+    a: "They are expensive and complex",
+    b: "They handle general web browsing",
+    c: "They integrate multiple functions into one small chip",
+    d: "They require constant internet access",
     correct: "c",
-    explanation: "Force sensors measure applied pressure, useful in tasks like gripping.",
+    explanation: "Microcontrollers are compact, efficient, and integrate essential components for control-based tasks.",
     wrongExplanations: {
-      a: "Color sensors are used to detect surface colors, not pressure.",
-      b: "Ultrasonic sensors measure distance using sound waves, not grip strength.",
-      d: "Light sensors detect brightness, not how tightly something is held.",
-    },
-  },
-  {
-    question: "Why are touch sensors important for robots interacting with humans?",
-    a: "To play music.",
-    b: "To avoid touching any object.",
-    c: "To ensure safe and responsive physical interaction.",
-    d: "To increase processing speed.",
-    correct: "c",
-    explanation: "Touch sensors help robots interact safely and appropriately with humans.",
-    wrongExplanations: {
-      a: "Playing music is unrelated to touch sensor functionality.",
-      b: "Touch sensors allow interaction, not avoidance.",
-      d: "Processing speed is handled by the processor, not touch sensors.",
-    },
-  },
-  {
-    question: "Which of the following best describes a tactile sensor?",
-    a: "It detects ambient temperature.",
-    b: "It tracks location using GPS.",
-    c: "It detects physical contact or pressure.",
-    d: "It senses magnetic fields.",
-    correct: "c",
-    explanation: "Tactile sensors detect touch or pressure, allowing physical interaction.",
-    wrongExplanations: {
-      a: "Temperature sensors are used to detect heat or cold, not touch.",
-      b: "GPS sensors determine position, not physical contact.",
-      d: "Magnetic field detection is done by magnetometers, not tactile sensors.",
-    },
-  },
-  {
-    question: "What would likely happen if a robot arm had no force sensor?",
-    a: "It would be able to speak more clearly.",
-    b: "It might crush fragile objects it tries to pick up.",
-    c: "It would navigate faster.",
-    d: "It would sense colors more accurately.",
-    correct: "b",
-    explanation: "Without a force sensor, a robot cannot adjust grip strength properly, risking damage.",
-    wrongExplanations: {
-      a: "Speaking ability is unrelated to robotic grip force.",
-      c: "Navigation speed is not directly affected by the lack of a force sensor.",
-      d: "Color sensing involves vision systems, not grip control.",
+      a: "They are actually cost-effective and simple.",
+      b: "That’s not their role—web tasks are for computers.",
+      d: "Microcontrollers often function offline in embedded systems.",
     },
   },
 ];
+const perfectFeedback = "🌟Awesome work! You’ve mastered the brain behind the bot!";
+const notPerfectFeedback = "💪Nice effort! You’re building a solid foundation—review the feedback and give it another shot!";
 
 
 </script>
+
 <script src="../../../js/lesson-quiz.js"></script>
