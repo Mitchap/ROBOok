@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="logo/png" href="../../../images/logo.png" />
+    <link rel="stylesheet" href="../../../styles/lessons_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ROBOok</title>
+  </head>
+  <body>
+    <!-- page loading animation -->
+    <div class="preloader d-flex justify-content-center align-items-center">
+      <div id="loader" class="loader"></div>
+      <div><h3 class="fw-bold mt-2">Loading...</h3></div>
+    </div>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <section id="banner">
+      <div
+        class="d-flex align-items-center justify-content-center"
+        style="height: 100%"
+      >
+        <h1 class="text-light banner-text">Microcontrollers</h1>
+      </div>
+    </section>
+
+    <div class="mt-5 ms-3 ms-md-5">
+      <a
+        class="btn btn-primary"
+        href="../../../modules/mcu_and_coding/microcontrollers.html"
+      >
+        <i class="fa-solid fa-chevron-left"></i> Back
+      </a>
+    </div>
+
+    <!-- This section has the page content -->
+    <section id="main">
+      <div class="container my-5">
+        <!-- Contents of Side Nav -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <!-- An underscore with 0 opacity is added to give space
+                and not cause layout issues -->
+          <p class="sidenav-title">LESSONS</p>
+          <hr style="border-bottom: 2px solid #f8f8f8" />
+          <!-- Lessons -->
+          <a
+            class="my-1 "
+            href="../../../lessons/sensors/sensor_types/seeing_with_sound.html"
+            >Lesson<span class="opacity-0">_</span>1</a
+          >
+          <a class="my-1 active" href="../../../lessons/sensors/sensor_types/sensing_light_color.html">Lesson<span class="opacity-0">_</span>2</a>
+          <a class="my-1 " href="../../../lessons/sensors/sensor_types/power_of_robot_touch.html">Lesson<span class="opacity-0">_</span>3</a>
+          <a class="my-1" href="../../../lessons/sensors/sensor_types/motion_balance_masters.html">Lesson<span class="opacity-0">_</span>4</a>
+        
+        </div>
+
+        <div class="mt-5 lesson-content">
+          <section class="lesson">
+            <h3 class="fw-bold">📘 Lesson 2</h3>
+            <h5 class="fw-medium">Meet the MCU Family
+            </h5>
+        
+            <div class="lesson-section mt-5">
+
+        <div class="d-flex flex-wrap align-items-center justify-content-center my-4">
+          <div class="col-md-5 p-3">
+            <p class="lh-base fs-5">
+              Just like there's a variety of animals in the animal kingdom, there's also a diverse 'family' of microcontrollers! From tiny chips controlling wearable sensors to powerful boards driving complex robots, each has its own strengths and applications. In this lesson, we'll explore some of the most popular microcontroller platforms, including the ever-popular Arduino and the feature-rich ESP32, and see how they power the world around us.
+            </p>
+          </div>
+          <div class="col-md-5 p-3">
+            <img src="../../../images/mcu_family.png" class="img-fluid lesson-media" alt="Microcontroller with drone">
+          </div>
+        </div>
+
+        
+            <div class="lesson-section">
+              <h4>🎯 What You'll Learn in This Lesson:</h4>
+              <ul>
+                <li>Identify several popular microcontroller platforms.
+                </li>
+                <li>Describe the key features of the Arduino Uno.
+                </li>
+                <li>Briefly introduce other microcontroller platforms (e.g., ESP32, Raspberry Pi Pico).
+                </li>
+                <li>Understand the differences between various microcontroller platforms.
+                </li>
+                <li>Recognize that different MCUs are suited for different tasks.
+                </li>
+              </ul>
+            </div>
+        
+            <div class="lesson-section">
+              <h4 class="mt-5">Arduino Uno: Your Entry to Robot Brains 🚀</h4>
+              <p>Meet the Arduino Uno – the rockstar of beginner-friendly microcontroller boards! It's super popular because it's:</p>
+              <ul>
+                <li><strong>Cheap Thrills:</strong> Won't break the bank.</li>
+                <li><strong>Easy Peasy:</strong> Simple to learn and use, even if you're a total noob.</li>
+                <li><strong>Squad Goals:</strong> HUGE online community ready to help you out.</li>
+                <li><strong>Plug-and-Play:</strong> Tons of ready-made code libraries and cool add-on boards called "shields" to expand its powers.</li>
+              </ul>
+
+              <div class="text-center">
+                <div class="col-md-5 mx-auto">
+                  <img src="../../../images/arduino_parts.png" class="w-100 h-100" alt="">
+                </div>
+              <p><a href="https://www.hackerearth.com/blog/developers/a-tour-of-the-arduino-uno-board/" target="_blank">Source: Hackerearth</a></p>
+              </div>
+            </div>
+            
+            <div class="lesson-section">
+              <h4 class="mt-5">Beyond the Uno: Leveling Up Your Brainpower 🧠</h4>
+              <ul>
+                <li><strong>ESP32: The Connected Brain 🌐</strong><br />
+                  This chip has built-in Wi-Fi and Bluetooth! Perfect for IoT (Internet of Things) projects – making your gadgets talk to the internet. Think smart homes and robots that can tweet (maybe not that last one... yet!).</li>
+                <li><strong>Raspberry Pi Pico: The Tiny Powerhouse 💪</strong><br />
+                  Seriously small and super cheap, but don't let the size fool you. It's got a powerful chip (RP2040) inside. Great for super compact robots and projects where every milliampere counts.</li>
+              </ul>
+            
+              <h5 class="mt-4">Other Brainiacs (Think of these as other cool kids on the block):</h5>
+              <ul>
+                <li><strong>Micro:bit:</strong> Designed for education, with built-in sensors and a display.</li>
+                <li><strong>STM32:</strong> Powerful and versatile, used in lots of industrial and advanced projects. <a href="https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html" target="_blank">STMicroelectronics</a></li>
+              </ul>
+            </div>
+            
+            <div class="lesson-section">
+              <h4 class="mt-5">Microcontroller Face-Off: Who Wins? 🏆</h4>
+              <p>Different microcontrollers have different superpowers! Here's a quick rundown:</p>
+            
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Feature</th>
+                      <th>Arduino Uno 🚀</th>
+                      <th>ESP32 🌐</th>
+                      <th>Raspberry Pi Pico 💪</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Speed</td>
+                      <td>Moderate</td>
+                      <td>Faster</td>
+                      <td>Fast</td>
+                    </tr>
+                    <tr>
+                      <td>Memory</td>
+                      <td>Limited</td>
+                      <td>More</td>
+                      <td>More</td>
+                    </tr>
+                    <tr>
+                      <td>I/O Pins</td>
+                      <td>Good amount</td>
+                      <td>Lots</td>
+                      <td>Lots</td>
+                    </tr>
+                    <tr>
+                      <td>Connectivity</td>
+                      <td>Needs add-ons</td>
+                      <td>Wi-Fi & Bluetooth</td>
+                      <td>Limited</td>
+                    </tr>
+                    <tr>
+                      <td>Power Use</td>
+                      <td>Moderate</td>
+                      <td>Moderate</td>
+                      <td>Low</td>
+                    </tr>
+                    <tr>
+                      <td>Cost</td>
+                      <td>Very Affordable</td>
+                      <td>Affordable</td>
+                      <td>Very Affordable</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <div class="lesson-section">
+              <h4 class="mt-5">Choosing Your Robot's Perfect Brain 🤔</h4>
+              <ul>
+                <li><strong>Simple Robot (basic sensors, motors):</strong> Arduino Uno – Easy to learn and has plenty of libraries to get you started.</li>
+                <li><strong>Internet-Connected Robot:</strong> ESP32 – Built-in Wi-Fi is a game-changer for online control and data.</li>
+                <li><strong>Small, Low-Power Robot:</strong> Raspberry Pi Pico – Tiny size and low energy use are perfect for stealthy bots.</li>
+              </ul>
+              <p>Think of it like choosing the right tool for the job. A hammer is great for nails, but you need a screwdriver for screws! Same with microcontrollers for different robot brains. 🛠️</p>
+            </div>
+            
+            <div class="lesson-section">
+              <h4 class="mt-5">🚀 Explore & Engage Zone</h4>
+              <ul>
+                <li><strong>🎮 Interactive Activity:</strong> Try this matching game to connect microcontroller parts with their functions. It's a fun way to lock in what you've learned—no soldering required!</li>
+                <li><strong>🎥 Watch:</strong> 
+                  <a href="https://www.youtube.com/watch?v=Zk5kCzXl4pI" target="_blank">Raspberry Pi vs Arduino vs Pi Pico vs ESP32 – What’s the Difference?</a>
+                  <p>Confused about which board to use for your next project? 🤔 This video breaks down the key differences between Raspberry Pi, Arduino, Pi Pico, and ESP32—comparing their strengths, weaknesses, and ideal uses. A great visual guide to help you choose the right microcontroller for your robot or gadget!</p>
+                </li>
+                <li><strong>🎥 Watch:</strong> 
+                  <a href="https://www.youtube.com/watch?v=ViX8ZeoaKN4" target="_blank">8 Popular Microcontrollers Ranked – From S-Tier to D-Tier!</a>
+                  <p>Discover which ones are top-tier and which might not be worth your time. A must-watch for anyone diving into electronics or robotics!</p>
+                </li>
+                <li><strong>📖 Read:</strong> 
+                  <a href="https://www.digikey.com/en/resources/blog/2025-makers-board-guide" target="_blank">Boards Guide – Maker's Guide to 2025 Boards</a>
+                  <p>This DigiKey guide explores the newest boards of 2025—from powerful MCUs to compact SBCs—and helps makers choose the right tech for their next big idea.</p>
+                </li>
+                <li><strong>📖 Read:</strong> 
+                  <a href="https://mrelectrouino.com/raspberry-pi-pico-vs-arduino-uno-vs-esp32-vs-esp8266-comparison-guide" target="_blank">Raspberry Pi Pico vs Arduino UNO vs ESP32 vs ESP8266 – Comparison Guide</a>
+                  <p>This article lays out a side-by-side comparison, breaking down specs, performance, and price. A super handy guide for robotics and DIY projects!</p>
+                </li>
+                <li><strong>🤔 Reflection Prompt & Local Connection:</strong>
+                  <p>Think about the microcontrollers you’ve seen or heard of around you, whether in smart homes, gadgets, or even school projects. How could you use these microcontrollers to solve problems in your local community?</p>
+                  <p><em>For example: Could an IoT-enabled robot help improve waste management in your area? Or could a small, low-power robot assist in local agriculture?</em></p>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="lesson-section mt-5">
+              <h4>📝 Summary and Key Takeaways</h4>
+              <ul>
+                <li>There is a diverse family of microcontroller platforms.</li>
+                <li>The Arduino Uno is popular for its ease of use and wide support.</li>
+                <li>ESP32 is known for its Wi-Fi and Bluetooth capabilities.</li>
+                <li>Raspberry Pi Pico is small and low cost.</li>
+                <li>Different microcontrollers are suited for different applications.</li>
+                <li>Just like picking the right tool for the job, the right microcontroller is key to making your robot work the way you want it to!</li>
+              </ul>
+            </div>
+            
+            <section>
+              <div class="d-inline-flex gap-1">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRelatedMCU" aria-expanded="false" aria-controls="collapseRelatedMCU">
+                  <i class="fa-solid fa-link"></i> Sources and Related Content
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+              <div class="collapse" id="collapseRelatedMCU">
+                <div class="card card-body">
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.arduino.cc/" target="_blank">Arduino Official Website</a></li>
+                    <li><a href="https://www.espressif.com/en/products/socs/esp32" target="_blank">ESP32 Datasheet – Espressif</a></li>
+                    <li><a href="https://www.raspberrypi.com/" target="_blank">Raspberry Pi Official Website</a></li>
+                    <li><a href="https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html" target="_blank">STM32 High Performance MCUs</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/ESP32" target="_blank">ESP32 – Wikipedia</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            
+        
+
+          <br /><br />
+          
+          <!-- quiz -->
+          <hr />
+          <div class="mt-5 lesson-content">
+            <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
+            <h4>
+              Test Your Understanding of Microcontroller Families
+            </h4>
+          </div>
+          <div id="quiz-intro">
+            <h2>Think You Got It? Let's Find Out!</h2>
+            <p>Try this quick challenge to see what you’ve learned!</p>
+            <button id="start-quiz">
+              Launch the Interactive Quiz Challenge
+            </button>
+          </div>
+
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+              <h2 id="question">Quiz</h2>
+              <ul class="quiz-ul">
+                <li class="quiz-li">
+                  <input type="radio" id="a" name="answer" class="answer" />
+                  <label id="a_text" for="a">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="b" name="answer" class="answer" />
+                  <label id="b_text" for="b">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="c" name="answer" class="answer" />
+                  <label id="c_text" for="c">Question</label>
+                </li>
+                <li class="quiz-li">
+                  <input type="radio" id="d" name="answer" class="answer" />
+                  <label id="d_text" for="d">Question</label>
+                </li>
+              </ul>
+            </div>
+            <button id="submit">Submit</button>
+            <div id="quiz-progress" class="quiz-progress mt-2">Question 1 / 5</div>
+
+          </div>
+
+          <h5>Check out the other lessons here</h5>
+          <button class="btn btn-primary" onclick="openNav()">Lessons</button>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- navbar is generated dynamically based on modules.js -->
+  <script src="../../../js/modules.js"></script>
+  <script src="../../../js/navigation.js"></script>
+</html>
+
+<!-- banner of image -->
+<style>
+  #banner {
+    background: linear-gradient(
+        rgba(23, 23, 23, 0.986),
+        rgba(107, 107, 107, 0.87)
+      ),
+      url(../../../images/mcu_coding.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 760px) {
+    #banner {
+      height: 12vh;
+    }
+  }
+</style>
+
+
+<script>
+const quizData = [
+  {
+    question: "What makes the Arduino Uno a great choice for beginners?",
+    a: "It has built-in Wi-Fi and Bluetooth",
+    b: "It’s complex and requires deep coding knowledge",
+    c: "It’s simple, affordable, and has a large community",
+    d: "It’s the most powerful microcontroller ever",
+    correct: "c",
+    explanation: "It's popular because it’s easy to use, budget-friendly, and well-supported.",
+    wrongExplanations: {
+      a: "That’s ESP32, which has built-in Wi-Fi and Bluetooth.",
+      b: "Arduino is known for being beginner-friendly, not complex.",
+      d: "The Uno isn’t the most powerful—it's just ideal for starters."
+    }
+  },
+  {
+    question: "Which microcontroller is best suited for an internet-connected robot?",
+    a: "Arduino Uno",
+    b: "Raspberry Pi Pico",
+    c: "ESP32",
+    d: "STM32",
+    correct: "c",
+    explanation: "ESP32 has built-in Wi-Fi and Bluetooth, making it perfect for connected projects.",
+    wrongExplanations: {
+      a: "Uno needs extra modules for Wi-Fi, so it’s less suited for internet-connected tasks.",
+      b: "Pico is great for low-power use but lacks built-in Wi-Fi.",
+      d: "STM32 is powerful but more complex and typically used in industrial setups."
+    }
+  },
+  {
+    question: "Why might a maker choose the Raspberry Pi Pico over other boards?",
+    a: "It has the most memory and fastest processor",
+    b: "It’s ideal for compact, low-power projects",
+    c: "It has built-in sensors and display",
+    d: "It’s the most expensive option",
+    correct: "b",
+    explanation: "It’s tiny, energy-efficient, and perfect for minimal, low-power designs.",
+    wrongExplanations: {
+      a: "ESP32 tends to be faster and has more memory than Pico.",
+      c: "That sounds more like the Micro:bit with its built-in sensors and display.",
+      d: "Pico is actually one of the most affordable options."
+    }
+  },
+  {
+    question: "What do all the following microcontrollers have in common: Arduino Uno, ESP32, Raspberry Pi Pico?",
+    a: "All require external components to work",
+    b: "All are only used in industrial environments",
+    c: "All can be used in robotics projects",
+    d: "All come with built-in Wi-Fi",
+    correct: "c",
+    explanation: "Each can be used in robotics, with unique strengths for different project types.",
+    wrongExplanations: {
+      a: "Many of these have built-in features and don’t require extra components to function.",
+      b: "These boards are used in education and DIY as well, not just industry.",
+      d: "Only the ESP32 has built-in Wi-Fi."
+    }
+  },
+  {
+    question: "Which statement best describes the difference between Arduino Uno and ESP32?",
+    a: "Arduino is cheaper but lacks wireless connectivity",
+    b: "ESP32 is simpler for beginners",
+    c: "Arduino has more memory and speed",
+    d: "ESP32 needs shields to connect to the internet",
+    correct: "a",
+    explanation: "Uno is cheaper and beginner-friendly but doesn’t have built-in wireless features.",
+    wrongExplanations: {
+      b: "Arduino is generally simpler for beginners compared to ESP32.",
+      c: "ESP32 is faster and has more memory than Arduino Uno.",
+      d: "ESP32 already has Wi-Fi and Bluetooth built-in—no shields needed."
+    }
+  }
+];
+
+const perfectFeedback = "Outstanding! 🌟 You’ve mastered the microcontroller lineup like a true tech explorer. Keep pushing forward—you’re ready to build bots with brains! 🚀";
+const notPerfectFeedback = " Great effort! 💡 You're getting there—these robot brains can be tricky, but your foundation is strong. Take a moment to review and keep building that knowledge! 💪";
+
+
+</script>
+
+<script src="../../../js/lesson-quiz.js"></script>
