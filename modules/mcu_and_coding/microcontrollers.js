@@ -28,7 +28,7 @@ const lessons = [
     content:
       "Build it virtually first! Discover how Tinkercad lets you experiment with Arduino circuits and code without needing physical parts, and how your virtual code works with the real Arduino!",
     route:
-      "../../../lessons/mcu_and_coding/microcontrollers/simulating_tinkercad.html",
+      "../../../lessons/mcu_and_coding/microcontrollers/simulating_with_tinkercad.html",
   },
 ];
 
