@@ -1,415 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="logo/png" href="../../../images/logo.png" />
-    <link rel="stylesheet" href="../../../styles/lessons_page.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>ROBOok</title>
-  </head>
-  <body>
-    <!-- page loading animation -->
-    <div class="preloader d-flex justify-content-center align-items-center">
-      <div id="loader" class="loader"></div>
-      <div><h3 class="fw-bold mt-2">Loading...</h3></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="logo/png" href="../../../images/logo.png" />
+  <link rel="stylesheet" href="../../../styles/lessons_page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>ROBOok</title>
+</head>
+
+<body>
+  <!-- page loading animation -->
+  <div class="preloader d-flex justify-content-center align-items-center">
+    <div id="loader" class="loader"></div>
+    <div>
+      <h3 class="fw-bold mt-2">Loading...</h3>
     </div>
-    <!-- NAVBAR -->
-    <div id="navbar"></div>
+  </div>
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
 
-    <section id="banner">
-      <div
-        class="d-flex align-items-center justify-content-center"
-        style="height: 100%"
-      >
-        <h1 class="text-light banner-text">Microcontrollers</h1>
-      </div>
-    </section>
-
-    <div class="mt-5 ms-3 ms-md-5">
-      <a
-        class="btn btn-primary"
-        href="../../../modules/mcu_and_coding/microcontrollers.html"
-      >
-        <i class="fa-solid fa-chevron-left"></i> Back
-      </a>
+  <section id="banner">
+    <div class="d-flex align-items-center justify-content-center" style="height: 100%">
+      <h1 class="text-light banner-text">Microcontrollers</h1>
     </div>
+  </section>
 
-    <!-- This section has the page content -->
-    <section id="main">
-      <div class="container my-5">
-        <!-- Contents of Side Nav -->
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <!-- An underscore with 0 opacity is added to give space
+  <div class="mt-5 ms-3 ms-md-5">
+    <a class="btn btn-primary" href="../../../modules/mcu_and_coding/microcontrollers.html">
+      <i class="fa-solid fa-chevron-left"></i> Back
+    </a>
+  </div>
+
+  <!-- This section has the page content -->
+  <section id="main">
+    <div class="container my-5">
+      <!-- Contents of Side Nav -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- An underscore with 0 opacity is added to give space
                 and not cause layout issues -->
-          <p class="sidenav-title">LESSONS</p>
-          <hr style="border-bottom: 2px solid #f8f8f8" />
-          <!-- Lessons -->
-          <a
-            class="my-1 "
-            href="../../..//lessons/mcu_and_coding/microcontrollers/the_mighty_microchip.html"
-            >Lesson<span class="opacity-0">_</span>1</a
-          >
-          <a class="my-1 " href="../../../lessons/mcu_and_coding/microcontrollers/mcu_family.html">Lesson<span class="opacity-0">_</span>2</a>
-          <a class="my-1 active" href="../../../lessons/mcu_and_coding/microcontrollers/arduino_board.html">Lesson<span class="opacity-0">_</span>3</a>
-          <a class="my-1" href="../../../lessons/mcu_and_coding/microcontrollers/simulating_with_tinkercad.html">Lesson<span class="opacity-0">_</span>4</a>
-        
-        </div>
+        <p class="sidenav-title">LESSONS</p>
+        <hr style="border-bottom: 2px solid #f8f8f8" />
+        <!-- Lessons -->
+        <a class="my-1 " href="../../..//lessons/mcu_and_coding/microcontrollers/the_mighty_microchip.html">Lesson<span
+            class="opacity-0">_</span>1</a>
+        <a class="my-1 " href="../../../lessons/mcu_and_coding/microcontrollers/mcu_family.html">Lesson<span
+            class="opacity-0">_</span>2</a>
+        <a class="my-1 active" href="../../../lessons/mcu_and_coding/microcontrollers/arduino_board.html">Lesson<span
+            class="opacity-0">_</span>3</a>
+        <a class="my-1"
+          href="../../../lessons/mcu_and_coding/microcontrollers/simulating_with_tinkercad.html">Lesson<span
+            class="opacity-0">_</span>4</a>
 
-        <div class="mt-5 lesson-content">
-          <section class="lesson">
-            <h3 class="fw-bold">📘 Lesson 3</h3>
-            <h5 class="fw-medium">Arduino Uno Board</h5>
-        
-            <div class="lesson-section mt-5">
-              <div class="d-flex flex-wrap align-items-center justify-content-center my-4">
-                <div class="col-md-5 p-3">
-                  <p class="lh-base fs-5">
-                    The Arduino Uno is a cornerstone of the maker and robotics world. It's the platform that has launched countless projects, from simple blinking lights to complex automated systems. But what exactly is on this little green board, and how does it work? In this lesson, we'll take a tour of the Arduino Uno and unlock the secrets of its various components.
+      </div>
 
-                  </p>
-                </div>
-                <div class=" p-3 text-center">
-                
-                    <video class="lesson-video" autoplay loop muted>
-                      <source src="../../../videos/robot_arm.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  <p class="text-center"><em>Source: <a href="https://www.tiktok.com/@new.tech95/video/7490389519427063047 " target="_blank">https://www.tiktok.com/@new.tech95</a></em></p>
-                </div>
+      <div class="mt-5 lesson-content">
+        <section class="lesson">
+          <h3 class="fw-bold">📘 Lesson 3</h3>
+          <h5 class="fw-medium">The Arduino Board: Getting to Know Its Parts and Purpose</h5>
+
+          <div class="lesson-section mt-5">
+            <div class="d-flex flex-wrap align-items-center justify-content-center my-4">
+              <div class="col-md-5 p-3">
+                <p class="lh-base fs-5">
+                  The Arduino Uno is a cornerstone of the maker and robotics world. It's the platform that has launched
+                  countless projects, from simple blinking lights to complex automated systems. But what exactly is on
+                  this little green board, and how does it work? In this lesson, we'll take a tour of the Arduino Uno
+                  and unlock the secrets of its various components.
+
+                </p>
               </div>
-        
-              <div class="lesson-section">
-                <h4>🎯 What You'll Learn in This Lesson:</h4>
-                <ul>
-                  <li>Identify the key components of the Arduino Uno board.</li>
-                  <li>Explain the function of each component (e.g., microcontroller, power supply, digital/analog pins).</li>
-                  <li>Understand the purpose of the Arduino headers and connectors.</li>
-                  <li>Learn about the Arduino's input and output capabilities.</li>
-                  <li>Recognize the role of the Arduino Uno in controlling electronic circuits.</li>
-                </ul>
+              <div class=" p-3 text-center">
+
+                <video class="lesson-video" autoplay loop muted>
+                  <source src="../../../videos/robot_arm.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p class="text-center"><em>Source: <a
+                      href="https://www.tiktok.com/@new.tech95/video/7490389519427063047 "
+                      target="_blank">https://www.tiktok.com/@new.tech95</a></em></p>
               </div>
-        
-              <div class="lesson-section">
-                <h4 class="mt-5">Taking a Tour of the Arduino Uno 🗺️
-                </h4>
-<p>Get ready to meet the inner workings of your new robot brain! Here's a detailed look at the Arduino Uno:
-</p>
-        
-                <figure class="col-md-5 mx-auto mt-5 text-center">
-                  <img src="../../../images/A-labeled-Arduino.png" class="w-100 h-100" alt="Labeled Arduino Board">
-                  <figcaption>Source: <a href="https://www.researchgate.net/figure/A-labeled-diagram-of-an-Arduino-Board-and-an-IDE-Software-The-program-code-written-for_fig1_359502443 
+            </div>
+
+            <div class="lesson-section">
+              <h4>🎯 What You'll Learn in This Lesson:</h4>
+              <ul>
+                <li>Identify the key components of the Arduino Uno board.</li>
+                <li>Explain the function of each component (e.g., microcontroller, power supply, digital/analog pins).
+                </li>
+                <li>Understand the purpose of the Arduino headers and connectors.</li>
+                <li>Learn about the Arduino's input and output capabilities.</li>
+                <li>Recognize the role of the Arduino Uno in controlling electronic circuits.</li>
+              </ul>
+            </div>
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Taking a Tour of the Arduino Uno 🗺️
+              </h4>
+              <p>Get ready to meet the inner workings of your new robot brain! Here's a detailed look at the Arduino
+                Uno:
+              </p>
+
+              <figure class="col-md-5 mx-auto mt-5 text-center">
+                <img src="../../../images/A-labeled-Arduino.png" class="w-100 h-100" alt="Labeled Arduino Board">
+                <figcaption>Source: <a href="https://www.researchgate.net/figure/A-labeled-diagram-of-an-Arduino-Board-and-an-IDE-Software-The-program-code-written-for_fig1_359502443 
                     " target="_blank">Research Gate</a></figcaption>
-                </figure>
-              </div>
-        
+              </figure>
+            </div>
 
-                <div class="lesson-section">
-                  <h4 class="mt-5">Labeling the Main Components and Their Functions:
-                  </h4>
-                  <ul class="d-grid gap-3">
-                    <li><strong>Microcontroller (ATmega328P):</strong> The <strong>"brain"</strong> of the Arduino Uno. This is the integrated circuit (the big black chip) that executes the code you write. It fetches instructions from its memory and performs all the calculations and control operations.
-                    </li>
-                     <li><strong>Power Supply (USB and DC jack):</strong>
-                    <ul>
-                      <li><strong>USB Port:</strong> Primarily used to upload code to the microcontroller and can also power the board when connected to a computer. Typically provides 5V.</li>
-                      <li><strong>DC Power Jack:</strong> Allows you to power the board using an external power supply (typically 7-12V). The onboard voltage regulator then steps this down to the 5V and 3.3V needed by the microcontroller and other components.
-                      </li>
-                    </ul>
-                  </li>
-                    <li>
-                      <strong>Digital Input/Output Pins (D0-D13):</strong>
-                      These are versatile pins that can be configured as either inputs to receive digital signals (HIGH/LOW, 5V/0V, on/off) or outputs to send digital signals to control other components like LEDs (on/off) or digital sensors.
-                    </li>
-                    <li>
-                      <strong>Analog Input Pins (A0-A5):</strong>
-                      These pins can read analog signals, which are continuously varying voltage levels (typically 0-5V). This allows the Arduino to interface with sensors that provide a range of values, like temperature sensors or light sensors.
-                    </li>
-                    <li>
-                      <strong>Ground (GND) Pins:</strong>
-                      These pins provide a common ground reference point for all the components in your circuit. It's essential for completing electrical circuits. You'll often connect the negative terminal of power supplies and the ground connections of sensors and actuators to these pins.
-                    </li>
-                    <li>
-                      <strong>Voltage Regulator:</strong>
-                      This component ensures a stable and consistent voltage supply (typically 5V and 3.3V) to the microcontroller and other parts of the board, regardless of slight fluctuations in the input voltage from the USB or DC jack. This protects the sensitive electronics.
-                    </li>
-                    <li>
-                      <strong>Crystal Oscillator:</strong>
-                      This component provides a precise timing signal (usually 16MHz) that acts as the heartbeat of the microcontroller. It dictates the speed at which the microcontroller executes instructions.
-                    </li>
-                    <li>
-                      <strong>Reset Button:</strong>
-                      Pressing this button restarts the microcontroller, causing it to begin running the program from the beginning. This is useful for debugging or restarting your project.
-                    </li>
-                    <li>
-                      <strong>Serial Communication Pins (TX/RX):</strong>
-                      <ul>
-                        <li><strong>TX (Transmit):</strong> Used to send serial data from the Arduino to another device (like your computer).</li>
-                        <li><strong>RX (Receive):</strong> Used to receive serial data from another device (like your computer). These pins are often used for debugging (sending information back to your computer's serial monitor) or communicating with other microcontrollers or serial devices.</li>
-                      </ul>
-                    </li>
-                  
-                  </div>        
 
-                  <div class="lesson-section">
-                    <h4 class="mt-5">Physical Layout and Pin Headers:
-                    </h4>
-                    <p class="mt-2">The Arduino Uno board is designed with a rectangular shape and features <strong>pin headers</strong> along its edges. These headers are rows of female connectors that allow you to easily connect wires, sensors, actuators, and other components to the microcontroller's pins using jumper wires.
-                    </p>
-                    <ul class="d-grid gap-3">
-                    <li>The digital I/O pins (D0-D13) are grouped together on one side. Some of these pins are also capable of Pulse Width Modulation (PWM), indicated by a tilde (~). PWM allows you to simulate analog output by quickly turning a digital pin on and off, effectively controlling the power delivered to components like LEDs (for brightness control) or motors (for speed control).</li> 
-                      <li>The analog input pins (A0-A5) are located on the other side.
-                      </li>
-                      <li>Power and ground pins (5V, 3.3V, GND, Vin) are conveniently placed for easy access.
-                      </li>
-                      <li>The serial communication pins (TX and RX) are typically labeled and located near the digital pins.
-                      </li>
+            <div class="lesson-section">
+              <h4 class="mt-5">Labeling the Main Components and Their Functions:
+              </h4>
+              <ul class="d-grid gap-3">
+                <li><strong>Microcontroller (ATmega328P):</strong> The <strong>"brain"</strong> of the Arduino Uno. This
+                  is the integrated circuit (the big black chip) that executes the code you write. It fetches
+                  instructions from its memory and performs all the calculations and control operations.
+                </li>
+                <li><strong>Power Supply (USB and DC jack):</strong>
+                  <ul>
+                    <li><strong>USB Port:</strong> Primarily used to upload code to the microcontroller and can also
+                      power the board when connected to a computer. Typically provides 5V.</li>
+                    <li><strong>DC Power Jack:</strong> Allows you to power the board using an external power supply
+                      (typically 7-12V). The onboard voltage regulator then steps this down to the 5V and 3.3V needed by
+                      the microcontroller and other components.
+                    </li>
                   </ul>
-                  <p>This organized layout and the use of pin headers make it easy to prototype and experiment with different electronic circuits and connect the Arduino Uno to a wide variety of external hardware.
+                </li>
+                <li>
+                  <strong>Digital Input/Output Pins (D0-D13):</strong>
+                  These are versatile pins that can be configured as either inputs to receive digital signals (HIGH/LOW,
+                  5V/0V, on/off) or outputs to send digital signals to control other components like LEDs (on/off) or
+                  digital sensors.
+                </li>
+                <li>
+                  <strong>Analog Input Pins (A0-A5):</strong>
+                  These pins can read analog signals, which are continuously varying voltage levels (typically 0-5V).
+                  This allows the Arduino to interface with sensors that provide a range of values, like temperature
+                  sensors or light sensors.
+                </li>
+                <li>
+                  <strong>Ground (GND) Pins:</strong>
+                  These pins provide a common ground reference point for all the components in your circuit. It's
+                  essential for completing electrical circuits. You'll often connect the negative terminal of power
+                  supplies and the ground connections of sensors and actuators to these pins.
+                </li>
+                <li>
+                  <strong>Voltage Regulator:</strong>
+                  This component ensures a stable and consistent voltage supply (typically 5V and 3.3V) to the
+                  microcontroller and other parts of the board, regardless of slight fluctuations in the input voltage
+                  from the USB or DC jack. This protects the sensitive electronics.
+                </li>
+                <li>
+                  <strong>Crystal Oscillator:</strong>
+                  This component provides a precise timing signal (usually 16MHz) that acts as the heartbeat of the
+                  microcontroller. It dictates the speed at which the microcontroller executes instructions.
+                </li>
+                <li>
+                  <strong>Reset Button:</strong>
+                  Pressing this button restarts the microcontroller, causing it to begin running the program from the
+                  beginning. This is useful for debugging or restarting your project.
+                </li>
+                <li>
+                  <strong>Serial Communication Pins (TX/RX):</strong>
+                  <ul>
+                    <li><strong>TX (Transmit):</strong> Used to send serial data from the Arduino to another device
+                      (like your computer).</li>
+                    <li><strong>RX (Receive):</strong> Used to receive serial data from another device (like your
+                      computer). These pins are often used for debugging (sending information back to your computer's
+                      serial monitor) or communicating with other microcontrollers or serial devices.</li>
+                  </ul>
+                </li>
+
+            </div>
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Physical Layout and Pin Headers:
+              </h4>
+              <p class="mt-2">The Arduino Uno board is designed with a rectangular shape and features <strong>pin
+                  headers</strong> along its edges. These headers are rows of female connectors that allow you to easily
+                connect wires, sensors, actuators, and other components to the microcontroller's pins using jumper
+                wires.
+              </p>
+              <ul class="d-grid gap-3">
+                <li>The digital I/O pins (D0-D13) are grouped together on one side. Some of these pins are also capable
+                  of Pulse Width Modulation (PWM), indicated by a tilde (~). PWM allows you to simulate analog output by
+                  quickly turning a digital pin on and off, effectively controlling the power delivered to components
+                  like LEDs (for brightness control) or motors (for speed control).</li>
+                <li>The analog input pins (A0-A5) are located on the other side.
+                </li>
+                <li>Power and ground pins (5V, 3.3V, GND, Vin) are conveniently placed for easy access.
+                </li>
+                <li>The serial communication pins (TX and RX) are typically labeled and located near the digital pins.
+                </li>
+              </ul>
+              <p>This organized layout and the use of pin headers make it easy to prototype and experiment with
+                different electronic circuits and connect the Arduino Uno to a wide variety of external hardware.
+              </p>
+
+
+            </div>
+            <div class="lesson-section">
+              <h4 class="mt-5">Understanding Input and Output 🚦</h4>
+              <p class="mt-2">
+                The Arduino Uno interacts with the physical world through its input and output pins:
+              </p>
+
+              <ul class="d-grid gap-3">
+                <li><strong>Digital Input:</strong> When a sensor (like a push button) is connected to a digital input
+                  pin, the Arduino can detect whether the button is pressed (HIGH, 5V) or not pressed (LOW, 0V). The pin
+                  reads a discrete value – either on or off.<br>
+                  <em>Example:</em> You connect a button to digital pin 2. When the button is pressed, pin 2 reads HIGH,
+                  and your program can then trigger a specific action.
+                </li>
+
+                <li><strong>Analog Input:</strong> When an analog sensor (like a light sensor) is connected to an analog
+                  input pin, the Arduino can read a range of voltage values. This allows it to measure continuous
+                  changes in the environment.<br>
+                  <em>Example:</em> A light sensor connected to analog pin A0 might output a voltage between 0V (dark)
+                  and 5V (bright). The Arduino reads this voltage and converts it into a digital value that represents
+                  the light intensity.
+                </li>
+
+                <li><strong>Digital Output:</strong> The Arduino can set a digital output pin to either HIGH (5V) or LOW
+                  (0V) to control digital devices.<br>
+                  <em>Example:</em> Connecting an LED to a digital output pin (e.g., pin 13). Setting the pin to HIGH
+                  turns the LED on, and setting it to LOW turns it off.
+                </li>
+
+                <li><strong>Analog Output (PWM):</strong> Using the PWM-capable digital pins, the Arduino can simulate
+                  analog output. By rapidly switching the pin on and off with varying "on" times, you can control the
+                  average power delivered to a component.<br>
+                  <em>Example:</em> Connecting an LED to a PWM pin (e.g., pin 9). By varying the PWM signal, you can
+                  smoothly control the brightness of the LED from dim to bright.
+                </li>
+              </ul>
+            </div>
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Powering Your Projects ⚡</h4>
+              <p class="mt-2">
+                The Arduino Uno can be powered in a couple of ways:
+              </p>
+
+              <ul class="d-grid gap-3">
+                <li><strong>USB:</strong> Connecting the Arduino to your computer via the USB cable provides 5V power,
+                  which is sufficient for many basic projects and for uploading code. However, the current drawn from a
+                  USB port is limited.</li>
+
+                <li><strong>DC Power Jack:</strong> You can use an external DC power supply with a voltage between 7V
+                  and 12V connected to the DC power jack. The onboard voltage regulator will step this down to the
+                  required 5V and 3.3V for the board. It's generally recommended to use a power supply within this
+                  range. Voltages significantly higher than 12V can overheat and damage the voltage regulator.</li>
+              </ul>
+
+              <p class="mt-2">
+                <strong>Important Note:</strong> While you can sometimes power small external components directly from
+                the Arduino's 5V or 3.3V output pins, be mindful of the current limitations. Drawing too much current
+                can damage the Arduino. For power-hungry components like motors, it's usually best to use a separate
+                power supply and control them with the Arduino's signals.
+              </p>
+            </div>
+
+            <div class="lesson-section">
+              <h4 class="mt-5">The Arduino Community and Ecosystem 🌍</h4>
+              <p class="mt-2">
+                One of the biggest strengths of the Arduino platform is its massive and active community. This means:
+              </p>
+
+              <ul class="d-grid gap-3">
+                <li><strong>Extensive Online Resources:</strong> You'll find countless tutorials, projects, code
+                  examples, and troubleshooting guides online (forums, websites, YouTube).</li>
+                <li><strong>Vast Libraries:</strong> Pre-written code libraries are available for interacting with a
+                  wide range of sensors, actuators, and other hardware, making it much easier to get your projects
+                  working without having to write everything from scratch.</li>
+                <li><strong>Affordable Shields:</strong> Shields are add-on boards that plug directly onto the Arduino
+                  Uno, providing additional functionality like motor control, Wi-Fi connectivity, Ethernet, and more.
+                  This modular approach makes it easy to expand the capabilities of your Arduino projects.</li>
+              </ul>
+            </div>
+
+
+            <div class="lesson-section">
+              <h4 class="mt-5">🚀 Explore & Engage Zone</h4>
+              <p class="mt-5 fs-5"><strong>🎥 Try:</strong> “Arduino UNO Board Anatomy”</p>
+
+              <p>Explore the Arduino UNO board like never before with this interactive diagram! Click on each part to
+                discover its name and function—an exciting way to learn the board’s anatomy firsthand.</p>
+              <div class="d-flex flex-wrap align-items-center justify-content-center my-4 gap-4">
+                <div>
+                  <figure class="text-center">
+                    <img class="lesson-video" src="../../../images/board_anatomy.png" alt="arduino board with numbered parts">
+                  </figure>
+                </div>
+                <div>
+                  <!-- Numbered Buttons -->
+                  <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+                    <!-- Buttons 1 to 9 -->
+                    <button class=" label-btn" data-label="1">
+                      1
+                    </button>
+                    <button class=" label-btn" data-label="2">
+                      2
+                    </button>
+                    <button class=" label-btn" data-label="3">
+                      3
+                    </button>
+                    <button class=" label-btn" data-label="4">
+                      4
+                    </button>
+                    <button class=" label-btn" data-label="5">
+                      5
+                    </button>
+                    <button class=" label-btn" data-label="6">
+                      6
+                    </button>
+                    <button class=" label-btn" data-label="7">
+                      7
+                    </button>
+                    <button class=" label-btn" data-label="8">
+                      8
+                    </button>
+                    <button class=" label-btn" data-label="9">
+                      9
+                    </button>
+                    <button class=" label-btn" data-label="10">
+                      10
+                    </button>
+                  </div>
+
+                  <!-- Accordion Display -->
+                  <div class="accordion" id="labelAccordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#labelContent" aria-expanded="true" aria-controls="labelContent">
+                          Arduino MCU Component Info
+                        </button>
+                      </h2>
+                      <div id="labelContent" class="accordion-collapse collapse show">
+                        <div class="accordion-body" id="labelBody">
+                          Click a number above to display its description.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <ul>
+                <li class="mt-5"><strong>🎥 Watch:</strong> "Arduino Uno Hardware Explained In 3 Minutes”
+
+                  <p>
+                    Curious about what’s inside the iconic Arduino Uno? This fast-paced video breaks down its key
+                    hardware components—from the ATmega328P to the crystal oscillators—perfect for beginners who want a
+                    quick yet solid overview of how the board works!
                   </p>
 
-                    
-                    </div>      
-                    <div class="lesson-section">
-                      <h4 class="mt-5">Understanding Input and Output 🚦</h4>
-                      <p class="mt-2">
-                        The Arduino Uno interacts with the physical world through its input and output pins:
-                      </p>
-                    
-                      <ul class="d-grid gap-3">
-                        <li><strong>Digital Input:</strong> When a sensor (like a push button) is connected to a digital input pin, the Arduino can detect whether the button is pressed (HIGH, 5V) or not pressed (LOW, 0V). The pin reads a discrete value – either on or off.<br>
-                        <em>Example:</em> You connect a button to digital pin 2. When the button is pressed, pin 2 reads HIGH, and your program can then trigger a specific action.
-                        </li>
-                    
-                        <li><strong>Analog Input:</strong> When an analog sensor (like a light sensor) is connected to an analog input pin, the Arduino can read a range of voltage values. This allows it to measure continuous changes in the environment.<br>
-                        <em>Example:</em> A light sensor connected to analog pin A0 might output a voltage between 0V (dark) and 5V (bright). The Arduino reads this voltage and converts it into a digital value that represents the light intensity.
-                        </li>
-                    
-                        <li><strong>Digital Output:</strong> The Arduino can set a digital output pin to either HIGH (5V) or LOW (0V) to control digital devices.<br>
-                        <em>Example:</em> Connecting an LED to a digital output pin (e.g., pin 13). Setting the pin to HIGH turns the LED on, and setting it to LOW turns it off.
-                        </li>
-                    
-                        <li><strong>Analog Output (PWM):</strong> Using the PWM-capable digital pins, the Arduino can simulate analog output. By rapidly switching the pin on and off with varying "on" times, you can control the average power delivered to a component.<br>
-                        <em>Example:</em> Connecting an LED to a PWM pin (e.g., pin 9). By varying the PWM signal, you can smoothly control the brightness of the LED from dim to bright.
-                        </li>
-                      </ul>
-                    </div>
-                    
-                    <div class="lesson-section">
-                      <h4 class="mt-5">Powering Your Projects ⚡</h4>
-                      <p class="mt-2">
-                        The Arduino Uno can be powered in a couple of ways:
-                      </p>
-                    
-                      <ul class="d-grid gap-3">
-                        <li><strong>USB:</strong> Connecting the Arduino to your computer via the USB cable provides 5V power, which is sufficient for many basic projects and for uploading code. However, the current drawn from a USB port is limited.</li>
-                    
-                        <li><strong>DC Power Jack:</strong> You can use an external DC power supply with a voltage between 7V and 12V connected to the DC power jack. The onboard voltage regulator will step this down to the required 5V and 3.3V for the board. It's generally recommended to use a power supply within this range. Voltages significantly higher than 12V can overheat and damage the voltage regulator.</li>
-                      </ul>
-                    
-                      <p class="mt-2">
-                        <strong>Important Note:</strong> While you can sometimes power small external components directly from the Arduino's 5V or 3.3V output pins, be mindful of the current limitations. Drawing too much current can damage the Arduino. For power-hungry components like motors, it's usually best to use a separate power supply and control them with the Arduino's signals.
-                      </p>
-                    </div>
-                    
-                    <div class="lesson-section">
-                      <h4 class="mt-5">The Arduino Community and Ecosystem 🌍</h4>
-                      <p class="mt-2">
-                        One of the biggest strengths of the Arduino platform is its massive and active community. This means:
-                      </p>
-                    
-                      <ul class="d-grid gap-3">
-                        <li><strong>Extensive Online Resources:</strong> You'll find countless tutorials, projects, code examples, and troubleshooting guides online (forums, websites, YouTube).</li>
-                        <li><strong>Vast Libraries:</strong> Pre-written code libraries are available for interacting with a wide range of sensors, actuators, and other hardware, making it much easier to get your projects working without having to write everything from scratch.</li>
-                        <li><strong>Affordable Shields:</strong> Shields are add-on boards that plug directly onto the Arduino Uno, providing additional functionality like motor control, Wi-Fi connectivity, Ethernet, and more. This modular approach makes it easy to expand the capabilities of your Arduino projects.</li>
-                      </ul>
-                    </div>
-                    
-        
+                </li>
+                <div class="text-center my-5">
+                  <iframe class="lesson-video" src="https://www.youtube.com/embed/HIXnwFB902M"
+                    title="Arduino Uno Hardware Explained In 3 Minutes" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                <li><strong>📖 Read:</strong> “Overview of the Arduino UNO Components”
+
+                  <p> Dive into the official Arduino guide to get familiar with the UNO board’s layout, pinout diagram,
+                    and how each component works. It’s a great starting point for beginners ready to explore real
+                    hardware!
+                  </p>
+                  <a href="https://docs.arduino.cc/tutorials/uno-rev3/intro-to-board/"> 👉 Visit the Official Arduino
+                    Guide</a>
+                </li>
+              </ul>
               <div class="lesson-section">
-                <h4 class="mt-5">🚀  Explore & Engage Zone</h4>
-                <ul>
-                  <li class="mt-5"><strong>🎥 Watch:</strong> "Arduino Uno Hardware Explained In 3 Minutes”
-
-                    <p>
-                      Curious about what’s inside the iconic Arduino Uno? This fast-paced video breaks down its key hardware components—from the ATmega328P to the crystal oscillators—perfect for beginners who want a quick yet solid overview of how the board works!
-                      </p>
-
+                <h4 class="mt-5"><strong>🤔 Reflection Prompt & Local Connection:</strong></h4>
+                <ul class="list-unstyled d-grid">
+                  <li><strong> Think about this:</strong> <br>
+                    When you look at your surroundings—like public transportation, local farms, or even traffic
+                    lights—can you imagine how something like an Arduino Uno could help automate or improve them?
                   </li>
-                  <div class="text-center my-5">
-                    <iframe class="lesson-video" src="https://www.youtube.com/embed/HIXnwFB902M" title="Arduino Uno Hardware Explained In 3 Minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                  </div>
-                  <li><strong>📖 Read:</strong> “Overview of the Arduino UNO Components”
-
-                    <p> Dive into the official Arduino guide to get familiar with the UNO board’s layout, pinout diagram, and how each component works. It’s a great starting point for beginners ready to explore real hardware!
-                    </p>
-                    <a href="https://docs.arduino.cc/tutorials/uno-rev3/intro-to-board/"> 👉 Visit the Official Arduino Guide</a>
+                  <li><strong> Local Connection:</strong> <br>
+                    In the Philippines, some schools and barangays are starting to explore low-cost tech for projects
+                    like automated garden watering systems, solar-powered lamps, or environmental sensors.
                   </li>
+                  <li><strong> If you had access to an Arduino Uno, what simple problem in your community would you try
+                      to solve with it? 🌱💡</strong></li>
                 </ul>
-                <div class="lesson-section">
-                  <h4 class="mt-5"><strong>🤔 Reflection Prompt & Local Connection:</strong></h4>
-                    <ul class="list-unstyled d-grid">
-                      <li><strong> Think about this:</strong> <br>
-                        When you look at your surroundings—like public transportation, local farms, or even traffic lights—can you imagine how something like an Arduino Uno could help automate or improve them?
-                       </li>
-                       <li><strong> Local Connection:</strong> <br>
-                        In the Philippines, some schools and barangays are starting to explore low-cost tech for projects like automated garden watering systems, solar-powered lamps, or environmental sensors.
-                       </li>
-                       <li><strong> If you had access to an Arduino Uno, what simple problem in your community would you try to solve with it? 🌱💡</strong></li>
-                    </ul>
-                </div>
               </div>
-        
-              <div class="lesson-section">
-                <h4 class="mt-5">📝 Summary and Key Takeaways</h4>
-                <p class="mt-2">
-                  The Arduino Uno is one of the most beginner-friendly and widely used microcontroller boards in robotics and electronics. It’s powered by the ATmega328P microcontroller, the brain that processes inputs and controls outputs.
-                </p>
-                
-                <ul class="d-grid gap-3">
-                  <li><strong>Digital I/O Pins (D0–D13):</strong> Used for turning devices on/off like LEDs or reading digital input from buttons.</li>
-                  <li><strong>Analog Input Pins (A0–A5):</strong> Allow reading of variable signals like light intensity or temperature.</li>
-                  <li><strong>Power Inputs:</strong> Includes USB and DC jack inputs with onboard voltage regulators to safely power the board.</li>
-                  <li><strong>Communication Pins (TX/RX):</strong> Enable serial communication with a computer or other devices.</li>
-                  <li><strong>Reset Button:</strong> Lets you restart your program manually at any time.</li>
-                  <li><strong>Input and Output:</strong> Connect sensors (inputs) and actuators (outputs) to build interactive systems.</li>
-                  <li><strong>PWM (Pulse Width Modulation):</strong> Simulate analog output using digital pins—for example, to dim an LED or control motor speed.</li>
-                  <li><strong>Powering Your Project:</strong> Use USB for low-power projects or a DC jack for more power, but be mindful of current limits.</li>
-                  <li><strong>Arduino Ecosystem:</strong> Access extensive tutorials, shields (add-on boards), and a supportive global community.</li>
-                </ul>
-              
-                <p class="mt-2">
-                  🎯 With a solid understanding of the Arduino Uno, you’re now ready to build, program, and power your own robots and smart systems—right from the ground up!
-                </p>
-              </div>
-              
-        
-              <section>
-                <div class="d-inline-flex gap-1">
-                  <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRelatedArduino" aria-expanded="false" aria-controls="collapseRelatedArduino">
-                    <i class="fa-solid fa-link"></i> Sources and Related Content
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </button>
-                </div>
-                <div class="collapse" id="collapseRelatedArduino">
-                  <div class="card card-body">
-                    <div class="mt-4">
-                      <p class="fw-bold">📚 Sources:</p>
-                      <ul>
-                        <li>Arduino. (n.d.). <em>Arduino Official Website</em>. Retrieved from <a href="https://www.arduino.cc/" target="_blank">https://www.arduino.cc/</a></li>
-                        <li>Microchip Technology Inc. (n.d.). <em>ATmega328P Datasheet</em>. Retrieved from <a href="https://www.microchip.com/en-us/product/ATmega328P" target="_blank">https://www.microchip.com/en-us/product/ATmega328P</a></li>
-                        <li>Monk, S. (2016). <em>Programming Arduino: Getting Started with Sketches</em>. McGraw Hill Education.</li>
-                      </ul>
-                  
-                      <p class="mt-3 fw-bold">🔍 Related Links:</p>
-                      <ul>
-                        <li><a href="https://learn.sparkfun.com/tutorials/what-is-an-arduino" target="_blank">What is an Arduino? - SparkFun Learn</a></li>
-                        <li><a href="https://components101.com/microcontrollers/arduino-uno" target="_blank">Arduino Uno Pinout, Specifications, Pin Configuration & Programming</a></li>
-                        <li><a href="https://www.geeksforgeeks.org/overview-of-the-arduino-uno-components/" target="_blank">Overview of the Arduino UNO Components | GeeksforGeeks</a></li>
-                        <li><a href="https://circuitdigest.com/microcontroller-projects/arduino-uno-pinout-and-board-components" target="_blank">Arduino UNO Pinout, Specifications, Board Layout, Pin Description</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-        
-              <br /><br />
-        
-              <!-- quiz -->
-              <hr />
-              <div class="mt-5 lesson-content">
-                <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
-                <h4>Test Your Knowledge of the Arduino Uno</h4>
-              </div>
-              <div id="quiz-intro">
-                <h2>Think You Got It? Let's Find Out!</h2>
-                <p>Try this quick challenge to see what you’ve learned!</p>
-                <button id="start-quiz">
-                  Launch the Interactive Quiz Challenge
+            </div>
+
+            <div class="lesson-section">
+              <h4 class="mt-5">📝 Summary and Key Takeaways</h4>
+              <p class="mt-2">
+                The Arduino Uno is one of the most beginner-friendly and widely used microcontroller boards in robotics
+                and electronics. It’s powered by the ATmega328P microcontroller, the brain that processes inputs and
+                controls outputs.
+              </p>
+
+              <ul class="d-grid gap-3">
+                <li><strong>Digital I/O Pins (D0–D13):</strong> Used for turning devices on/off like LEDs or reading
+                  digital input from buttons.</li>
+                <li><strong>Analog Input Pins (A0–A5):</strong> Allow reading of variable signals like light intensity
+                  or temperature.</li>
+                <li><strong>Power Inputs:</strong> Includes USB and DC jack inputs with onboard voltage regulators to
+                  safely power the board.</li>
+                <li><strong>Communication Pins (TX/RX):</strong> Enable serial communication with a computer or other
+                  devices.</li>
+                <li><strong>Reset Button:</strong> Lets you restart your program manually at any time.</li>
+                <li><strong>Input and Output:</strong> Connect sensors (inputs) and actuators (outputs) to build
+                  interactive systems.</li>
+                <li><strong>PWM (Pulse Width Modulation):</strong> Simulate analog output using digital pins—for
+                  example, to dim an LED or control motor speed.</li>
+                <li><strong>Powering Your Project:</strong> Use USB for low-power projects or a DC jack for more power,
+                  but be mindful of current limits.</li>
+                <li><strong>Arduino Ecosystem:</strong> Access extensive tutorials, shields (add-on boards), and a
+                  supportive global community.</li>
+              </ul>
+
+              <p class="mt-2">
+                🎯 With a solid understanding of the Arduino Uno, you’re now ready to build, program, and power your own
+                robots and smart systems—right from the ground up!
+              </p>
+            </div>
+
+
+            <section>
+              <div class="d-inline-flex gap-1">
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseRelatedArduino" aria-expanded="false" aria-controls="collapseRelatedArduino">
+                  <i class="fa-solid fa-link"></i> Sources and Related Content
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
               </div>
-        
-              <div class="quiz-container" id="quiz">
-                <div class="quiz-header">
-                  <h2 id="question">Quiz</h2>
-                  <ul class="quiz-ul">
-                    <li class="quiz-li">
-                      <input type="radio" id="a" name="answer" class="answer" />
-                      <label id="a_text" for="a">Question</label>
-                    </li>
-                    <li class="quiz-li">
-                      <input type="radio" id="b" name="answer" class="answer" />
-                      <label id="b_text" for="b">Question</label>
-                    </li>
-                    <li class="quiz-li">
-                      <input type="radio" id="c" name="answer" class="answer" />
-                      <label id="c_text" for="c">Question</label>
-                    </li>
-                    <li class="quiz-li">
-                      <input type="radio" id="d" name="answer" class="answer" />
-                      <label id="d_text" for="d">Question</label>
-                    </li>
-                  </ul>
+              <div class="collapse" id="collapseRelatedArduino">
+                <div class="card card-body">
+                  <div class="mt-4">
+                    <p class="fw-bold">📚 Sources:</p>
+                    <ul>
+                      <li>Arduino. (n.d.). <em>Arduino Official Website</em>. Retrieved from <a
+                          href="https://www.arduino.cc/" target="_blank">https://www.arduino.cc/</a></li>
+                      <li>Microchip Technology Inc. (n.d.). <em>ATmega328P Datasheet</em>. Retrieved from <a
+                          href="https://www.microchip.com/en-us/product/ATmega328P"
+                          target="_blank">https://www.microchip.com/en-us/product/ATmega328P</a></li>
+                      <li>Monk, S. (2016). <em>Programming Arduino: Getting Started with Sketches</em>. McGraw Hill
+                        Education.</li>
+                    </ul>
+
+                    <p class="mt-3 fw-bold">🔍 Related Links:</p>
+                    <ul>
+                      <li><a href="https://learn.sparkfun.com/tutorials/what-is-an-arduino" target="_blank">What is an
+                          Arduino? - SparkFun Learn</a></li>
+                      <li><a href="https://components101.com/microcontrollers/arduino-uno" target="_blank">Arduino Uno
+                          Pinout, Specifications, Pin Configuration & Programming</a></li>
+                      <li><a href="https://www.geeksforgeeks.org/overview-of-the-arduino-uno-components/"
+                          target="_blank">Overview of the Arduino UNO Components | GeeksforGeeks</a></li>
+                      <li><a
+                          href="https://circuitdigest.com/microcontroller-projects/arduino-uno-pinout-and-board-components"
+                          target="_blank">Arduino UNO Pinout, Specifications, Board Layout, Pin Description</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <button id="submit">Submit</button>
-                <div id="quiz-progress" class="quiz-progress mt-2">Question 1 / 5</div>
               </div>
-        
-              <h5>Check out the other lessons here</h5>
-              <button class="btn btn-primary" onclick="openNav()">Lessons</button>
+            </section>
+
+            <br /><br />
+
+            <!-- quiz -->
+            <hr />
+            <div class="mt-5 lesson-content">
+              <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
+              <h4>Test Your Knowledge of the Arduino Uno</h4>
             </div>
-          </section>
-        </div>
-        
+            <div id="quiz-intro">
+              <h2>Think You Got It? Let's Find Out!</h2>
+              <p>Try this quick challenge to see what you’ve learned!</p>
+              <button id="start-quiz">
+                Launch the Interactive Quiz Challenge
+              </button>
+            </div>
+
+            <div class="quiz-container" id="quiz">
+              <div class="quiz-header">
+                <h2 id="question">Quiz</h2>
+                <ul class="quiz-ul">
+                  <li class="quiz-li">
+                    <input type="radio" id="a" name="answer" class="answer" />
+                    <label id="a_text" for="a">Question</label>
+                  </li>
+                  <li class="quiz-li">
+                    <input type="radio" id="b" name="answer" class="answer" />
+                    <label id="b_text" for="b">Question</label>
+                  </li>
+                  <li class="quiz-li">
+                    <input type="radio" id="c" name="answer" class="answer" />
+                    <label id="c_text" for="c">Question</label>
+                  </li>
+                  <li class="quiz-li">
+                    <input type="radio" id="d" name="answer" class="answer" />
+                    <label id="d_text" for="d">Question</label>
+                  </li>
+                </ul>
+              </div>
+              <button id="submit">Submit</button>
+              <div id="quiz-progress" class="quiz-progress mt-2">Question 1 / 5</div>
+            </div>
+
+            <h5>Check out the other lessons here</h5>
+            <button class="btn btn-primary" onclick="openNav()">Lessons</button>
+          </div>
+        </section>
+      </div>
+
       <button onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="fa-solid fa-chevron-up"></i>
       </button>
-    </section>
+  </section>
 
-    <!-- Footer -->
-    <div id="footer"></div>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+  <!-- Footer -->
+  <div id="footer"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  <!-- navbar is generated dynamically based on modules.js -->
-  <script src="../../../js/modules.js"></script>
-  <script src="../../../js/navigation.js"></script>
+<!-- navbar is generated dynamically based on modules.js -->
+<script src="../../../js/modules.js"></script>
+<script src="../../../js/navigation.js"></script>
+
 </html>
 
 <!-- banner of image -->
 <style>
   #banner {
-    background: linear-gradient(
-        rgba(23, 23, 23, 0.986),
-        rgba(107, 107, 107, 0.87)
-      ),
+    background: linear-gradient(rgba(23, 23, 23, 0.986),
+        rgba(107, 107, 107, 0.87)),
       url(../../../images/mcu_coding.jpg);
     background-size: cover;
     background-position: center top;
@@ -418,90 +555,122 @@
     margin-bottom: 50px;
   }
 
+#labelContent{
+  max-width: 500px;
+}
+  
   @media screen and (max-width: 760px) {
     #banner {
       height: 12vh;
     }
   }
 </style>
+<script>
+const descriptions = {
+  1: "1️⃣ Digital pins - Use these pins with digitalRead(), digitalWrite(), and analogWrite(). analogWrite() works only on the pins with the PWM symbol.",
+  2: "2️⃣ Pin 13 LED - The only actuator built-in to your board. Besides being a handy target for your first blink sketch, this LED is very useful for debugging.",
+  3: "3️⃣ Power LED - Indicates that your Arduino is receiving power. Useful for debugging.",
+  4: "4️⃣ ATmega microcontroller - The heart of your board.",
+  5: "5️⃣ Analog in - Use these pins with analogRead().",
+  6: "6️⃣ GND and 5V pins - Use these pins to provide +5V power and ground to your circuits.",
+  7: "7️⃣ Power connector - This is how you power your Arduino when it's not plugged into a USB port for power. Can accept voltages between 7–12V.",
+  8: "8️⃣ TX and RX LEDs - These LEDs indicate communication between your Arduino and your computer. Expect them to flicker rapidly during sketch upload as well as during serial communication. Useful for debugging.",
+  9: "9️⃣ USB port - Used for powering your Arduino UNO, uploading your sketches to your Arduino, and for communicating with your Arduino sketch (via Serial.println() etc.).",
+  10: "🔟 Reset button - Resets the ATmega microcontroller."
+};
 
+
+  const buttons = document.querySelectorAll(".label-btn");
+  const labelBody = document.getElementById("labelBody");
+  const labelCollapse = bootstrap.Collapse.getOrCreateInstance(
+    document.getElementById("labelContent")
+  );
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const label = button.getAttribute("data-label");
+      labelBody.innerHTML = descriptions[label];
+      labelCollapse.show(); // Make sure it's open if collapsed
+    });
+  });
+</script>
 
 <script>
-const quizData = [
-  {
-    question: "What is the primary function of the microcontroller (ATmega328P) on the Arduino Uno?",
-    a: "Provides power to external components",
-    b: "Sends data wirelessly to other devices",
-    c: "Executes the code and controls operations",
-    d: "Supplies timing signals to the board",
-    correct: "c",
-    explanation: "The microcontroller runs the code and handles control logic.",
-    wrongExplanations: {
-      a: "That’s part of the power system.",
-      b: "ESP32 does wireless; Arduino Uno needs add-ons.",
-      d: "That’s the role of the crystal oscillator."
+  const quizData = [
+    {
+      question: "What is the primary function of the microcontroller (ATmega328P) on the Arduino Uno?",
+      a: "Provides power to external components",
+      b: "Sends data wirelessly to other devices",
+      c: "Executes the code and controls operations",
+      d: "Supplies timing signals to the board",
+      correct: "c",
+      explanation: "The microcontroller runs the code and handles control logic.",
+      wrongExplanations: {
+        a: "That’s part of the power system.",
+        b: "ESP32 does wireless; Arduino Uno needs add-ons.",
+        d: "That’s the role of the crystal oscillator."
+      }
+    },
+    {
+      question: "Which pins on the Arduino Uno can read a range of voltage levels, such as from a light sensor?",
+      a: "Digital I/O Pins (D0–D13)",
+      b: "Serial Pins (TX/RX)",
+      c: "Analog Input Pins (A0–A5)",
+      d: "Ground Pins (GND)",
+      correct: "c",
+      explanation: "Analog input pins read continuously varying voltage (e.g., 0–5V).",
+      wrongExplanations: {
+        a: "Digital pins only read HIGH or LOW (on/off).",
+        b: "These are used for serial communication.",
+        d: "GND is used for grounding circuits, not sensing input."
+      }
+    },
+    {
+      question: "Which Arduino Uno component ensures the board receives a stable voltage even if the input voltage fluctuates?",
+      a: "Crystal Oscillator",
+      b: "Voltage Regulator",
+      c: "Reset Button",
+      d: "TX/RX Pins",
+      correct: "b",
+      explanation: "The voltage regulator keeps the output voltage steady.",
+      wrongExplanations: {
+        a: "That provides timing, not voltage control.",
+        c: "The reset button restarts the program.",
+        d: "These are for serial communication."
+      }
+    },
+    {
+      question: "Which statement best describes Pulse Width Modulation (PWM) on the Arduino Uno?",
+      a: "It reads analog signals with full voltage range.",
+      b: "It allows digital pins to simulate analog output.",
+      c: "It is only used for serial data transfer.",
+      d: "It powers external devices directly.",
+      correct: "b",
+      explanation: "PWM simulates analog output by toggling digital pins quickly.",
+      wrongExplanations: {
+        a: "That’s analog input, not PWM.",
+        c: "Serial transfer uses TX/RX, not PWM.",
+        d: "Powering devices depends on current availability, not PWM."
+      }
+    },
+    {
+      question: "What is the main role of the USB port on the Arduino Uno?",
+      a: "Provides analog voltage to the sensors",
+      b: "Resets the board automatically",
+      c: "Uploads code and powers the board",
+      d: "Controls PWM signals on the board",
+      correct: "c",
+      explanation: "USB is used to upload sketches and power the board.",
+      wrongExplanations: {
+        a: "Analog voltages are read via analog pins, not the USB.",
+        b: "Reset is done with a separate button.",
+        d: "PWM is controlled via code on specific digital pins."
+      }
     }
-  },
-  {
-    question: "Which pins on the Arduino Uno can read a range of voltage levels, such as from a light sensor?",
-    a: "Digital I/O Pins (D0–D13)",
-    b: "Serial Pins (TX/RX)",
-    c: "Analog Input Pins (A0–A5)",
-    d: "Ground Pins (GND)",
-    correct: "c",
-    explanation: "Analog input pins read continuously varying voltage (e.g., 0–5V).",
-    wrongExplanations: {
-      a: "Digital pins only read HIGH or LOW (on/off).",
-      b: "These are used for serial communication.",
-      d: "GND is used for grounding circuits, not sensing input."
-    }
-  },
-  {
-    question: "Which Arduino Uno component ensures the board receives a stable voltage even if the input voltage fluctuates?",
-    a: "Crystal Oscillator",
-    b: "Voltage Regulator",
-    c: "Reset Button",
-    d: "TX/RX Pins",
-    correct: "b",
-    explanation: "The voltage regulator keeps the output voltage steady.",
-    wrongExplanations: {
-      a: "That provides timing, not voltage control.",
-      c: "The reset button restarts the program.",
-      d: "These are for serial communication."
-    }
-  },
-  {
-    question: "Which statement best describes Pulse Width Modulation (PWM) on the Arduino Uno?",
-    a: "It reads analog signals with full voltage range.",
-    b: "It allows digital pins to simulate analog output.",
-    c: "It is only used for serial data transfer.",
-    d: "It powers external devices directly.",
-    correct: "b",
-    explanation: "PWM simulates analog output by toggling digital pins quickly.",
-    wrongExplanations: {
-      a: "That’s analog input, not PWM.",
-      c: "Serial transfer uses TX/RX, not PWM.",
-      d: "Powering devices depends on current availability, not PWM."
-    }
-  },
-  {
-    question: "What is the main role of the USB port on the Arduino Uno?",
-    a: "Provides analog voltage to the sensors",
-    b: "Resets the board automatically",
-    c: "Uploads code and powers the board",
-    d: "Controls PWM signals on the board",
-    correct: "c",
-    explanation: "USB is used to upload sketches and power the board.",
-    wrongExplanations: {
-      a: "Analog voltages are read via analog pins, not the USB.",
-      b: "Reset is done with a separate button.",
-      d: "PWM is controlled via code on specific digital pins."
-    }
-  }
-];
+  ];
 
-const perfectFeedback = "Outstanding! 🌟 You’ve got the Arduino Uno layout wired into your brain! You’re well on your way to building smart, sensor-powered robots like a pro. 🚀";
-const notPerfectFeedback = " Great effort! 💡 You're decoding the Arduino world step by step—review the key components and you’ll be building circuits with confidence in no time! 💪";
+  const perfectFeedback = "Outstanding! 🌟 You’ve got the Arduino Uno layout wired into your brain! You’re well on your way to building smart, sensor-powered robots like a pro. 🚀";
+  const notPerfectFeedback = " Great effort! 💡 You're decoding the Arduino world step by step—review the key components and you’ll be building circuits with confidence in no time! 💪";
 
 
 </script>

@@ -63,24 +63,15 @@ body {
 /* The side navigation menu */
 .sidenav {
   height: 100%;
-  /* 100% Full-height */
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Stay on top */
   top: 0;
-  /* Stay at the top */
   left: 0;
   background-color: #262626;
-  /* Black*/
   overflow-x: hidden;
-  /* Disable horizontal scroll */
   padding-top: 60px;
-  /* Place content 60px from the top */
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sidenav-title {
@@ -177,6 +168,19 @@ footer {
   color: #f8f8f8;
 }
 
+.label-btn {
+  background-color: #e57e25;
+  color: #e7edf1;
+  padding: 2px 10px;
+  outline: none;
+  font-weight: 500;
+  border: none;
+}
+
+.label-btn:hover {
+  background-color: #925118;
+  transition: 300ms ease-in-out;
+}
 @media screen and (max-width: 760px) {
   .logo {
     width: 60px;
