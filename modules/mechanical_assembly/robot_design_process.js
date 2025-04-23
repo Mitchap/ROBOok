@@ -4,28 +4,32 @@ const lessons = [
     title: "Conceptual Design",
     content:
       "Brainstorm and sketch! Learn how robot ideas first take shape on paper.",
-    route: "../../modules/assembly/conceptual_design.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_design/conceptual_design.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Introduction to CAD",
     content:
       "Draw it with computers! Discover how CAD software helps create precise robot plans.",
-    route: "../../modules/assembly/introduction_to_cad.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_design/introduction_to_cad.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "3D Modeling",
     content:
       "See it before you build it! Learn how 3D modeling brings your robot design to life on screen.",
-    route: "../../modules/assembly/3d_modeling.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_design/3d_modeling.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Solid & Simple",
     content:
       "Build it to last (and build it easily)! Learn how to design robots that are strong, stable, and easy to put together.",
-    route: "../../modules/assembly/solid_and_simple.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_design/solid_and_simple.html",
   },
 ];
 

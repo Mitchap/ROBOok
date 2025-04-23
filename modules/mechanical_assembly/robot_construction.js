@@ -4,28 +4,32 @@ const lessons = [
     title: "Workshop Tools",
     content:
       "Meet your building buddies! Discover the essential tools you'll need to assemble your robot.",
-    route: "../../modules/assembly/workshop_equipment.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_construction/workshop_equipment.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Assembly Techniques",
     content:
       "Piece by piece! Learn the best ways to put together your robot's frame, motors, and sensors.",
-    route: "../../modules/assembly/assembly_techniques.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_construction/assembly_techniques.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Wiring Management",
     content:
       "Connecting the power and brains! Learn how to wire your robot neatly and safely.",
-    route: "../../modules/assembly/wiring_management.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_construction/wiring_management.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Fabrication Methods",
     content:
       "From screen to reality! Explore cool ways like 3D printing to create custom robot components.",
-    route: "../../modules/assembly/fabrication_methods.html",
+    route:
+      ".../../../lessons/mechanical_assembly/robot_construction/fabrication_methods.html",
   },
 ];
 

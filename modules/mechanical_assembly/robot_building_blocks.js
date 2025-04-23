@@ -4,28 +4,32 @@ const lessons = [
     title: "Robot Building Materials",
     content:
       "Metal, plastic, or more? Explore the properties of different materials and why they're chosen to build robot bodies.",
-    route: "../../modules/assembly/building_materials.html",
+    route:
+      "../../../lessons/mechanical_assembly/robot_building_blocks/building_materials.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Chassis and Frames",
     content:
       "The skeleton of the bot! Discover the chassis and frames that provide essential support and structure.",
-    route: "../../modules/assembly/chassis_and_frames.html",
+    route:
+      "../../../lessons/mechanical_assembly/robot_building_blocks/chassis_and_frames.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Fasteners and Adhesives",
     content:
       "Screws, rivets, and glue! Learn the tricks to securely connect robot parts and build a solid machine.",
-    route: "../../modules/assembly/fasteners_and_adhesives.html",
+    route:
+      "../../../lessons/mechanical_assembly/robot_building_blocks/fasteners_and_adhesives.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Bot Wheels & Mobility Systems",
     content:
       "Round and ready to roll! Learn about different types of robot wheels and how they enable movement.",
-    route: "../../modules/assembly/robot_wheels.html",
+    route:
+      "../../../lessons/mechanical_assembly/robot_building_blocks/robot_wheels.html",
   },
 ];
 

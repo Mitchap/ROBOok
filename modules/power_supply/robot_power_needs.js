@@ -4,28 +4,32 @@ const lessons = [
     title: "The Robot's Fuel Tank",
     content:
       "Just like us, robots need energy to live! Discover why power is the lifeblood of every robotic action.",
-    route: "../../modules/power/the_robots_fuel_tank.html",
+    route:
+      "../../../lessons/power_supply/robot_power_needs/the_robots_fuel_tank.html",
   },
   {
     image: "../../images/powersupply.jpg",
     title: "Volts, Amps, and Watts",
     content:
       "Decode the power lingo! Learn the meaning of volts, amps, and watts and how they describe the flow of electricity in your robot.",
-    route: "../../modules/power/volts_amps_watts.html",
+    route:
+      "../../../lessons/power_supply/robot_power_needs/volts_amps_watts.html",
   },
   {
     image: "../../images/powersupply.jpg",
     title: "Voltage Regulation",
     content:
       "Keep it steady! Discover why a consistent power flow is crucial for your robot's reliable performance and how to avoid damaging power surges.",
-    route: "../../modules/power/voltage_regulation.html",
+    route:
+      "../../../lessons/power_supply/robot_power_needs/voltage_regulation.html",
   },
   {
     image: "../../images/powersupply.jpg",
     title: "Power Consumption",
     content:
       "Energy eaters! Learn how different robot parts draw power and why understanding consumption is key to long-lasting robots.",
-    route: "../../modules/power/power_consumption.html",
+    route:
+      "../../../lessons/power_supply/robot_power_needs/power_consumption.html",
   },
 ];
 

@@ -4,28 +4,32 @@ const lessons = [
     title: "The Right Power Supply",
     content:
       "Power decisions! Understand why picking the perfect power source is crucial for your robot's success and safety.",
-    route: "../../modules/power/the_right_power_supply.html",
+    route:
+      ".../../../lessons/power_supply/managing_robot_power/the_right_power_supply.html",
   },
   {
     image: "../../images/powersupply.jpg",
     title: "Electrical Requirements",
     content:
       "What does your robot crave? Learn how to figure out the voltage, current, and power your robot's components need to thrive.",
-    route: "../../modules/power/electrical_requirements.html",
+    route:
+      ".../../../lessons/power_supply/managing_robot_power/electrical_requirements.html",
   },
   {
     image: "../../images/powersupply.jpg",
     title: "Operating Time",
     content:
       "Real-world power! Explore the practical limitations like size, weight, battery life, and cost that influence your power supply choices.",
-    route: "../../modules/power/operating_time.html",
+    route:
+      ".../../../lessons/power_supply/managing_robot_power/operating_time.html",
   },
   {
     image: "../../images/powersupply.jpg",
     title: "Power Calculation & Battery Life",
     content:
       "Math for more power! Learn how to calculate your robot's energy needs and estimate how long your batteries will last.",
-    route: "../../modules/power/power_calculation_battery_life.html",
+    route:
+      ".../../../lessons/power_supply/managing_robot_power/power_calculation_battery_life.html",
   },
 ];
 
