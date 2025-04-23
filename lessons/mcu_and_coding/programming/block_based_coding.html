@@ -41,14 +41,14 @@
         class="d-flex align-items-center justify-content-center"
         style="height: 100%"
       >
-        <h1 class="text-light banner-text">Sensor Types</h1>
+        <h1 class="text-light banner-text">Programming</h1>
       </div>
     </section>
 
     <div class="mt-5 ms-3 ms-md-5">
       <a
         class="btn btn-primary"
-        href="../../../modules/sensors/sensor_types.html"
+        href="../../../modules/mcu_and_coding/programming.html"
       >
         <i class="fa-solid fa-chevron-left"></i> Back
       </a>
@@ -69,140 +69,382 @@
           <!-- Lessons -->
           <a
             class="my-1 "
-            href="../../../lessons/sensors/sensor_types/seeing_with_sound.html"
+            href="../../..//lessons/mcu_and_coding/programming/language_of_robots.html"
             >Lesson<span class="opacity-0">_</span>1</a
           >
-          <a class="my-1" href="../../../lessons/sensors/sensor_types/sensing_light_color.html">Lesson<span class="opacity-0">_</span>2</a>
-          <a class="my-1 active" href="../../../lessons/sensors/sensor_types/power_of_robot_touch.html">Lesson<span class="opacity-0">_</span>3</a>
-          <a class="my-1" href="../../../lessons/sensors/sensor_types/motion_balance_masters.html">Lesson<span class="opacity-0">_</span>4</a>
+          <a class="my-1 active" href="../../../lessons/mcu_and_coding/programming/block_based_coding.html">Lesson<span class="opacity-0">_</span>2</a>
+          <a class="my-1 " href="../../../lessons/mcu_and_coding/programming/arduino_code.html">Lesson<span class="opacity-0">_</span>3</a>
+          <a class="my-1" href="../../../lessons/mcu_and_coding/programming/variables_and_control.html">Lesson<span class="opacity-0">_</span>4</a>
         
         </div>
 
         <div class="mt-5 lesson-content">
           <section class="lesson">
-            <h3 class="fw-bold">Lesson 3</h3>
-            <h5 class="fw-medium">Power of Robot Touch: Understanding Tactile and Force Sensors</h5>
-          
-            <div class="lesson-section">
-              <p>Have you ever tried picking up a fragile egg or adjusting your grip on a slippery glass? Your sense of touch tells you how hard to squeeze or when you’ve made contact. Robots can do the same thing—with the help of touch and force sensors! These clever tools allow robots to "feel" their world, making them smarter, safer, and more precise in tasks like gripping, sorting, or avoiding collisions.</p>
-              <p><strong>Watch:</strong> Robot Hand with Force Feedback – See how robots use sensors to feel pressure and adjust grip like a human hand!</p>
-            </div>
-          
-            <div class="lesson-section">
-              <h4>What You'll Learn in This Lesson:</h4>
-              <ul>
-                <li>Describe what tactile and force sensors do in robots.</li>
-                <li>Differentiate between bump sensors, tactile pads, and force sensors.</li>
-                <li>Explain real-world applications of touch sensors in robotic tasks.</li>
-                <li>Understand the importance of touch sensing for safety and control in robotics.</li>
-              </ul>
-            </div>
-          
-            <div class="lesson-section">
-              <h4>Content</h4>
-          
-              <h5>What Are Tactile and Force Sensors?</h5>
-              <p>Touch sensors allow robots to detect physical contact. Just like your skin tells your brain when you touch something, robots use sensors to know when and how much they're touching.</p>
-              <p>There are two main types:</p>
-              <ul>
-                <li><strong>Tactile Sensors</strong> – detect touch, pressure, or surface texture. These include:
-                  <ul>
-                    <li>Bump sensors (simple switches that detect collisions)</li>
-                    <li>Pressure-sensitive pads (sense how hard something is pressing)</li>
-                  </ul>
-                </li>
-                <li><strong>Force Sensors</strong> – measure the force applied in multiple directions. These are more advanced and allow for controlled gripping or pushing.</li>
-              </ul>
-          
-              <h5>How Do They Work?</h5>
-              <p>Bump sensors are simple switches—when pressed, they signal the robot that it hit something.</p>
-              <p>Tactile sensors often use materials like piezoelectric films or resistive layers that change their electrical resistance based on pressure.</p>
-              <p>Force sensors (like Force Sensing Resistors or strain gauges) measure force magnitude and sometimes direction.</p>
-          
-              <h5>Real-World Applications</h5>
-              <ul>
-                <li><strong>Safe Robot-Human Interaction:</strong> Robots equipped with touch sensors can slow down or stop when they sense a person nearby.</li>
-                <li><strong>Gripping and Handling:</strong> Robotic arms in factories use tactile sensors to handle delicate items like eggs or electronics.</li>
-                <li><strong>Cleaning Robots:</strong> Touch sensors help vacuums know when they’ve bumped into a wall or obstacle.</li>
-                <li><strong>Medical Robotics:</strong> Surgical robots use force feedback to ensure delicate precision during operations.</li>
-              </ul>
-            </div>
-          
-            <div class="lesson-section">
-              <h4>Explore & Engage Zone</h4>
-              <ul>
-                <li><strong>Try it Yourself in Tinkercad:</strong> Bump Sensor Simulation – See how a robot can react to collisions using a bump sensor circuit.</li>
-                <li><strong>Watch:</strong> Robot Hand with Force Feedback (YouTube) – Watch how a robotic hand senses force and adjusts its grip on fragile objects!</li>
-              </ul>
-            </div>
-          
-            <div class="lesson-section">
-              <h4>Summary and Key Takeaways</h4>
-              <ul>
-                <li>Robots can “feel” their surroundings using tactile and force sensors.</li>
-                <li>Tactile sensors detect simple touches or pressure.</li>
-                <li>Force sensors measure more complex pressure forces for precision.</li>
-                <li>These sensors are crucial for safety, precision gripping, and responsive interaction.</li>
-              </ul>
-            </div>
-          </section>
-          
+            <h3 class="fw-bold">📘 Lesson 2</h3>
+            <h5 class="fw-medium">First Words: Block-Based Coding in Tinkercad
+            </h5> 
+        
+            <div class="lesson-section mt-5">
+
+        <div class="d-flex flex-wrap align-items-center justify-content-center my-4">
+          <div class="col-md-5 p-3">
+            <p class="lh-base fs-5">
+              Ready to start speaking robot? One of the easiest ways to begin programming is with block-based coding. Imagine snapping together colorful LEGO blocks, but instead of building a tower, you're building a set of instructions for a virtual robot! Tinkercad provides a fantastic way to learn this, and in this lesson, we'll take our first steps into the world of programming using Tinkercad's visual block interface.
+
+            </p>
+          </div>
+          <div class=" p-3 text-center">
+    
+            <video class="lesson-video" autoplay loop muted>
+              <source src="../../../videos/drag-and-drop.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
         </div>
+        </div>
+        
+        <div class="lesson-section">
+          <h4>🎯 What You'll Learn in This Lesson:</h4>
+          <ul class="d-grid gap-3">
+            <li>Introduction to block-based programming</li>
+            <li>Explain how to use the Tinkercad block-based editor.</li>
+            <li>Identify common programming blocks in Tinkercad.</li>
+            <li>Understand basic programming concepts (sequence, loops, conditionals) using blocks.</li>
+            <li>Create simple programs in Tinkercad using blocks.</li>
+          </ul>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">What is Block-Based Programming? Coding with Digital LEGOs 🧱💻</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Imagine building something cool with LEGO blocks. Each block has a specific shape and a specific thing it can do, right? You snap them together in a certain order to create a car, a spaceship, or whatever you can dream up.</p>
+            <p>Block-based programming is super similar! It's a visual way to write code by dragging and dropping pre-made blocks instead of typing lines of text. Each block is like a digital LEGO brick that represents a specific programming command or function – telling the computer to do something specific. You connect these blocks in a particular order to create a sequence of instructions, just like building with LEGOs!</p>
+          </div>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">Getting Started with Tinkercad Blocks 🖱️🧩</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Tinkercad makes it easy to jump into block-based coding:</p>
+            <p>In your Tinkercad Circuits workspace, after you've added an Arduino, click the "Code" button (the one that looks like &lt;&gt;).</p>
+            <p>By default, you'll see the block-based editor.</p>
+          </div>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">Common Programming Blocks</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Introduce some of the most common blocks:</p>
+            <ul>
+              <li><strong> 
+                "wait" block:
+              </strong>
+               Pauses the program for a specified time.</li>
+              <li><strong> 
+                "set pin" block:
+              </strong>
+               Sets a digital pin to HIGH (on) or LOW (off).</li>
+              <li><strong> 
+                "read digital pin" block:
+              </strong>
+               Reads the value of a digital input pin.</li>
+              <li><strong> 
+                "read analog pin" block:
+              </strong>
+               Reads the value of an analog input pin.</li>
+              <li><strong> 
+                "repeat" block:
+              </strong>
+               Executes a set of blocks multiple times (loop).</li>
+              <li><strong> 
+                "if...do" block:
+              </strong>
+               Executes a set of blocks only if a condition is true (conditional statement).</li>
+            </ul>
+            <p>Explain the function of each block with simple examples.</p>
+          </div>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">Basic Programming Concepts with Blocks</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Explain how block-based coding helps to understand fundamental programming concepts:</p>
+            <ul>
+              <li><strong>Sequence:</strong> The order in which the blocks are arranged determines the order in which the instructions are executed.</li>
+              <li><strong>Loops:</strong> Using "repeat" blocks to execute a set of instructions multiple times.</li>
+              <li><strong>Conditional statements:</strong> Using "if...do" blocks to make decisions based on conditions.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">Creating Simple Programs with Blocks</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Provide step-by-step examples of how to create simple programs using Tinkercad blocks:</p>
+            <p><strong>Example 1: Blinking an LED:</strong></p>
+            <ul>
+              <li>Use "set pin" blocks to turn the LED on and off.</li>
+              <li>Use "wait" blocks to control the timing.</li>
+              <li>Use a "repeat" block to make the LED blink continuously.</li>
+            </ul>
+            <p><strong>Example 2: Reading a virtual button and turning on an LED:</strong></p>
+            <ul>
+              <li>Use "read digital pin" to read the button state.</li>
+              <li>Use an "if...do" block to check if the button is pressed.</li>
+              <li>Use a "set pin" block to turn the LED on if the button is pressed.</li>
+            </ul>
+          </div>
+        </div>
+        
 
-          <br /><br />
+            <div class="lesson-section">
+              <h4 class="mt-5">What is Block-Based Programming? Coding with Digital LEGOs 🧱💻
+              </h4>
+              <div class="d-grid gap-2 mt-4">
+              <p>Imagine building something cool with LEGO blocks. Each block has a specific shape and a specific thing it can do, right? You snap them together in a certain order to create a car, a spaceship, or whatever you can dream up.
+              </p> 
+              <p>
+                Block-based programming is super similar! It's a visual way to write code by dragging and dropping pre-made blocks instead of typing lines of text. Each block is like a digital LEGO brick that represents a specific programming command or function – telling the computer to do something specific. You connect these blocks in a particular order to create a sequence of instructions, just like building with LEGOs!
+              </p> 
+              </div>
+            </div> 
 
-          <section>
-            <div class="d-inline-flex gap-1">
-              <button
-                class="btn btn-outline-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseRelatedTouch"
-                aria-expanded="false"
-                aria-controls="collapseRelatedTouch"
-              >
-              <i class="fa-solid fa-link"></i> Sources and Related Content
-                <i class="fa-solid fa-chevron-down"></i>
-              </button>
+            <div class="lesson-section">
+              <h4 class="mt-5">Getting Started with Tinkercad Blocks 🖱️🧩
+
+              </h4>
+              <div class="d-grid gap-2 mt-4">
+                
+                <ol class="d-grid gap-3">
+              <p>Tinkercad makes it easy to jump into block-based coding:
+              <li>
+                In your Tinkercad Circuits workspace, after you've added an Arduino, click the "Code" button (the one that looks like <>).
+              </li>
+              <li>
+                By default, you'll see the block-based editor.
+              </li>
+
+            </ol>
+
             </div>
-            <div class="collapse" id="collapseRelatedTouch">
-              <div class="card card-body">
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="https://www.arduino.cc/en/Tutorial/LibraryExamples/Forcesensor" target="_blank">Arduino: Force Sensitive Resistor</a>
-                  </li>
-                  <li class="mt-2">
-                    <a href="https://learn.adafruit.com/" target="_blank">Adafruit: Tactile Sensors Overview</a>
-                  </li>
-                  <li class="mt-2">
-                    <a href="https://biomimetics.mit.edu" target="_blank">MIT Biomimetic Robotics Lab: Tactile Sensor Research</a>
-                  </li>
-                  <li class="mt-2">
-                    <a href="#" target="_blank">Arduino Tactile Sensor Tutorial (YouTube)</a>
-                  </li>
-                  <li class="mt-2">
-                    <a href="#" target="_blank">Datasheet: Force Sensing Resistor (FSR)</a>
-                  </li>
-                  <li class="mt-2">
-                    <a href="#" target="_blank">Blog: How Touch Helps Robots Pick Up a Strawberry</a>
-                  </li>
+
+            <div class="p-2 my-5" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+              <pre>
+    +-----------------------------------------------------------------+
+    | [Blocks] [Text]                                               | <--- Code Editor Mode Switch
+    +-----------------------------------------------------------------+
+    | + Control     | + Input       | + Output      | + Math        | ... | <--- Block Categories
+    +--------------+---------------+---------------+---------------+-----+
+    |                                                                 |
+    |   [Drag and drop blocks here to build your program]             | <--- Blocks Workspace
+    |                                                                 |
+    +-----------------------------------------------------------------+
+    | [Code Preview (Text Equivalent)]                                | <--- Shows the text code generated by the blocks
+    +-----------------------------------------------------------------+
+    </pre>
+            </div>
+            </div> 
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Block Categories Overview</h4>
+              <div class="d-grid gap-2 mt-4">
+                <p>Here's a quick look at some of the block categories you'll find:</p>
+                <ul>
+                  <li><strong>Control:</strong> Blocks that manage the flow of your program (like waiting, repeating, or making decisions).</li>
+                  <li><strong>Input:</strong> Blocks that get information from sensors or the virtual environment (like reading button presses or sensor values).</li>
+                  <li><strong>Output:</strong> Blocks that control things like turning LEDs on/off or setting motor speeds.</li>
+                  <li><strong>Math:</strong> Blocks for performing calculations.</li>
                 </ul>
               </div>
             </div>
             
+            <div class="lesson-section">
+              <h4 class="mt-5">Common Programming Blocks 💪</h4>
+              <div class="d-grid gap-2 mt-4">
+                <p>Let's check out some of the blocks you'll use a lot:</p>
+            
+                <p><strong>wait (1) seconds:</strong> This block tells the program to pause for the specified amount of time (in seconds). Think of it as the robot taking a little break before doing the next thing.</p>
+                <p><em>Example:</em> wait (0.5) seconds makes the program pause for half a second.</p>
+            
+                <p><strong>set pin (13) to HIGH / set pin (13) to LOW:</strong> This block controls the digital output pins of the Arduino. HIGH usually means turning something ON (like sending power), and LOW means turning it OFF (stopping the power). The number in the block specifies which pin to control.</p>
+                <p><em>Example:</em> set pin (8) to HIGH turns on whatever is connected to digital pin 8.</p>
+            
+                <p><strong>read digital pin (2):</strong> This block reads the state (HIGH or LOW) of a specific digital input pin. It's like asking if a button connected to that pin is pressed (HIGH) or not (LOW).</p>
+                <p><em>Example:</em> If a button is connected to digital pin 2, this block will tell you if it's currently being pressed.</p>
+            
+                <p><strong>read analog pin (A0):</strong> This block reads the voltage value from a specific analog input pin. Analog pins can read a range of values, like the brightness from a light sensor. The value you get will be a number representing that voltage.</p>
+                <p><em>Example:</em> If a light sensor is connected to analog pin A0, this block will give you a number that tells you how bright it is.</p>
+            
+                <p><strong>repeat (10) times:</strong> This block is a loop. It tells the program to execute the blocks placed inside it a specific number of times. It's great for making things happen repeatedly.</p>
+                <p><em>Example:</em> Putting set pin (13) to HIGH inside a repeat (3) times block will turn pin 13 ON three times in a row (very quickly!).</p>
+            
+                <p><strong>if (condition) do:</strong> This is a conditional statement. The blocks inside this block will only be executed if the condition you specify is true. It allows your program to make decisions.</p>
+                <p><em>Example:</em> if (read digital pin (7) == HIGH) do { set pin (12) to HIGH } means "IF the button on digital pin 7 is pressed (HIGH), THEN turn ON the LED connected to digital pin 12."</p>
+              </div>
+            </div>
+            
+            <div class="lesson-section">
+              <h4 class="mt-5">Basic Programming Concepts with Blocks 🧠</h4>
+              <div class="d-grid gap-2 mt-4">
+                <p>Block-based coding is a fantastic way to grasp fundamental programming ideas without getting bogged down in typing rules:</p>
+                <ul>
+                  <li><strong>Sequence:</strong> The order you snap the blocks together is crucial! The Arduino will execute the instructions in that exact order, one after the other, from top to bottom. It's like following the steps in a recipe.</li>
+                  <li><strong>Loops:</strong> The repeat block shows you how to make the Arduino do the same set of instructions over and over again. This is super useful for things like blinking an LED continuously or making a robot move in a circle.</li>
+                  <li><strong>Conditional statements:</strong> The if...do block introduces the idea of decision-making. Your program can check if something is true or false and then do different things based on the result. This is how robots can react to their environment.</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="lesson-section">
+              <h4 class="mt-5">Creating Simple Programs with Blocks 🚀</h4>
+              <div class="d-grid gap-2 mt-4">
+                <p>Let's build a couple of simple programs using Tinkercad blocks:</p>
+            
+                <p><strong>Example 1: Blinking an LED</strong></p>
+                <ol>
+                  <li>Make sure you have an Arduino and an LED connected with a resistor in your Tinkercad circuit (like we did in the previous lesson). Let's say the LED is connected to digital pin 13.</li>
+                  <li>Open the Code editor and make sure you're in Blocks mode.</li>
+                  <li>Drag out the following blocks and connect them:</li>
+                <div class="p-2 my-5" style="background-color: #1b1b1b; color: rgb(154, 228, 43);">
+                  <pre>
+
+  [repeat [forever]]
+  [set pin [13] to [HIGH]]
+  [wait [1] seconds]
+  [set pin [13] to [LOW]]
+  [wait [1] seconds]</pre>
+</div>
+              <li>Click "Start Simulation". You should see your virtual LED blinking on and off every second!
+              </li>
+</ol>
+              </div>
+            </div>
+            
+            <div class="lesson-section">
+              <div class="d-grid gap-2 mt-4">
+            
+                <p><strong>Example 2: Reading a Virtual Button and Turning on an LED</strong></p>
+                <ol>
+                  <li>In Tinkercad Circuits, add a Button component to your circuit and connect one side of it to a digital input pin on the Arduino (e.g., pin 7). Connect the other side of the button to 5V (through a pull-up or pull-down resistor for proper behavior, but Tinkercad often handles this simply). Also, make sure you have an LED connected to a digital output pin (e.g., pin 12) with a resistor.
+                  </li>
+                  <li>
+                    Open the Code editor in Blocks mode.
+                  </li>
+                  <li>
+                    Drag out and connect the following blocks:
+                  </li>
+                <div class="p-2 my-5" style="background-color: #1b1b1b; color: rgb(154, 228, 43);">
+                  <pre>
+
+  [repeat [forever]]
+  [if [ [read digital pin [7]] == [HIGH] ]]
+  [set pin [12] to [HIGH]]
+  [else]
+  [set pin [12] to [LOW]]
+  [end if]</pre>
+</div>
+              <li>Click "Start Simulation". Now, when you virtually "click" the button in Tinkercad, the LED should turn on. When you release the button, the LED should turn off.
+              </li>
+</ol>
+              </div>
+<p class="fs-5 my-5">These simple examples show how you can use block-based programming to create interactive circuits and control virtual components in Tinkercad! As you get more comfortable with these blocks, you'll be able to build much more complex and interesting programs for your virtual robots.
+</p>
+            </div>
+          
+
+              
+            <div class="lesson-section">
+              <h4>🚀 Explore & Engage Zone</h4>
+            
+              <h5 class="ms-4">🎮 Interactive Elements and Activities</h5>
+              <p class="my-4">
+                Embedded mini-tasks or digital tools (if available) to apply the concept.
+              </p>
+              <ul class="d-grid gap-3">
+                <li>A Tinkercad simulation with a pre-built circuit where students can modify the block-based code to change the behavior of the circuit.</li>
+                <li>A drag-and-drop activity where students arrange blocks to create a program that controls a virtual robot to perform a simple task.</li>
+              </ul>
+            
+              <h4 class="mt-5">🧰 Supplementary Resources</h4>
+            
+              <h5 class="ms-5">📺 Additional Materials</h5>
+              <p class="my-4">
+                Extra materials like videos, simulators, reference links (e.g., Tinkercad, YouTube).
+              </p>
+              <ul class="d-grid gap-3">
+                <li>A video tutorial on using the Tinkercad block-based editor.</li>
+                <li>Links to Tinkercad tutorials and example projects.</li>
+                <li>A resource explaining basic programming concepts for beginners.</li>
+              </ul>
+            
+              <hr class="my-4">
+              <h4>🤔 Reflection Prompt & Local Connection</h4>
+              <p> Have you ever built something using LEGO blocks or followed steps in a game like Minecraft or Roblox Studio? That’s a lot like block-based coding! Think about how each move or step builds on the last to create something awesome. How do you think using blocks to build programs helps beginners learn coding faster—especially in places like your school or local community where not everyone has experience with text-based programming?
+              </p>
+              <hr class="my-4">
+            
+            </div>
+            
+
+            
+            <div class="lesson-section mt-5">
+              <h4>📝 Summary and Key Takeaways</h4>
+              <p>
+                Block-based programming is like building with digital LEGO bricks 🧱💡—each block is a command that tells the robot what to do. Instead of writing code, you drag and snap these visual blocks together to create programs. It’s fun, easy, and a perfect way to start your coding journey!
+              </p>        
+              <ul class="d-grid gap-3">
+                <li>🧩 Block-based coding uses colorful visual blocks that represent real programming commands.</li>
+                <li>🧠 Tinkercad makes it simple to program circuits using blocks with drag-and-drop tools.</li>
+                <li>🛠️ You explored important block categories: Control, Input, Output, and Math.</li>
+                <li>🔁 You learned how to build basic programs using blocks like wait, set pin, read pin, repeat, and if...do.</li>
+                <li>🤖 These blocks help robots follow sequences, repeat actions, and make decisions based on inputs—like pressing a button to turn on an LED.</li>
+              </ul>
+              <p><em>Whether you’re blinking LEDs or reacting to a button press, block-based programming is your launchpad into robotics coding. Ready to build your next virtual creation?</em> 🚀</p>
+            </div>
+        
+            
           </section>
+        </div>
+        
+        <br /><br />
+        
+        <section>
+          <div class="d-inline-flex gap-1">
+            <button
+              class="btn btn-outline-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseRelatedMCU"
+              aria-expanded="false"
+              aria-controls="collapseRelatedMCU"
+            >
+              <i class="fa-solid fa-link"></i> Sources and Related Content
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="collapse" id="collapseRelatedMCU">
+            <div class="card card-body">
+              <ul class="d-grid gap-3">
+                <li><a href="https://www.arduino.cc/" target="_blank">Arduino Official Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+
+          <br /><br />
           
           <!-- quiz -->
           <hr />
           <div class="mt-5 lesson-content">
             <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
             <h4>
-              Test Your Understanding of Microcontrollers!
+              Test Your Understanding of Block-Based Coding
+
             </h4>
           </div>
           <div id="quiz-intro">
-            <h2 class="">Think You Got It? Let's Find Out!</h2>
-            <p>Test your Understanding of Ultrasonic Sensors!</p>
+            <h2>Think You Got It? Let's Find Out!</h2>
+            <p>Try this quick challenge to see what you’ve learned!</p>
             <button id="start-quiz">
               Launch the Interactive Quiz Challenge
             </button>
@@ -265,7 +507,7 @@
         rgba(23, 23, 23, 0.986),
         rgba(107, 107, 107, 0.87)
       ),
-      url(../../../images/sensors.jpg);
+      url(../../../images/mcu_coding.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -284,80 +526,95 @@
 <script>
 const quizData = [
   {
-    question: "What is the main function of a bump sensor in a robot?",
-    a: "Measure distance to an object.",
-    b: "Detect when the robot has made contact with something.",
-    c: "Sense the color of nearby objects.",
-    d: "Determine the speed of the robot's wheels.",
+    question: "What is block-based programming similar to?",
+    a: "Solving math problems",
+    b: "Writing long paragraphs",
+    c: "Typing code from memory",
+    d: "Building with LEGO blocks",
+    correct: "d",
+    explanation: "Correct! It’s like snapping together LEGO blocks to build instructions.",
+    wrongExplanations: {
+      a: "Incorrect. It’s more visual and creative than solving equations.",
+      b: "Incorrect. There’s no paragraph writing in block coding.",
+      c: "Incorrect. Typing comes later in text-based coding."
+    },
+  },
+  {
+    question: "What does the block wait (1) seconds do?",
+    a: "Turn the light off",
+    b: "Pause the program",
+    c: "Make a robot jump",
+    d: "Read a sensor value",
     correct: "b",
-    explanation: "Bump sensors detect contact, helping robots recognize collisions or obstacles.",
+    explanation: "Correct! It tells the program to pause for a short time.",
     wrongExplanations: {
-      a: "Distance measurement is typically done using ultrasonic or infrared sensors.",
-      c: "Color sensors are used for identifying colors, not for detecting contact.",
-      d: "Speed detection is managed by encoders or motion sensors, not bump sensors.",
+      a: "Incorrect. Turning lights on/off needs a different block.",
+      c: "Incorrect. Robots need motor blocks for movement.",
+      d: "Incorrect. This block doesn’t read input — it waits."
     },
   },
   {
-    question: "Which sensor helps a robot determine how tightly it is gripping an object?",
-    a: "Color sensor",
-    b: "Ultrasonic sensor",
-    c: "Force sensor",
-    d: "Light sensor",
+    question: "What is the main benefit of using block-based coding?",
+    a: "You can copy and paste code",
+    b: "You learn spelling rules",
+    c: "You don’t have to type code",
+    d: "You design apps instantly",
     correct: "c",
-    explanation: "Force sensors measure applied pressure, useful in tasks like gripping.",
+    explanation: "Correct! No typing needed — just drag and drop blocks.",
     wrongExplanations: {
-      a: "Color sensors are used to detect surface colors, not pressure.",
-      b: "Ultrasonic sensors measure distance using sound waves, not grip strength.",
-      d: "Light sensors detect brightness, not how tightly something is held.",
+      a: "Incorrect. That’s more common in text-based environments.",
+      b: "Incorrect. Spelling isn’t a focus in block programming.",
+      d: "Incorrect. This course is about robotics and circuits, not apps."
     },
   },
   {
-    question: "Why are touch sensors important for robots interacting with humans?",
-    a: "To play music.",
-    b: "To avoid touching any object.",
-    c: "To ensure safe and responsive physical interaction.",
-    d: "To increase processing speed.",
-    correct: "c",
-    explanation: "Touch sensors help robots interact safely and appropriately with humans.",
-    wrongExplanations: {
-      a: "Playing music is unrelated to touch sensor functionality.",
-      b: "Touch sensors allow interaction, not avoidance.",
-      d: "Processing speed is handled by the processor, not touch sensors.",
-    },
-  },
-  {
-    question: "Which of the following best describes a tactile sensor?",
-    a: "It detects ambient temperature.",
-    b: "It tracks location using GPS.",
-    c: "It detects physical contact or pressure.",
-    d: "It senses magnetic fields.",
-    correct: "c",
-    explanation: "Tactile sensors detect touch or pressure, allowing physical interaction.",
-    wrongExplanations: {
-      a: "Temperature sensors are used to detect heat or cold, not touch.",
-      b: "GPS sensors determine position, not physical contact.",
-      d: "Magnetic field detection is done by magnetometers, not tactile sensors.",
-    },
-  },
-  {
-    question: "What would likely happen if a robot arm had no force sensor?",
-    a: "It would be able to speak more clearly.",
-    b: "It might crush fragile objects it tries to pick up.",
-    c: "It would navigate faster.",
-    d: "It would sense colors more accurately.",
+    question: "Which block category would control an LED?",
+    a: "Math",
+    b: "Output",
+    c: "Input",
+    d: "Control",
     correct: "b",
-    explanation: "Without a force sensor, a robot cannot adjust grip strength properly, risking damage.",
+    explanation: "Correct! Output blocks tell things like LEDs and motors what to do.",
     wrongExplanations: {
-      a: "Speaking ability is unrelated to robotic grip force.",
-      c: "Navigation speed is not directly affected by the lack of a force sensor.",
-      d: "Color sensing involves vision systems, not grip control.",
+      a: "Incorrect. Math is for calculations, not controlling hardware.",
+      c: "Incorrect. Input blocks read from sensors or buttons.",
+      d: "Incorrect. Control blocks manage the flow of code, not the output."
     },
   },
+  {
+    question: "Which block lets the robot make decisions?",
+    a: "if (condition) do",
+    b: "wait (1) seconds",
+    c: "set pin to HIGH",
+    d: "repeat (10) times",
+    correct: "a",
+    explanation: "Correct! The if block is how robots decide what to do.",
+    wrongExplanations: {
+      b: "Incorrect. That just pauses the action.",
+      c: "Incorrect. That turns a pin on, but doesn’t decide when.",
+      d: "Incorrect. That block repeats — it doesn’t evaluate conditions."
+    },
+  },
+  {
+    question: "What does the block read analog pin (A0) do?",
+    a: "Turns on an LED",
+    b: "Reads sensor voltage",
+    c: "Sends a digital signal",
+    d: "Connects to the battery",
+    correct: "b",
+    explanation: "Correct! It checks the voltage from something like a light sensor.",
+    wrongExplanations: {
+      a: "Incorrect. It doesn’t control outputs, it reads inputs.",
+      c: "Incorrect. That would use a digital output block.",
+      d: "Incorrect. Power connections aren’t part of this block."
+    },
+  }
 ];
 
-const perfectFeedback = "🌟Great job! Your robotic sensor knowledge is on point – you’ve got the touch!";
-const notPerfectFeedback = "💪Awesome effort! Every mistake is a chance to learn. Revisit the key points and try again!";
+const perfectFeedback = "🌟 You’ve snapped those coding blocks into place like a champ! You’re building strong programming foundations! 🚀";
+const notPerfectFeedback = "  Great effort! 💡 You’re learning to piece together programs like digital LEGO sets. Keep exploring, you’re getting better with every block! 💪";
 
 
 </script>
+
 <script src="../../../js/lesson-quiz.js"></script>

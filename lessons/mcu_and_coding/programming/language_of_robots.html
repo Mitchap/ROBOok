@@ -41,14 +41,14 @@
         class="d-flex align-items-center justify-content-center"
         style="height: 100%"
       >
-        <h1 class="text-light banner-text">Sensor Types</h1>
+        <h1 class="text-light banner-text">Programming</h1>
       </div>
     </section>
 
     <div class="mt-5 ms-3 ms-md-5">
       <a
         class="btn btn-primary"
-        href="../../../modules/sensors/sensor_types.html"
+        href="../../../modules/mcu_and_coding/programming.html"
       >
         <i class="fa-solid fa-chevron-left"></i> Back
       </a>
@@ -68,145 +68,312 @@
           <hr style="border-bottom: 2px solid #f8f8f8" />
           <!-- Lessons -->
           <a
-            class="my-1 "
-            href="../../../lessons/sensors/sensor_types/seeing_with_sound.html"
+            class="my-1 active"
+            href="../../..//lessons/mcu_and_coding/programming/language_of_robots.html"
             >Lesson<span class="opacity-0">_</span>1</a
           >
-          <a class="my-1 " href="../../../lessons/sensors/sensor_types/sensing_light_color.html">Lesson<span class="opacity-0">_</span>2</a>
-          <a class="my-1 " href="../../../lessons/sensors/sensor_types/power_of_robot_touch.html">Lesson<span class="opacity-0">_</span>3</a>
-          <a class="my-1 active" href="../../../lessons/sensors/sensor_types/motion_balance_masters.html">Lesson<span class="opacity-0">_</span>4</a>
+          <a class="my-1 " href="../../../lessons/mcu_and_coding/programming/block_based_coding.html">Lesson<span class="opacity-0">_</span>2</a>
+          <a class="my-1 " href="../../../lessons/mcu_and_coding/programming/arduino_code.html">Lesson<span class="opacity-0">_</span>3</a>
+          <a class="my-1" href="../../../lessons/mcu_and_coding/programming/variables_and_control.html">Lesson<span class="opacity-0">_</span>4</a>
         
         </div>
 
         <div class="mt-5 lesson-content">
-          <h3 class="fw-bold">Lesson 4</h3>
-          <h5 class="fw-medium">Motion & Balance Masters</h5>
+          <section class="lesson">
+            <h3 class="fw-bold">📘 Lesson 1</h3>
+            <h5 class="fw-medium">The Language of Robots: How Microcontrollers Understand Instructions
+            </h5>
         
-          <p>
-            Have you ever wondered how a robot knows if it’s tilting, turning, or falling over? Just like you use your inner ear to stay balanced, robots use special sensors to stay upright and move smoothly. These are the unsung heroes behind self-balancing robots, drones, and even smartphones!
-          </p>
-        
-          <div class="text-center my-5 img-fluid">
-            <a href="https://www.youtube.com/watch?v=example">
-              <button class="btn btn-primary">Watch how robots stay balanced using gyroscopes and accelerometers</button>
-            </a>
+            <div class="lesson-section mt-5">
+
+        <div class="d-flex flex-wrap align-items-center justify-content-center my-4">
+          <div class="col-md-5 p-3">
+            <p class="lh-base fs-5">
+              Imagine trying to teach a dog a new trick. You can't just speak to it in English; you need to use specific commands and actions it understands. Similarly, robots don't understand human languages. Instead, we use special languages called 'programming languages' to give them instructions. In this lesson, we'll explore the fundamental concept of programming and how we use these languages to communicate with robots.
+
+            </p>
           </div>
-        
-          <h3>What You'll Learn in This Lesson:</h3>
-          <ul>
-            <li>Explain how accelerometers measure changes in acceleration and orientation.</li>
-            <li>Describe how gyroscopes detect rotational movement.</li>
-            <li>Understand how combining both sensors improves robot motion sensing.</li>
-            <li>Identify real-world uses of these sensors in robotics and devices like drones and smartphones.</li>
-          </ul>
-        
-          <h3>What is an Accelerometer?</h3>
-          <p>
-            An accelerometer is a sensor that detects changes in motion and orientation. It measures linear acceleration (movement along a straight path) and gravitational pull (which helps detect tilt). Accelerometers are often found in smartphones to detect screen rotation or in fitness trackers to count steps.
-          </p>
-          <p><strong>Real-world Example:</strong> In robots, accelerometers help them detect when they're tipping over or when they start moving forward or backward.</p>
-        
-          <h3>What is a Gyroscope?</h3>
-          <p>
-            A gyroscope measures rotational velocity — how fast something is spinning or turning. It senses how a robot is rotating along different axes (like spinning left or right).
-          </p>
-          <p><strong>Real-world Example:</strong> In drones, gyroscopes help the robot stay balanced and stable in the air.</p>
-        
-          <h3>Working Together: The Power of Sensor Fusion</h3>
-          <p>
-            On their own, each sensor has limitations. But when combined, accelerometers and gyroscopes offer more accurate and reliable orientation sensing. This technique is called sensor fusion, and it's essential in self-balancing robots, stabilizing camera gimbals, and even virtual reality headsets!
-          </p>
-          <p><strong>Analogy:</strong> Think of it like teamwork. The accelerometer tells you if you're tipping, while the gyroscope tells you how fast you're spinning. Together, they help you stay upright and on track.</p>
-        
-          <h3>Explore & Engage Zone</h3>
-          <div class="text-center my-5">
-            <a href="https://www.youtube.com/watch?v=RedShirtJeff">
-              <button class="btn btn-secondary">Watch: How Accelerometers and Gyroscopes Work</button>
-            </a>
-          </div>
-        
-          <div class="text-center my-5">
-            <a href="https://www.tinkercad.com/things/example">
-              <button class="btn btn-success">Try it Yourself in Tinkercad</button>
-            </a>
-          </div>
-        
-          <h4>Extra Reading:</h4>
-          <ul>
-            <li><a href="https://www.example.com/arduino-mpu6050-tutorial">Arduino MPU6050 Tutorial – How to Use It</a></li>
-            <li><a href="https://www.example.com/what-is-sensor-fusion">What is Sensor Fusion? (SparkFun Guide)</a></li>
-          </ul>
-        
-          <h3>Summary and Key Takeaways</h3>
-          <ul>
-            <li>Accelerometers measure acceleration and tilt.</li>
-            <li>Gyroscopes detect rotation and spin.</li>
-            <li>When used together, they give robots powerful motion and balance sensing.</li>
-            <li>These sensors are crucial in drones, balancing bots, and even smartphones.</li>
-          </ul>
+            <figure class="col-md-5 p-3 text-center">
+              <img src="../../../images/language.png" class="img-fluid lesson-media" alt="Microcontroller with drone">
+            </figure>
         </div>
         
+            <div class="lesson-section">
+              <h4>🎯 What You'll Learn in This Lesson:</h4>
+              <ul class="d-grid gap-3">
+                <li>Define programming.</li>
+                <li>Define a programming language.</li>
+                <li>Explain the purpose of programming languages in robotics.</li>
+                <li>Introduce the concept of giving instructions to a computer.</li>
+                <li>Distinguish between different types of programming languages (briefly).</li>
+              </ul>
+        
+            <div class="lesson-section">
+              <h4 class="mt-5">What is Programming? Telling Computers What to Do 🤖💻
+              </h4>
+              <div class="d-grid gap-2 mt-4">
+                <p>Imagine you want to bake a cake 🎂. You can't just throw ingredients together and hope for the best, right? You need a recipe! This recipe is a set of step-by-step instructions that tells you exactly what to do: mix flour, add sugar, bake at a certain temperature, etc.
+                </p>
+                
+                <p>Programming is kind of like writing a recipe, but instead of telling a baker what to do, you're creating a set of instructions that a computer (or a robot!) can follow. The recipe is the "program," and the computer or robot is the "baker."
+                </p>
+                
+                <p>So, in simple terms, programming is how we tell computers (and robots) what to do!</p>
+              </div>
+            </div>
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Programming Languages: Talking to Machines 🗣️
+              </h4>
+              <div class="d-grid gap-2 mt-4">
+                <p>Computers and robots don't understand English or Tagalog the way we do. They need a special way of being told what to do, and that's where programming languages come in.</p>
+                                
+                <p>A programming language is a formal language with its own specific rules and syntax (like grammar in a human language). It's like a secret code we use to write computer programs. Different programming languages are designed for different purposes, just like there are different kinds of recipes for different kinds of food.</p>
+                                
+                <p>There are tons of different programming languages out there! You might have heard of some like Python, Java, or C++. In this course, we're going to focus on the Arduino programming language, which is great for controlling electronics and robots.</p>
+              </div>
+            </div> 
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Why Programming for Robots? ⚙️🧠
+              </h4>
+              <div class="d-grid gap-2 mt-4">
+              <p>Why do robots need programming? Well, they're not born knowing what to do! Robots need instructions to perform tasks. Programming is the key to giving them those instructions.</p>
+              
+            <ul class="d-grid gap-3">
+              <p>With programming, we can:</p>
+              <li>Control a robot's behavior: Make it move forward, turn, grab things, or even dance!</li>
+              <li>Enable decision-making: Program robots to react to their surroundings based on information from sensors.
+              </li>
+              <li>Make them interact with their environment: Allow them to respond to light, sound, touch, and other inputs.</li>
+              <li>Achieve specific goals: Program robots to complete tasks, whether it's navigating a maze or assembling a product.
+              </li>
+
+            </ul>
+            <p>Basically, programming is what makes a robot smart and allows it to do useful things!
+            </p>
+            </div>
+            </div> 
+
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Giving Instructions to a Computer 📝➡️💻
+
+              </h4>
+              <div class="d-grid gap-2 mt-4">
+              <p>The basic process of writing a program goes something like this:</p>
+              <ol>
+                <li>Break it down: First, you need to figure out the task you want the computer or robot to do and break it down into smaller, logical steps.
+                </li>
+                <li>Write the steps: Then, you write those steps down using the specific rules of a programming language.</li>
+                <li>Execute: The computer or robot reads these instructions one by one, in order, and performs them.</li>
+              </ol>
+              <p>Let's take a super simple example: making an LED turn on. We can think of the steps like this:</p>
+
+              </div>
+              <div class="p-2 my-5" style="background-color: #1b1b1b; color: rgb(154, 228, 43);">
+                <pre>
+
+  START
+      Turn the LED ON
+  END</pre>
+              </div>
+              <p>In a programming language (like Arduino), this might look something like this (we'll learn this later!):</p>
+              <div class="p-1" style="background-color: #1b1b1b; ">
+<pre style="color: rgb(232, 83, 207);">
+  
+  Arduino</pre>
+  <pre style="color: rgb(154, 228, 43);">
+  
+    digitalWrite(ledPin, HIGH); // Turn the LED ON
+  </pre>
+            </div> 
+
+            <div class="lesson-section">
+              <h4 class="mt-5">Why Programming for Robots? ⚙️🧠
+              </h4>
+              <div class="d-grid gap-2 mt-4">
+              <p>Why do robots need programming? Well, they're not born knowing what to do! Robots need instructions to perform tasks. Programming is the key to giving them those instructions.</p>
+              
+            <ul class="d-grid gap-3">
+              <p>With programming, we can:</p>
+              <li>Control a robot's behavior: Make it move forward, turn, grab things, or even dance!</li>
+              <li>Enable decision-making: Program robots to react to their surroundings based on information from sensors.
+              </li>
+              <li>Make them interact with their environment: Allow them to respond to light, sound, touch, and other inputs.</li>
+              <li>Achieve specific goals: Program robots to complete tasks, whether it's navigating a maze or assembling a product.
+              </li>
+
+            </ul>
+            <p>Basically, programming is what makes a robot smart and allows it to do useful things!
+            </p>
+            </div>
+            </div> 
+
+            <p class="mt-3">
+              The computer reads this instruction and makes the LED connected to 
+              <code class="p-1 mx-1 text-dark" style="background-color: #dcdcdc;;">ledPin</code> light up!
+            </p>
+          </div> 
+            
+
+          <div class="lesson-section">
+            <h4 class="mt-5">Types of Programming Languages (Quick Look) 👀
+            </h4>
+            <div class="d-grid gap-2 mt-4">
+            <p>Just like there are different ways to communicate with people (talking, writing, sign language), there are different types of programming languages. Two main types you'll encounter are:</p>
+            <ul class="d-grid gap-3">
+              <li>Text-based languages: These are like writing instructions using words, symbols, and specific grammar. Arduino, C++, and Python are examples of text-based languages. You type out lines of code.
+              </li>
+              <li>Block-based languages: These are more visual. Instead of typing lines of code, you drag and drop colorful blocks that represent different commands and connect them like puzzle pieces. Scratch (which you might have seen before) and the block-based coding in Tinkercad are examples of this.
+              </li>
+            </ul>
+            <p>In this course, we're going to start with block-based coding in Tinkercad because it's a really fun and easy way to learn the basics of programming. Once you're comfortable with the concepts, we'll move on to text-based coding with Arduino, which gives you even more control over your robots and projects!
+            </p>
+          </div>
+          </div> 
+
+              
+        <div class="lesson-section">
+          <h4>🚀 Explore & Engage Zone</h4>
+
+          <h5 class="ms-4">🎮 Interactive Elements and Activities</h5>
+          
+          <h5 class="ms-4">❄️ Code with Elsa & Anna in the Frozen Coding Challenge!</h5>
+          <p class="my-4">
+            Ready to try coding in a fun, magical way? Join Elsa and Anna from Disney’s <em>Frozen</em> 
+            as they skate through a winter wonderland—guided by your code! This beginner-friendly 
+            activity introduces you to the basics of computer programming using simple drag-and-drop blocks.
+          </p>
+          
+          <p><strong>👉 Your Task:</strong></p>
+           <ul class="d-grid gap-3">
+            <li>Arrange the coding blocks in the correct order to complete each challenge.</li>
+            <li>
+              Help Elsa draw shapes and create snowflake patterns—all by learning how to sequence 
+              instructions like a real programmer!
+            </li>
+          </ul>
+          <p>
+            ✨ <a href="https://hourofcode.com/frzn">Try the Frozen Coding Challenge now!</a>
+          </p>
+          
+          <h4 class="mt-5">🧰 Supplementary Resources</h4>
+          
+          <h5 class="ms-5">🔍 A Look Back at Programming's Origins</h5>
+          <p class="my-4">
+            <strong>🎥 Video: "The History of Programming Languages"</strong><br>
+            Discover how programming languages evolved—from early machine code to today’s powerful, 
+            user-friendly languages. This short and insightful video breaks it down in a timeline 
+            that’s easy to follow and fun to watch.
+          </p>
+          <p>
+            📺 <a href="https://www.youtube.com/watch?v=FCMxA3m_Imc" target="_blank">
+              Watch on YouTube
+            </a>
+          </p>
+          
+          <h5 class="mt-5">📘 Getting Started with Programming Concepts</h5>
+          <p>
+            <strong>💡 Beginner’s Guide to Coding: Learn Programming Basics</strong><br>
+            New to coding? This friendly guide walks you through key programming concepts like sequences, 
+            loops, and conditions using fun examples. It's the perfect intro before jumping into 
+            block-based or text coding!
+          </p>
+          <p>
+            🧠 <a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">
+              Explore the guide on Khan Academy
+            </a>
+          </p>
+          
+          <h5 class="mt-5">🌐 What Are Programming Languages, Anyway?</h5>
+          <p>
+            <strong>📚 Article: "Types of Programming Languages Explained"</strong><br>
+            Ever wondered why there are so many programming languages? This easy-to-understand article 
+            explains the differences between high-level and low-level languages, compiled vs interpreted, 
+            and what makes each one unique.
+          </p>
+          <p>
+            🧩 <a href="https://www.geeksforgeeks.org/introduction-to-programming-languages/" target="_blank">
+              Read the article on GeeksforGeeks
+            </a>
+          </p>
+          
+            <hr class="my-4">
+            <h4>🤔 Reflection Prompt & Local Connection</h4>
+            <p>
+              Have you ever followed a recipe, a TikTok tutorial, or step-by-step instructions to build 
+              or fix something? That’s just like programming! Think about a time you gave someone 
+              instructions—maybe helping a friend play a game or teaching your younger sibling how to use an app. 
+              How is that similar to how we “program” robots to follow steps and complete tasks?
+            </p>
+            <hr class="my-4">
+          
+        </div>
+
+            
+        <div class="lesson-section mt-5">
+          <h4>📝 Summary and Key Takeaways</h4>
+          <p>Programming is like writing a recipe—but for computers and robots! 🧁🤖 It’s how we give step-by-step instructions so they know exactly what to do. Instead of using everyday language, we use programming languages like Arduino, Python, or block-based tools like Tinkercad.</p>        
+          <ul class="d-grid gap-3">
+            <li>🧠 Programming is the process of telling a robot or computer what to do using code.
+            </li>
+            <li>💬 Programming languages are special tools that help us “talk” to machines.
+            </li>
+           <li>⚙️ Robots need programming to move, make decisions, respond to their environment, and complete tasks.
+          </li>
+          <li>🧩 We can write code in two main ways: block-based (visual and easy for beginners) and text-based (typed, more advanced).
+          </li>
+          <li>🧪 You’ll start with block-based coding in Tinkercad, then level up to Arduino text-based programming!
+          </li>
+          </ul>
+        
+          <p><em>Whether you're lighting up an LED or programming a robot to follow a line, it all begins with code. Let’s start thinking like programmers!</em> 💡💻</p>
+        </div>
+        
+            
+          </section>
+        </div>
+        
+        <br /><br />
+        
+        <section>
+          <div class="d-inline-flex gap-1">
+            <button
+              class="btn btn-outline-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseRelatedMCU"
+              aria-expanded="false"
+              aria-controls="collapseRelatedMCU"
+            >
+              <i class="fa-solid fa-link"></i> Sources and Related Content
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="collapse" id="collapseRelatedMCU">
+            <div class="card card-body">
+              <ul class="d-grid gap-3">
+                <li><a href="https://www.arduino.cc/" target="_blank">Arduino Official Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
         
 
           <br /><br />
-          <section>
-            <div class="d-inline-flex gap-1">
-              <button
-                class="btn btn-outline-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseResources"
-                aria-expanded="false"
-                aria-controls="collapseResources"
-              >
-              <i class="fa-solid fa-link"></i> Sources and Related Content
-                <i class="fa-solid fa-chevron-down"></i>
-              </button>
-            </div>
-            <div class="collapse" id="collapseResources">
-              <div class="card card-body">
-                <ul class="list-unstyled">
-                  <li>
-                    RedShirtJeff. (2020). How Accelerometers and Gyroscopes Work [Video]. YouTube. 
-                    <a href="https://www.youtube.com/watch?v=8W1fsF7eGn8" target="_blank">https://www.youtube.com/watch?v=8W1fsF7eGn8</a>
-                  </li>
-                  <li class="mt-2">
-                    Random Nerd Tutorials. (2023). Arduino MPU6050 Tutorial. 
-                    <a href="https://randomnerdtutorials.com/mpu6050-accelerometer-gyroscope-arduino/" target="_blank">https://randomnerdtutorials.com/mpu6050-accelerometer-gyroscope-arduino/</a>
-                  </li>
-                  <li class="mt-2">
-                    SparkFun. (2022). IMU Basics and Sensor Fusion. 
-                    <a href="https://learn.sparkfun.com/tutorials/imu-inertial-measurement-unit-basics" target="_blank">https://learn.sparkfun.com/tutorials/imu-inertial-measurement-unit-basics</a>
-                  </li>
-                  <li class="mt-2">
-                    Tinkercad Simulation. 
-                    <a href="https://www.tinkercad.com/things/5tXhr1CBN4o" target="_blank">https://www.tinkercad.com/things/5tXhr1CBN4o</a>
-                  </li>
-                  <li class="mt-2">
-                    MPU6050 Datasheet. 
-                    <a href="#" target="_blank">Link to datasheet (if available)</a>
-                  </li>
-                  <li class="mt-2">
-                    Arduino Language Reference. 
-                    <a href="https://www.arduino.cc/reference/en/" target="_blank">https://www.arduino.cc/reference/en/</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          
-          
           
           <!-- quiz -->
           <hr />
           <div class="mt-5 lesson-content">
             <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
             <h4>
-              Test Your Understanding of Sensors!
+              Test Your Understanding of Programming Basics
+
             </h4>
           </div>
           <div id="quiz-intro">
-            <h2 class="">Think You Got It? Let's Find Out!</h2>
+            <h2>Think You Got It? Let's Find Out!</h2>
             <p>Try this quick challenge to see what you’ve learned!</p>
             <button id="start-quiz">
               Launch the Interactive Quiz Challenge
@@ -236,13 +403,12 @@
               </ul>
             </div>
             <button id="submit">Submit</button>
+            <div id="quiz-progress" class="quiz-progress mt-2">Question 1 / 5</div>
+
           </div>
 
-          <h5>You've completed this topic, but you can still check out the other lessons here</h5>
+          <h5>Check out the other lessons here</h5>
           <button class="btn btn-primary" onclick="openNav()">Lessons</button>
-
-          <h5 class="mt-5">Next Topic: Sensing to Action</h5>
-          <a class="btn btn-info" href="../../../modules/sensors/sensing_to_action.html">Go now!</a>  
         </div>
       </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -286,191 +452,85 @@
   }
 </style>
 
-<!-- quiz script -->
 
 <script>
 const quizData = [
   {
-    question: "What does an accelerometer measure?",
-    a: "Rotation only",
-    b: "Distance traveled",
-    c: "Linear acceleration and tilt",
-    d: "Temperature",
-    correct: "c",
-    explanation: "Correct! Accelerometers detect changes in acceleration and gravitational direction.",
-  },
-  {
-    question: "Gyroscopes are mainly used to detect:",
-    a: "Speed",
-    b: "Sound waves",
-    c: "Rotation and angular velocity",
-    d: "Light levels",
-    correct: "c",
-    explanation: "Right! Gyroscopes measure how fast something spins or turns.",
-  },
-  {
-    question: "Combining accelerometers and gyroscopes improves:",
-    a: "Battery life",
-    b: "Speed",
-    c: "Orientation sensing",
-    d: "Light detection",
-    correct: "c",
-    explanation: "Correct! Sensor fusion makes sensing motion more accurate.",
-  },
-  {
-    question: "A self-balancing robot uses these sensors to:",
-    a: "Avoid water",
-    b: "Navigate GPS",
-    c: "Maintain upright position",
-    d: "Play music",
-    correct: "c",
-    explanation: "Exactly! Motion sensors help robots stay upright.",
-  },
-  {
-    question: "In smartphones, accelerometers are used to:",
-    a: "Make calls",
-    b: "Rotate the screen",
-    c: "Detect sound",
-    d: "Charge faster",
+    question: "What is programming most similar to, according to the lesson?",
+    a: "Playing a game",
+    b: "Following a recipe",
+    c: "Watching a robot show",
+    d: "Drawing on a computer screen",
     correct: "b",
-    explanation: "Yes! Your phone rotates the screen based on accelerometer data.",
+    explanation: "Programming is like writing a recipe — step-by-step instructions for a computer.",
+    wrongExplanations: {
+      a: "Incorrect. While programming can feel playful, it’s not the best analogy here.",
+      c: "Incorrect. Watching robots isn't the same as controlling them.",
+      d: "Incorrect. Drawing is creative but doesn’t involve logic-based instructions."
+    },
+  },
+  {
+    question: "Why do we use programming languages?",
+    a: "To decorate programs",
+    b: "To talk to robots and computers",
+    c: "To make the screen colorful",
+    d: "To organize your computer desktop",
+    correct: "b",
+    explanation: "Programming languages help us communicate with machines in a way they understand.",
+    wrongExplanations: {
+      a: "Incorrect. Programming isn’t about decorating — it’s about communication.",
+      c: "Incorrect. You can do cool things with code, but that’s not its main purpose.",
+      d: "Incorrect. That’s more of a desktop feature than a coding concept."
+    },
+  },
+  {
+    question: "What type of programming will we start with in this course?",
+    a: "Text-based coding in Arduino",
+    b: "Scratch-based mobile apps",
+    c: "Block-based coding in Tinkercad",
+    d: "Drawing-based coding with Java",
+    correct: "c",
+    explanation: "We'll begin with block-based coding in Tinkercad, which is beginner-friendly.",
+    wrongExplanations: {
+      a: "Incorrect. We’ll do that later, but not as a starting point.",
+      b: "Incorrect. Scratch is similar, but we’re using Tinkercad for block coding.",
+      d: "Incorrect. Java isn’t part of this course — and coding isn’t based on drawing."
+    },
+  },
+  {
+    question: "Which of these is an example of a text-based programming language?",
+    a: "Scratch",
+    b: "Blockly",
+    c: "Python",
+    d: "Tinkercad Blocks",
+    correct: "c",
+    explanation: "Python is a powerful text-based programming language.",
+    wrongExplanations: {
+      a: "Incorrect. Scratch is block-based, not text-based.",
+      b: "Incorrect. Blockly is another block-based system.",
+      d: "Incorrect. Tinkercad uses blocks to represent code visually."
+    },
+  },
+  {
+    question: "Why do robots need programming?",
+    a: "To charge their batteries",
+    b: "To watch videos online",
+    c: "To follow instructions and perform tasks",
+    d: "To take photos of their surroundings",
+    correct: "c",
+    explanation: "Robots need programming to follow instructions and do useful things.",
+    wrongExplanations: {
+      a: "Incorrect. Charging is about hardware, not programming.",
+      b: "Incorrect. That’s not their primary function — and wouldn’t need programming.",
+      d: "Incorrect. Robots might take photos, but only if they’re programmed to do so."
+    },
   },
 ];
 
-  const intro = document.getElementById("quiz-intro");
-  const quizContainer = document.getElementById("quiz");
-  const startBtn = document.getElementById("start-quiz");
+const perfectFeedback = "🌟 Your logic is on point and your code-smarts are showing! You’re already thinking like a programmer! 🚀";
+const notPerfectFeedback = " Great effort! 💡 You’re starting to crack the code behind programming. Every step you take makes the logic clearer! 💪";
 
-  startBtn.addEventListener("click", () => {
-    intro.style.display = "none";
-    quizContainer.style.display = "block";
-  });
 
-  const quiz = document.getElementById("quiz");
-  const answerEls = document.querySelectorAll(".answer");
-  const questionEl = document.getElementById("question");
-  const a_text = document.getElementById("a_text");
-  const b_text = document.getElementById("b_text");
-  const c_text = document.getElementById("c_text");
-  const d_text = document.getElementById("d_text");
-  const submitBtn = document.getElementById("submit");
-
-  let currentQuiz = 0;
-  let score = 0;
-  let answered = false;
-
-  loadQuiz();
-
-  function loadQuiz() {
-    deselectAnswers();
-    resetStyles();
-    answered = false;
-
-    const currentQuizData = quizData[currentQuiz];
-    questionEl.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
-    submitBtn.innerText = "Submit";
-  }
-
-  function getSelected() {
-    let answer = undefined;
-    answerEls.forEach((answerEl) => {
-      if (answerEl.checked) {
-        answer = answerEl.id;
-      }
-    });
-    return answer;
-  }
-
-  function deselectAnswers() {
-    answerEls.forEach((answerEl) => {
-      answerEl.checked = false;
-    });
-  }
-
-  function resetStyles() {
-    document.querySelectorAll("label").forEach((label) => {
-      label.style.backgroundColor = "";
-      label.style.color = "";
-    });
-  }
-
-  function disableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = true;
-    });
-  }
-
-  function enableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = false;
-    });
-  }
-
-  submitBtn.addEventListener("click", () => {
-    const answer = getSelected();
-
-    if (!answered) {
-      if (answer) {
-        answered = true;
-
-        const currentData = quizData[currentQuiz];
-        const explanation = currentData.explanation;
-        const correct = currentData.correct;
-
-        disableAnswers();
-
-        if (answer === correct) {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#4CAF50"; // Green
-          score++;
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
-        } else {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#F44336"; // Red
-          document.getElementById(`${correct}_text`).style.backgroundColor =
-            "#4CAF50"; // Highlight correct
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${explanation}</p>`;
-        }
-
-        submitBtn.innerText =
-          currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
-      }
-    } else {
-      currentQuiz++;
-      if (currentQuiz < quizData.length) {
-        enableAnswers();
-        loadQuiz();
-      } else {
-        showFinalScore();
-      }
-    }
-  });
-
-  function showFinalScore() {
-    const percent = (score / quizData.length) * 100;
-
-    quiz.innerHTML = `
-    <h2>You got ${score} out of ${quizData.length} correct (${percent}%).</h2>
-    <div id="quiz-feedback" class="quiz-feedback"></div>
-    <button class="quiz-retry" onclick="location.reload()">Try Again</button>
-  `;
-
-    // show feedback based on score
-    const feedbackEl = document.getElementById("quiz-feedback");
-
-    if (score === quizData.length) {
-      feedbackEl.textContent =
-        " Awesome work! You’ve mastered motion sensing like a robotics pro!";
-      feedbackEl.className = "quiz-feedback perfect-score";
-    } else {
-      feedbackEl.textContent =
-        "Great effort! Review the tricky parts and give it another shot. You're learning fast!";
-      feedbackEl.className = "quiz-feedback review-needed";
-    }
-  }
 </script>
 
+<script src="../../../js/lesson-quiz.js"></script>

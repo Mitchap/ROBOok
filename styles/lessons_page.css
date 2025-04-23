@@ -150,6 +150,9 @@ body {
 .lesson-paragraph {
   font-size: 1.2rem;
 }
+.lesson-section {
+  margin: 20px auto;
+}
 
 .contacts {
   color: #0c4a7a;
