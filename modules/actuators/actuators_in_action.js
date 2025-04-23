@@ -4,28 +4,29 @@ const lessons = [
     title: "Sumo Power",
     content:
       "Push 'em out! See the mighty motors and drives that give Sumobots the force to conquer their rivals.",
-    route: "../modules/actuators/sumo_power.html",
+    route: "../../../lessons/actuators/actuators_in_action/sumo_power.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "Line Speed",
     content:
       "Zoom along the line! Learn how motors work with sensors to keep robots perfectly on track.",
-    route: "../modules/actuators/line_speed.html",
+    route: "../../../lessons/actuators/actuators_in_action/line_speed.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "Mission Actions",
     content:
       "Task accomplished! Discover how robots use different actuators to master challenges and get the job done.",
-    route: "../modules/actuators/mission_actions.html",
+    route:
+      "../../../lessons/actuators/actuators_in_action/mission_actions.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "Robot Arms",
     content:
       "Working together! See how robots control many 'muscles' at once to create smooth and complex movements, like a robotic arm.",
-    route: "../modules/actuators/robot_arms.html",
+    route: "../../../lessons/actuators/actuators_in_action/robot_arms.html",
   },
 ];
 

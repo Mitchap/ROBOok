@@ -4,28 +4,28 @@ const lessons = [
     title: "Actuation Power",
     content:
       "Muscles for robots! Discover what makes them move, grab, and groove – it's all about these action heroes!",
-    route: "../modules/actuators/actuation_power.html",
+    route: "../../../lessons/actuators/robot_motion/actuation_power.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "DC Motors Spin",
     content:
       "Fast and furious! Explore the world of DC motors, from speedy wheels to powerful gears that give robots their drive.",
-    route: "../modules/actuators/dc_motors.html",
+    route: "../../../lessons/actuators/robot_motion/dc_motors.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "Servo Steps",
     content:
       "Move with precision! See how servo and stepper motors give robots super-accurate control for delicate tasks.",
-    route: "../modules/actuators/servo_steps.html",
+    route: "../../../lessons/actuators/robot_motion/servo_steps.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "More Than Wheels",
     content:
       "Not just rolling around! Discover the cool ways robots use pumps, air, and even liquid power to move and do amazing things.",
-    route: "../modules/actuators/more_than_wheels.html",
+    route: "../../../lessons/actuators/robot_motion/more_than_wheels.html",
   },
 ];
 

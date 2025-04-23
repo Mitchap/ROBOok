@@ -4,28 +4,28 @@ const lessons = [
     title: "DC Motor Secrets",
     content:
       "Unlock the inner workings of DC motors! Learn about speed, strength (torque), and how to make them do exactly what you want.",
-    route: "../modules/actuators/dc_motor_secrets.html",
+    route: "../../../lessons/actuators/actuator_types/dc_motor_secrets.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "Precision Motors",
     content:
       "Accuracy experts! Dive deeper into servo and stepper motors and see where their pinpoint control really shines.",
-    route: "../modules/actuators/precision_motors.html",
+    route: "../../../lessons/actuators/actuator_types/precision_motors.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "Fluid Force",
     content:
       "Power up with air and liquid! Discover how pneumatics and hydraulics give robots the muscle for super-strong actions.",
-    route: "../modules/actuators/fluid_force.html",
+    route: "../../../lessons/actuators/actuator_types/fluid_force.html",
   },
   {
     image: "../../images/actuators.jpg",
     title: "Robot Grippers",
     content:
       "Grab and go! Explore the different hands robots use and the clever ways they hold and move objects.",
-    route: "../modules/actuators/robot_grippers.html",
+    route: "../../../lessons/actuators/actuator_types/robot_grippers.html",
   },
 ];
 
