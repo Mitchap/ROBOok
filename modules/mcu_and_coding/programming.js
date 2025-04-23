@@ -1,27 +1,27 @@
 const lessons = [
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/language_of_robots.png",
     title: "Language of Robots",
     content:
       "Talk to your bot! Discover the secret languages called programming that tell robots exactly what to do, from simple commands to complex actions.",
     route: "../modules/programming/language_of_robots.html",
   },
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/block_based_coding.png",
     title: "Block-Based Coding",
     content:
       "Code without typing! Learn the basics of programming your virtual robot using colorful drag-and-drop blocks in Tinkercad.",
     route: "../modules/programming/block_based_coding.html",
   },
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/arduino_code.png",
     title: "Arduino Code",
     content:
       "See the code behind the blocks! Explore how visual programming translates into the real text language of Arduino, the same language you'll use in the official Arduino IDE!",
     route: "../modules/programming/arduino_code.html",
   },
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/variables_and_control.png",
     title: "Variables and Control",
     content:
       "Making choices and repeating tasks, your way! Program your virtual robot's behavior using both visual blocks and text commands.",

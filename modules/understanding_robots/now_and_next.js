@@ -1,27 +1,27 @@
 const lessons = [
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/robots_today.png",
     title: "Robots Today",
     content:
       "See amazing robots in action right now! From factories to hospitals and even exploring space, discover the real-world heroes of today.",
     route: "#",
   },
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/winning_robots.png",
     title: "Winning Robots",
     content:
       "Discover the exciting world of robotics competitions and the incredible robots that rise to the top! See what it takes to design a champion bot.",
     route: "#",
   },
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/future_bots.png",
     title: "Future Bots",
     content:
       "Get a sneak peek into the future! Explore the mind-blowing technologies and possibilities that tomorrow's robots might bring.",
     route: "#",
   },
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/iot_ai_machine_learning.png",
     title: "IoT, AI & Machine Learning",
     content:
       "Want to know how robots are becoming truly intelligent? We'll explore the amazing worlds of connected devices (IoT), robot 'thinking' (AI), and how robots learn from data (ML)!",

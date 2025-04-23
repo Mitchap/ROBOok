@@ -1,27 +1,27 @@
 const lessons = [
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/coding_digitals.png",
     title: "Coding Digitals",
     content:
       "Virtual on or off! Code your simulated robot to react to digital inputs from the virtual world.",
     route: "../modules/programming/coding_digitals.html",
   },
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/coding_analogs.png",
     title: "Coding Analogs",
     content:
       "Simulated shades of gray! Code your virtual robot to respond to a range of analog sensor values in the virtual environment.",
     route: "../modules/programming/coding_analogs.html",
   },
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/coding_actuators.png",
     title: "Coding Actuators",
     content:
       "Simulated shades of gray! Code your virtual robot to respond to a range of analog sensor values in the virtual environment.",
     route: "../modules/programming/coding_actuators.html",
   },
   {
-    image: "../../images/mcu_coding.jpg",
+    image: "../../images/coding_with_libraries.png",
     title: "Coding with Libraries",
     content:
       "Unlock virtual superpowers! See how libraries can add pre-built functions to your simulated robot projects in Tinkercad.",

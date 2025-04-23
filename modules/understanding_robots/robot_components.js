@@ -1,27 +1,27 @@
 const lessons = [
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/input_devices.png",
     title: "Input Devices",
     content:
       "Keyboards, remotes, joysticks, and even RFID scanners! Explore the different ways we can send commands and information into our robots.",
     route: "#",
   },
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/output_devices_visuals.png",
     title: "Output Devices – Visuals",
     content:
       " Lights, displays, and glowing patterns! Discover the cool ways robots can show us information using LEDs, screens, and matrices.",
     route: "#",
   },
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/output_devices_audio.png",
     title: "Output Devices – Audio",
     content:
       "Beeps, boops, and even robot voices! Explore how buzzers and speakers allow robots to communicate with sound.",
     route: "#",
   },
   {
-    image: "../../images/understanding_robots.jpg",
+    image: "../../images/communication_and_network.png",
     title: "Communication & Network",
     content:
       "Going wireless! Uncover how robots connect with each other and the wider world using Bluetooth, Wi-Fi, and even cellular networks.",
