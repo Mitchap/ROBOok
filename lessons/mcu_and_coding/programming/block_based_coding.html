@@ -332,20 +332,24 @@
                   <li>
                     Drag out and connect the following blocks:
                   </li>
-                <div class="p-2 my-5" style="background-color: #1b1b1b; color: rgb(154, 228, 43);">
-                  <pre>
 
-  [repeat [forever]]
-  [if [ [read digital pin [7]] == [HIGH] ]]
-  [set pin [12] to [HIGH]]
-  [else]
-  [set pin [12] to [LOW]]
-  [end if]</pre>
-</div>
-              <li>Click "Start Simulation". Now, when you virtually "click" the button in Tinkercad, the LED should turn on. When you release the button, the LED should turn off.
-              </li>
-</ol>
+                  </ol>
               </div>
+              <div class="p-2 my-5" style="background-color: #1b1b1b; color: rgb(154, 228, 43);">
+                <pre>
+
+[repeat [forever]]
+[if [ [read digital pin [7]] == [HIGH] ]]
+[set pin [12] to [HIGH]]
+[else]
+[set pin [12] to [LOW]]
+[end if]</pre>
+
+</div>
+<ol start="4">
+  <li> Click "Start Simulation". Now, when you virtually "click" the button in Tinkercad, the LED should turn on. When you release the button, the LED should turn off.
+  </li>
+</ol>
 <p class="fs-5 my-5">These simple examples show how you can use block-based programming to create interactive circuits and control virtual components in Tinkercad! As you get more comfortable with these blocks, you'll be able to build much more complex and interesting programs for your virtual robots.
 </p>
             </div>
