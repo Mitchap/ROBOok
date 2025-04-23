@@ -4,7 +4,7 @@ const lessons = [
     title: "Actuation Power",
     content:
       "Muscles for robots! Discover what makes them move, grab, and groove – it's all about these action heroes!",
-    route: "../modules/actuators/power.html",
+    route: "../modules/actuators/actuation_power.html",
   },
   {
     image: "../../images/actuators.jpg",
@@ -18,7 +18,7 @@ const lessons = [
     title: "Servo Steps",
     content:
       "Move with precision! See how servo and stepper motors give robots super-accurate control for delicate tasks.",
-    route: "../modules/actuators/servo.html",
+    route: "../modules/actuators/servo_steps.html",
   },
   {
     image: "../../images/actuators.jpg",

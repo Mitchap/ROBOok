@@ -4,21 +4,21 @@ const lessons = [
     title: "Conceptual Design",
     content:
       "Brainstorm and sketch! Learn how robot ideas first take shape on paper.",
-    route: "../../modules/assembly/idea_lab.html",
+    route: "../../modules/assembly/conceptual_design.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "Introduction to CAD",
     content:
       "Draw it with computers! Discover how CAD software helps create precise robot plans.",
-    route: "../../modules/assembly/digital_blueprints.html",
+    route: "../../modules/assembly/introduction_to_cad.html",
   },
   {
     image: "../../images/assembly.jpg",
     title: "3D Modeling",
     content:
       "See it before you build it! Learn how 3D modeling brings your robot design to life on screen.",
-    route: "../../modules/assembly/virtual_build.html",
+    route: "../../modules/assembly/3d_modeling.html",
   },
   {
     image: "../../images/assembly.jpg",

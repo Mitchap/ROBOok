@@ -18,7 +18,7 @@ const lessons = [
     title: "Operating Time",
     content:
       "Real-world power! Explore the practical limitations like size, weight, battery life, and cost that influence your power supply choices.",
-    route: "../../modules/power/Operating Time.html",
+    route: "../../modules/power/operating_time.html",
   },
   {
     image: "../../images/powersupply.jpg",

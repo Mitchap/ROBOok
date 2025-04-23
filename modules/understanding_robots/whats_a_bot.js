@@ -4,28 +4,30 @@ const lessons = [
     title: "Robot Defined",
     content:
       "Think robots are just like in movies? Get ready to have your mind blown as we uncover the real meaning of what makes a machine a robot!",
-    route: "#",
+    route:
+      "../../../lessons/understanding_robots/whats_a_bot/robot_defined.html",
   },
   {
     image: "../../images/bot_history.png",
     title: "Bot History",
     content:
       "From ancient inventions to the first electronic brains – take a quick and surprising trip through the amazing history that led to today's robots!",
-    route: "#",
+    route: "../../../lessons/understanding_robots/whats_a_bot/bot_history.html",
   },
   {
     image: "../../images/robot_types.png",
     title: "Robot Types",
     content:
       "Meet the robot family! From factory workers to space explorers, discover the incredible variety of bots and what unique jobs they do.",
-    route: "#",
+    route: "../../../lessons/understanding_robots/whats_a_bot/robot_types.html",
   },
   {
     image: "../../images/sci_fi_ethics.png",
     title: "Sci-Fi & Ethics",
     content:
       "Cool robots in movies vs. real life science! And as robots get smarter, what's right and wrong? Let's explore!",
-    route: "#",
+    route:
+      "../../../lessons/understanding_robots/whats_a_bot/sci_fi_ethics.html",
   },
 ];
 

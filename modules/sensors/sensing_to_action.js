@@ -4,7 +4,7 @@ const lessons = [
     title: "Sensors in Sumobot",
     content:
       "RoboRumble! See how 'eyes' and 'feelers' help Sumobots locate rivals and stay inside the battle zone for victory!",
-    route: "../topics/sensors/sumobot.html",
+    route: "../topics/sensors/sensors_in_sumobot.html",
   },
   {
     image: "../../images/sensors_in_line_following.png",
