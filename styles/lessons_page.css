@@ -205,8 +205,7 @@ footer {
   }
 
   .lesson-content {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: auto 30px;
   }
   .lesson-paragraph {
     font-size: 1rem;

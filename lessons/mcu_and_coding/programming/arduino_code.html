@@ -41,14 +41,14 @@
         class="d-flex align-items-center justify-content-center"
         style="height: 100%"
       >
-        <h1 class="text-light banner-text">Sensor Types</h1>
+        <h1 class="text-light banner-text">Programming</h1>
       </div>
     </section>
 
     <div class="mt-5 ms-3 ms-md-5">
       <a
         class="btn btn-primary"
-        href="../../../modules/sensors/sensor_types.html"
+        href="../../../modules/mcu_and_coding/programming.html"
       >
         <i class="fa-solid fa-chevron-left"></i> Back
       </a>
@@ -68,207 +68,569 @@
           <hr style="border-bottom: 2px solid #f8f8f8" />
           <!-- Lessons -->
           <a
-            class="my-1 active"
-            href="../../../lessons/sensors/sensor_types/seeing_with_sound.html"
+            class="my-1 "
+            href="../../..//lessons/mcu_and_coding/programming/language_of_robots.html"
             >Lesson<span class="opacity-0">_</span>1</a
           >
-          <a
-            class="my-1"
-            href="../../../lessons/sensors/sensor_types/sensing_light_color.html"
-            >Lesson<span class="opacity-0">_</span>2</a
-          >
-          <a
-            class="my-1"
-            href="../../../lessons/sensors/sensor_types/power_of_robot_touch.html"
-            >Lesson<span class="opacity-0">_</span>3</a
-          >
-          <a
-            class="my-1"
-            href="../../../lessons/sensors/sensor_types/motion_balance_masters.html"
-            >Lesson<span class="opacity-0">_</span>4</a
-          >
+          <a class="my-1 active" href="../../../lessons/mcu_and_coding/programming/block_based_coding.html">Lesson<span class="opacity-0">_</span>2</a>
+          <a class="my-1 " href="../../../lessons/mcu_and_coding/programming/arduino_code.html">Lesson<span class="opacity-0">_</span>3</a>
+          <a class="my-1" href="../../../lessons/mcu_and_coding/programming/variables_and_control.html">Lesson<span class="opacity-0">_</span>4</a>
+        
         </div>
 
         <div class="mt-5 lesson-content">
-          <h3 class="fw-bold">Lesson 1</h3>
-          <h5 class="fw-medium">
-            Seeing with Sound – How Ultrasonic Sensors Work
-          </h5>
-          <p>
-            Ever seen a bat fly in the dark without hitting anything? It doesn’t
-            use eyes—it uses sound! Robots can do that too. Meet the ultrasonic
-            sensor: a clever tool that helps robots “see” distance using sound
-            waves. From avoiding walls to mapping entire rooms, it’s a sensor
-            that makes smart movement possible.
-          </p>
-          <div class="text-center my-5 img-fluid">
-            <img
-              class="lesson-media"
-              src="https://kaiserscience.files.wordpress.com/2017/03/bat-sonar-echolocation.gif"
-              alt="Bat Echolocation GIF"
-            />
-            <img
-              class="lesson-media"
-              src="https://ai.thestempedia.com/wp-content/uploads/2022/02/ezgif.com-gif-maker-2.gif"
-              alt="Robot using Ultrasonic Sensor"
-            />
+          <section class="lesson">
+            <h3 class="fw-bold">📘 Lesson 3</h3>
+            <h5 class="fw-medium">From Blocks to Text: Introducing Arduino Code
+            </h5> 
+        
+            <div class="lesson-section mt-5">
+
+        <div class="d-flex flex-wrap align-items-center justify-content-center my-4">
+          <div class="col-md-5 p-3">
+            <p class="lh-base fs-5">
+              You've learned to speak robot with blocks; now it's time to see the written language behind them! Arduino code is the text-based language that gives you even more control and flexibility in programming your robots. In this lesson, we'll bridge the gap between visual blocks and real code, uncovering how your block creations translate into the Arduino language and how you can use the Arduino IDE.
+
+            </p>
           </div>
-
-          <h3>What You'll Learn in This Lesson:</h3>
-          <ul>
-            <li>
-              Describe how ultrasonic sensors use sound to detect distance.
-            </li>
-            <li>Explain the basic principle of echolocation in robotics.</li>
-            <li>Identify real-life uses of ultrasonic sensors in robots.</li>
-            <li>
-              Recognize the factors that can affect the accuracy of ultrasonic
-              sensing.
-            </li>
-          </ul>
-
-          <h3>How It Works</h3>
-          <p>
-            An ultrasonic sensor measures distance by sending out sound waves
-            and listening for their echo. Think of it like shouting in a
-            canyon—you hear the echo bounce back!
-          </p>
-          <ol>
-            <li>The sensor sends out a high-frequency sound wave.</li>
-            <li>The wave travels through the air until it hits an object.</li>
-            <li>The wave reflects back (echo), and the sensor detects it.</li>
-            <li>
-              The sensor calculates the distance based on how long it took the
-              echo to return.
-            </li>
-          </ol>
-
-          <div class="text-center">
-            <img
-              class="lesson-media"
-              src="https://preview.redd.it/how-do-ultrasonic-sensors-work-and-interface-with-arduino-v0-245evpqyf2nc1.gif?width=750&auto=webp&s=068104d34c0061a650f2ef6e2ced0a64d5d0ad14"
-              alt="Ultrasonic Sensor Diagram"
-            />
+          <div class=" p-3 text-center">
+    
+            <img src="../../../images/arduino_code.png" class="lesson-media">
           </div>
-
-          <h4>🧠 The Magic Formula</h4>
-          <p>
-            <strong>Distance = (Speed of Sound × Time Echo Took) ÷ 2</strong>
-          </p>
-          <p>
-            <em>✅ Why divide by 2?</em> Because the sound has to travel to the
-            object and back!
-          </p>
-
-          <h4>⚖️ Factors Affecting Accuracy</h4>
-          <ul>
-            <li>Surface angle: Slanted surfaces may reflect sound away.</li>
-            <li>Material: Soft materials may absorb sound.</li>
-            <li>
-              Environmental noise: Other sounds can interfere with the signal.
-            </li>
+        </div>
+        </div>
+        
+        <div class="lesson-section">
+          <h4>🎯 What You'll Learn in This Lesson:</h4>
+          <ul class="d-grid gap-3">
+            <li>Explain the relationship between block-based code and Arduino text code.</li>
+            <li>Introduction to the Arduino IDE (Integrated Development Environment).</li>
+            <li>Identify the basic structure of an Arduino program (setup() and loop() functions).</li>
+            <li>Understand how common blocks translate into Arduino code.</li>
+            <li>Write simple Arduino programs using text code.</li>
           </ul>
-
-          <h4>📌 Real-World Uses</h4>
-          <ul>
-            <li>
-              <strong>Obstacle Avoidance:</strong> Robots avoid crashing into
-              things.
-            </li>
-            <li>
-              <strong>Room Mapping:</strong> Like vacuum bots that map
-              floorplans.
-            </li>
-            <li>
-              <strong>Parking Assist:</strong> Cars use them to detect how close
-              you are to the wall!
-            </li>
-          </ul>
-          <div class="mx-auto my-4 text-center">
-            <iframe
-              class="lesson-video"
-              src="https://www.youtube.com/embed/KGwtit2bFyo"
-              title="How To Use Ultrasonic Sensors with Arduino! + Project Idea!"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">Introducing the Arduino IDE 💻🔌</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Introduce the Arduino IDE as the software used to write, compile, and upload Arduino code to physical Arduino boards.</p>
+            <p>Explain that it's a free and open-source application.</p>
+            <p>Show a screenshot of the Arduino IDE interface, highlighting its key parts:</p>
+            <ul>
+              <li>Code editor window</li>
+              <li>Toolbar (for compiling and uploading)</li>
+              <li>Message area (for displaying errors and information)</li>
+            </ul>
           </div>
-          <h5 class="fw-medium mt-4">Summary and Key Takeaways</h5>
-          <ul>
-            <li>
-              Ultrasonic sensors use sound waves to detect distance—like a bat!
-            </li>
-            <li>
-              They send out a sound, wait for it to bounce back, and calculate
-              how far away an object is.
-            </li>
-            <li>
-              These sensors are essential for tasks like navigation and obstacle
-              avoidance.
-            </li>
-            <li>
-              Factors like shape, material, and angle can affect sensing
-              accuracy.
-            </li>
-          </ul>
-          <br /><br />
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">The Structure of an Arduino Program 🧱📜</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Explain the basic structure of an Arduino program, which consists of two main functions:</p>
+            <ul>
+              <li><code>void setup()</code>: This function runs once at the beginning of the program. It's used to initialize variables, set pin modes, and perform other setup tasks.</li>
+              <li><code>void loop()</code>: This function runs continuously after the <code>setup()</code> function. It's where the main program logic resides.</li>
+            </ul>
+            <p>Provide a simple Arduino code example (e.g., blinking an LED) and point out the <code>setup()</code> and <code>loop()</code> functions.</p>
+          </div>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">Translating Blocks into Arduino Code 🔁🔧</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Show more examples of how common blocks translate into Arduino code, expanding on the earlier examples.</p>
+            <p>Explain the syntax of common Arduino functions:</p>
+            <ul>
+              <li><code>pinMode(pin, mode);</code> (setting pin mode as INPUT or OUTPUT)</li>
+              <li><code>digitalWrite(pin, value);</code> (setting a digital pin HIGH or LOW)</li>
+              <li><code>digitalRead(pin);</code> (reading a digital pin value)</li>
+              <li><code>analogRead(pin);</code> (reading an analog pin value)</li>
+              <li><code>delay(milliseconds);</code> (pausing the program)</li>
+            </ul>
+          </div>
+        </div>
+        
+           <div class="table-responsive d-flex justify-content-center">
+          <table class="table table-bordered table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Tinkercad Block</th>
+                      <th>Arduino Code</th>
+                      <th>What it Does</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>set built-in LED to [ON]</td>
+                      <td><code>digitalWrite(LED_BUILTIN, HIGH);</code></td>
+                      <td>Turns the built-in LED on the Arduino board ON.</td>
+                    </tr>
+                    <tr>
+                      <td>set built-in LED to [OFF]</td>
+                      <td><code>digitalWrite(LED_BUILTIN, LOW);</code></td>
+                      <td>Turns the built-in LED on the Arduino board OFF.</td>
+                    </tr>
+                    <tr>
+                      <td>read digital pin [7]</td>
+                      <td><code>digitalRead(7)</code></td>
+                      <td>Reads the digital state of pin 7 (returns HIGH or LOW).</td>
+                    </tr>
+                    <tr>
+                      <td>read analog pin [A0]</td>
+                      <td><code>analogRead(A0)</code></td>
+                      <td>Reads the analog value of pin A0 (returns a value between 0 and 1023).</td>
+                    </tr>
+                    <tr>
+                      <td>if [[read digital pin [4]] == [HIGH]] do { ... }</td>
+                      <td><code>if (digitalRead(4) == HIGH) { ... }</code></td>
+                      <td>Executes the code inside the curly braces if the digital value of pin 4 is HIGH.</td>
+                    </tr>
+                    <tr>
+                      <td>delay [500] (milliseconds)</td>
+                      <td><code>delay(500);</code></td>
+                      <td>Pauses the program for 500 milliseconds (half a second).</td>
+                    </tr>
+                    <tr>
+                      <td>define variable [count] to [0]</td>
+                      <td><code>int count = 0;</code></td>
+                      <td>Creates an integer variable named <code>count</code> and sets its initial value to 0.</td>
+                    </tr>
+                  </tbody>
+                </table> 
+        </div>     
+        <div class="lesson-section">
+          <h4 class="mt-5">Writing Simple Arduino Programs 🧩</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Guide students through writing a simple Arduino program in the Arduino IDE.
+            </p>
+            <ul>
+              <li><code>void setup()</code> – runs once at the start. Used for things like setting pin modes or initializing variables.</li>
+              <li><code>void loop()</code> – runs repeatedly after <code>setup()</code>. This is where your main code goes.</li>
+            </ul>
+            <p>Example: Blinking an LED:</p>
+            <pre class="p-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+    void setup() {
+      pinMode(13, OUTPUT); // Set pin 13 as an output
+    }
+    
+    void loop() {
+      digitalWrite(13, HIGH);  // Turn the LED on
+      delay(1000);             // Wait for 1 second
+      digitalWrite(13, LOW);   // Turn the LED off
+      delay(1000);             // Wait for 1 second
+    }</pre>
+          </div>
+        </div>
+        
+        
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">From Blocks to Code: Unveiling the Connection 🔗➡️⌨️
+          </h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>The cool thing about Tinkercad is that the colorful blocks you've been dragging and dropping aren't just for fun – they have a direct translation into real Arduino code! Think of the block editor as a visual way to learn the basic building blocks of programming before diving into the actual text. Understanding this connection is super important because it's your stepping stone to writing more powerful and complex programs using the Arduino language.
+            </p>
+            <p>Here's how some common blocks you've used translate into their text-based Arduino equivalents:</p>
 
-          <section>
-            <div class="d-inline-flex gap-1">
-              <button
-                class="btn btn-outline-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseRelatedContent"
-                aria-expanded="false"
-                aria-controls="collapseRelatedContent"
-              >
-                <i class="fa-solid fa-link"></i> Sources and Related Content
-                <i class="fa-solid fa-chevron-down"></i>
-              </button>
+          </div>
+          <div class="lesson-content my-4">
+            <h2 class="mb-4">Tinkercad to Arduino Code Reference</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Tinkercad Block</th>
+                    <th>Arduino Code</th>
+                    <th>What it Does</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>set pin [13] to HIGH</td>
+                    <td><code>digitalWrite(13, HIGH);</code></td>
+                    <td>Sets digital pin 13 to HIGH (usually turns something ON).</td>
+                  </tr>
+                  <tr>
+                    <td>set pin [13] to LOW</td>
+                    <td><code>digitalWrite(13, LOW);</code></td>
+                    <td>Sets digital pin 13 to LOW (usually turns something OFF).</td>
+                  </tr>
+                  <tr>
+                    <td>wait [1] seconds</td>
+                    <td><code>delay(1000);</code></td>
+                    <td>Pauses the program for 1000 milliseconds (which is 1 second).</td>
+                  </tr>
+                  <tr>
+                    <td>read digital pin [2]</td>
+                    <td><code>digitalRead(2)</code></td>
+                    <td>Reads the digital value (HIGH or LOW) from digital pin 2.</td>
+                  </tr>
+                  <tr>
+                    <td>read analog pin [A0]</td>
+                    <td><code>analogRead(A0)</code></td>
+                    <td>Reads the analog value (0-1023) from analog pin A0.</td>
+                  </tr>
+                  <tr>
+                    <td>repeat [10] times { ... }</td>
+                    <td><code>for (int i = 0; i &lt; 10; i++) { ... }</code></td>
+                    <td>Executes the code inside the curly braces 10 times.</td>
+                  </tr>
+                  <tr>
+                    <td>if [condition] do { ... }</td>
+                    <td><code>if (condition) { ... }</code></td>
+                    <td>Executes the code inside the curly braces only if the condition is true.</td>
+                  </tr>
+                  <tr>
+                    <td>else { ... }</td>
+                    <td><code>else { ... }</code></td>
+                    <td>Executes the code inside the curly braces if the 'if' condition is false.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="collapse" id="collapseRelatedContent">
-              <div class="card card-body">
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="https://youtu.be/KGwtit2bFyo" target="_blank"
-                      >Watch a Video Explanation: "Ultrasonic Sensors in
-                      Action"</a
-                    >
-                  </li>
-                  <li class="mt-2">
-                    <a href="https://www.tinkercad.com/" target="_blank"
-                      >Tinkercad Sensor Simulation: "Try it Yourself in
-                      Tinkercad"</a
-                    >
-                  </li>
-                  <li class="mt-2">
-                    <a
-                      href="https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
-                      target="_blank"
-                      >Ultrasonic Sensor Datasheet</a
-                    >
-                  </li>
-                  <li class="mt-2">
-                    <a href="https://docs.arduino.cc/" target="_blank"
-                      >Arduino HC-SR04 Reference Guide</a
-                    >
-                  </li>
+
+            <p>See how the blocks have direct text commands? This makes it much easier to understand what's happening under the hood!</p>
+        </div>
+        
+        <div class="lesson-section">
+          <h4 class="mt-5">Introducing the Arduino IDE 💻</h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>The Arduino IDE (Integrated Development Environment) is the software you'll use to write, compile (check for errors), and upload your Arduino code to a real, physical Arduino board. It's a free and open-source application that's available for Windows, macOS, and Linux. Think of it as your main coding workshop for your physical robot brains.
+            </p>
+            <pre class="p-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+    +-----------------------------------------------------------------------+
+    | [ File | Edit | Sketch | Tools | Help ]                             | <--- Menu Bar
+    +-----------------------------------------------------------------------+
+    | [ Verify (Check Mark) ] [ Upload (Right Arrow) ] [ New ] [ Open ] [ Save ] [ Serial Monitor ] | <--- Toolbar
+    +-----------------------------------------------------------------------+
+    |                                                                       |
+    | // Your Arduino Code Goes Here                                       | <--- Code Editor Window
+    |                                                                       |
+    +-----------------------------------------------------------------------+
+    | [ Compilation Messages | Error Messages | Upload Status | Serial Output ] | <--- Message Area
+    +-----------------------------------------------------------------------+
+              </pre>
+          </div>
+        </div>
+
+
+        <div class="lesson-section">
+          <div class="d-grid gap-2 mt-4">
+            <p>Key Parts of the Arduino IDE:
+            </p>
+            <ul>
+              <li>
+                <strong>Code Editor Window:</strong> This is where you type your Arduino code. It includes features like syntax highlighting to make the code easier to read.
+              </li>
+              <li>
+                <strong>Toolbar:</strong> Contains buttons for common actions:
+                <ul class="mt-2">
+                  <li><strong>Verify (Check Mark):</strong> Compiles your code to check for errors without uploading it.</li>
+                  <li><strong>Upload (Right Arrow):</strong> Compiles and sends your code to the connected Arduino board.</li>
+                  <li><strong>New:</strong> Creates a new sketch (Arduino program).</li>
+                  <li><strong>Open:</strong> Opens an existing sketch.</li>
+                  <li><strong>Save:</strong> Saves your current sketch.</li>
                 </ul>
-              </div>
-            </div>
-          </section>
+              </li>
+              <li>
+                <strong>Serial Monitor:</strong> Opens a window to display serial data from your Arduino board—great for debugging.
+              </li>
+              <li>
+                <strong>Message Area:</strong> Displays feedback from the IDE like compilation errors, upload success messages, and serial output.
+              </li>
+            </ul>
+          </div>
+        </div>  
 
+   
+        <div class="lesson-section">
+          <h4 class="mt-5">The Structure of an Arduino Program 🧱🧱
+          </h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Every Arduino program, also called a sketch, has a basic structure with two main, essential functions:
+            </p>
+            <pre class="p-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+  void setup() {
+    // put your setup code here, to run once:
+  }
+
+  void loop() {
+    // put your main code here, to run repeatedly:
+  }</pre>
+          </div>
+          <ul>
+            <li><code>void setup()</code>: This function runs only once when your Arduino board powers up or is reset. It's where you put code to initialize things, like setting up the communication speed, or telling the Arduino which pins will be inputs and which will be outputs.
+            </li>
+            <li><code>void loop()</code>: This function runs continuously, over and over again, after the <code>setup()</code> function has finished. This is where the main logic of your program goes – the instructions that will be repeated to control your robot or electronic project.
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="lesson-section">
+          <div class="d-grid gap-2 mt-4">
+            <p>Here's a simple example of the blinking LED code again, showing the <code>setup()</code> and <code>loop()</code> functions:
+            </p>
+            <pre class="p-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+    // This code will blink an LED connected to pin 13
+
+    void setup() {
+      // Set digital pin 13 as an OUTPUT
+      pinMode(13, OUTPUT);
+    }
+
+    void loop() {
+      // Turn the LED ON (send HIGH voltage)
+      digitalWrite(13, HIGH);
+      // Wait for 1000 milliseconds (1 second)
+      delay(1000);
+      // Turn the LED OFF (send LOW voltage)
+      digitalWrite(13, LOW);
+      // Wait for 1000 milliseconds (1 second)
+      delay(1000);
+    }</pre>
+          </div>
+          <ul>
+            <li><code>void setup()</code>: This function runs only once when your Arduino board powers up or is reset. It's where you put code to initialize things, like setting up the communication speed, or telling the Arduino which pins will be inputs and which will be outputs.
+            </li>
+            <li><code>void loop()</code>: This function runs continuously, over and over again, after the <code>setup()</code> function has finished. This is where the main logic of your program goes – the instructions that will be repeated to control your robot or electronic project.
+            </li>
+          </ul>
+          <p>In the <code>setup()</code> function, we tell the Arduino that pin 13 will be used to send signals out to the LED. In the <code>loop()</code> function, we tell it to turn the LED on, wait, turn it off, wait, and then repeat that forever.
+          </p>
+        </div>
+
+        <div class="lesson-section">
+          <h4 class="mt-5">Translating Blocks into Arduino Code (More Examples) ↔️
+          </h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Let's look at a few more block-to-code translations:
+            </p>
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped table-hover">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Tinkercad Block</th>
+                          <th>Arduino Code</th>
+                          <th>What it Does</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>set built-in LED to [ON]</td>
+                          <td><code>digitalWrite(LED_BUILTIN, HIGH);</code></td>
+                          <td>Turns the built-in LED on the Arduino board ON.</td>
+                        </tr>
+                        <tr>
+                          <td>set built-in LED to [OFF]</td>
+                          <td><code>digitalWrite(LED_BUILTIN, LOW);</code></td>
+                          <td>Turns the built-in LED on the Arduino board OFF.</td>
+                        </tr>
+                        <tr>
+                          <td>read digital pin [7]</td>
+                          <td><code>digitalRead(7)</code></td>
+                          <td>Reads the digital state of pin 7 (returns HIGH or LOW).</td>
+                        </tr>
+                        <tr>
+                          <td>read analog pin [A0]</td>
+                          <td><code>analogRead(A0)</code></td>
+                          <td>Reads the analog value of pin A0 (returns a value between 0 and 1023).</td>
+                        </tr>
+                        <tr>
+                          <td>if [[read digital pin [4]] == [HIGH]] do { ... }</td>
+                          <td><code>if (digitalRead(4) == HIGH) { ... }</code></td>
+                          <td>Executes the code inside the curly braces if the digital value of pin 4 is HIGH.</td>
+                        </tr>
+                        <tr>
+                          <td>delay [500] (milliseconds)</td>
+                          <td><code>delay(500);</code></td>
+                          <td>Pauses the program for 500 milliseconds (half a second).</td>
+                        </tr>
+                        <tr>
+                          <td>define variable [count] to [0]</td>
+                          <td><code>int count = 0;</code></td>
+                          <td>Creates an integer variable named <code>count</code> and sets its initial value to 0.</td>
+                        </tr>
+                      </tbody>
+                    </table> 
+            </div>
+
+          <ul >
+            <li >
+              <strong>pinMode(pin, mode);</strong>: This function is used in <code>setup()</code> to configure a specific pin as either an <strong>INPUT</strong> (to receive signals) or an <strong>OUTPUT</strong> (to send signals).
+              <ul class="mt-2">
+                <li ><code>pinMode(7, INPUT);</code> sets pin 7 as an input pin.</li>
+                <li><code>pinMode(13, OUTPUT);</code> sets pin 13 as an output pin.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>digitalWrite(pin, value);</strong>: This function sets a digital pin to either <strong>HIGH</strong> (5V) or <strong>LOW</strong> (0V). It's used to control output components.
+              <ul class="mt-2">
+                <li ><code>digitalWrite(13, HIGH);</code> turns on something connected to pin 13.</li>
+              </ul>
+            </li>
+            <li >
+              <strong>digitalRead(pin);</strong>: This function reads the digital value (either HIGH or LOW) from a specified digital pin. It's used to get input from digital sensors.
+              <ul class=" mt-2">
+                <li ><code>int buttonState = digitalRead(2);</code> reads the state of pin 2 and stores it in a variable called <code>buttonState</code>.</li>
+              </ul>
+            </li>
+            <li >
+              <strong>analogRead(pin);</strong>: This function reads the analog value (an integer between 0 and 1023) from a specified analog pin. It's used to get input from analog sensors.
+              <ulmt-2">
+                <li ><code>int lightLevel = analogRead(A0);</code> reads the value from analog pin A0 and stores it in a variable called <code>lightLevel</code>.</li>
+            </li>
+            <li >
+              <strong>delay(milliseconds);</strong>: This function pauses the program execution for the specified number of milliseconds.
+            </li>
+          </ul>
+        </div>
+
+
+        </div>
+
+        <div class="lesson-section">
+          <h4 class="mt-5">Writing Simple Arduino Programs ✍️
+          </h4>
+          <div class="d-grid gap-2 mt-4">
+            <p>Let's walk through writing the blinking LED program directly in the Arduino IDE:
+            </p>
+    <pre class="p-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+    void setup() {
+      // Set digital pin 13 as an output
+      pinMode(13, OUTPUT);
+    }
+    
+    void loop() {
+      // Turn the LED on
+      digitalWrite(13, HIGH);
+      // Wait for 1 second (1000 milliseconds)
+      delay(1000);
+      // Turn the LED off
+      digitalWrite(13, LOW);
+      // Wait for 1 second
+      delay(1000);
+    }</pre>
+    </div>
+    <p>Explanation of Each Line:
+    </p>
+    <ul class="d-grid gap-2">
+      <li><code>void setup() {</code>: This marks the beginning of the <code>setup()</code> function.</li>
+      <li><code>pinMode(13, OUTPUT);</code>: This line tells the Arduino that digital pin number 13 will be used to send signals out (to control the LED).</li>
+      <li><code>}</code>: This curly brace marks the end of the <code>setup()</code> function.</li>
+      <li><code>void loop() {</code>: This marks the beginning of the loop() function, which will run repeatedly.</li>
+      <li><code>digitalWrite(13, HIGH);</code>: This line sends a HIGH voltage (5V) to digital pin 13, which will turn the LED connected to it ON.</li>
+      <li><code>delay(1000);</code>: This line pauses the program for 1000 milliseconds, which is equal to one second. The LED will stay ON for this time.</li>
+      <li><code>digitalWrite(13, LOW);</code>: This line sends a LOW voltage (0V) to digital pin 13, turning the LED OFF.</li>
+      <li><code>delay(1000);</code>: This line pauses the program for another second, so the LED stays OFF for one second.</li>
+      <li><code>}</code>: This curly brace marks the end of the <code>loop()</code> function. The program will then go back to the beginning of the <code>loop()</code> and repeat the process.</li>
+    </ul>
+    
+    <p class="mt-5">Compiling and Uploading (In Principle):
+    </p>
+    <ol class="d-grid gap-2">
+      <li>Connect your Arduino Uno board to your computer using a USB cable.</li>
+      <li>Open the Arduino IDE and paste or type the code into the editor window.</li>
+      <li>Select the correct board: Go to Tools > Board and choose "Arduino Uno".</li>
+      <li>Select the correct port: Go to Tools > Port and select the serial port that your Arduino is connected to (it will usually be labeled with "Arduino" or "USB Serial Device").</li>
+      <li>Compile the code: Click the "Verify" button (the check mark). The IDE will check your code for errors. If there are any, they will be displayed in the message area.</li>
+      <li>Upload the code: If your code compiles without errors, click the "Upload" button (the right arrow). The IDE will compile the code again and then send it to your Arduino board. You should see some messages in the message area indicating the upload process. Once it's done, the LED connected to pin 13 on your physical Arduino board should start blinking!</li>
+    </ol>
+    
+    </div>
+        
+      <!-- explore and egage zone -->
+            <div class="lesson-section">
+              <h4>🚀 Explore & Engage Zone</h4>
+            
+              <h5 class="ms-4">🎮 Interactive Elements and Activities</h5>
+              <p class="my-4">
+                Embedded mini-tasks or digital tools (if available) to apply the concept.
+              </p>
+              <ul class="d-grid gap-3">
+                <li>A Tinkercad simulation with a pre-built circuit where students can modify the block-based code to change the behavior of the circuit.</li>
+                <li>A drag-and-drop activity where students arrange blocks to create a program that controls a virtual robot to perform a simple task.</li>
+              </ul>
+            
+              <h4 class="mt-5">🧰 Supplementary Resources</h4>
+            
+              <h5 class="ms-5">📺 Additional Materials</h5>
+              <p class="my-4">
+                Extra materials like videos, simulators, reference links (e.g., Tinkercad, YouTube).
+              </p>
+              <ul class="d-grid gap-3">
+                <li>A video tutorial on using the Tinkercad block-based editor.</li>
+                <li>Links to Tinkercad tutorials and example projects.</li>
+                <li>A resource explaining basic programming concepts for beginners.</li>
+              </ul>
+
+              <hr class="my-4">
+              <h4>🤔 Reflection Prompt & Local Connection</h4>
+              <p> How might writing real Arduino code give you more control over your robot project compared to using just blocks? Can you think of a local problem where a simple automated solution (like blinking lights or sensors) could be helpful?
+              </p>
+              <hr class="my-4">
+              
+              <div class="lesson-section mt-5">
+                <h4>📝 Summary and Key Takeaways</h4>
+                <p>
+                  Block-based programming is like building with digital LEGO bricks 🧱💡—each block is a command that tells the robot what to do. Instead of writing code, you drag and snap these visual blocks together to create programs. It’s fun, easy, and a perfect way to start your coding journey!
+                </p>        
+                <ul class="d-grid gap-3">
+                    <li>Tinkercad blocks are visual representations of real Arduino code.</li>
+                    <li>The Arduino IDE is where you write, test, and upload your sketches.</li>
+                    <li>Every Arduino sketch includes a <code>setup()</code> (runs once) and a <code>loop()</code> (runs forever).</li>
+                    <li>Writing Arduino code opens the door to more flexible and powerful robot programming!</li>
+                  </ul>
+              </div>
+
+            
+            </div>
+
+          </section>
+        </div>
+        
+        <br /><br />
+        
+        <section>
+          <div class="d-inline-flex gap-1">
+            <button
+              class="btn btn-outline-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseRelatedMCU"
+              aria-expanded="false"
+              aria-controls="collapseRelatedMCU"
+            >
+              <i class="fa-solid fa-link"></i> Sources and Related Content
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="collapse" id="collapseRelatedMCU">
+            <div class="card card-body">
+              <ul class="d-grid gap-3">
+                <li><a href="https://www.arduino.cc/" target="_blank">Arduino Official Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+
+          <br /><br />
+          
           <!-- quiz -->
           <hr />
           <div class="mt-5 lesson-content">
             <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
-            <h4>Test Your Understanding of Sensors!</h4>
+            <h4>
+              Test Your Understanding of Arduino Code
+
+            </h4>
           </div>
           <div id="quiz-intro">
-            <h2 class="">Think You Got It? Let's Find Out!</h2>
+            <h2>Think You Got It? Let's Find Out!</h2>
             <p>Try this quick challenge to see what you’ve learned!</p>
             <button id="start-quiz">
               Launch the Interactive Quiz Challenge
@@ -298,6 +660,8 @@
               </ul>
             </div>
             <button id="submit">Submit</button>
+            <div id="quiz-progress" class="quiz-progress mt-2">Question 1 / 5</div>
+
           </div>
 
           <h5>Check out the other lessons here</h5>
@@ -330,7 +694,7 @@
         rgba(23, 23, 23, 0.986),
         rgba(107, 107, 107, 0.87)
       ),
-      url(../../../images/sensors.jpg);
+      url(../../../images/mcu_coding.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -345,193 +709,84 @@
   }
 </style>
 
-<!-- quiz script -->
 
 <script>
-  const quizData = [
-    {
-      question: "What principle do ultrasonic sensors use to detect objects?",
-      a: "Infrared reflection",
-      b: "Echolocation",
-      c: "Magnetic fields",
-      d: "Light waves",
-      correct: "b",
-      explanation: "Echolocation, like how bats navigate using sound.",
+const quizData = [
+  {
+    question: "What Arduino code does the Tinkercad block set pin [13] to HIGH correspond to?",
+    a: "digitalWrite(13, LOW);",
+    b: "pinMode(13, OUTPUT);",
+    c: "digitalRead(13);",
+    d: "digitalWrite(13, HIGH);",
+    correct: "d",
+    explanation: "digitalWrite(13, HIGH); sends power to pin 13 to turn it ON.",
+    wrongExplanations: {
+      a: "This turns the pin OFF, not ON.",
+      b: "This sets the pin mode but doesn’t turn it on.",
+      c: "This reads the pin, it doesn’t write to it."
     },
-    {
-      question: "Which part of the ultrasonic sensor emits the sound wave?",
-      a: "Microcontroller",
-      b: "Echo receiver",
-      c: "Transmitter",
-      d: "Speaker",
-      correct: "c",
-      explanation: "The transmitter sends out the sound wave.",
+  },
+  {
+    question: "What is the purpose of the delay(1000); command in Arduino?",
+    a: "It reads a sensor.",
+    b: "It sets a pin to HIGH.",
+    c: "It pauses the program for 1 second.",
+    d: "It repeats the loop forever.",
+    correct: "c",
+    explanation: "delay(1000); pauses the program for 1000 milliseconds, or 1 second.",
+    wrongExplanations: {
+      a: "Reading a sensor requires analogRead() or digitalRead().",
+      b: "Setting a pin HIGH uses digitalWrite().",
+      d: "The loop() function repeats the program forever, not delay()."
     },
-    {
-      question:
-        "What does the ultrasonic sensor measure to calculate distance?",
-      a: "Temperature",
-      b: "Voltage",
-      c: "Time",
-      d: "Speed",
-      correct: "c",
-      explanation: "It calculates how long the echo takes to return.",
+  },
+  {
+    question: "What does the setup() function do in an Arduino sketch?",
+    a: "It runs over and over again.",
+    b: "It runs once at the start to set initial configurations.",
+    c: "It reads sensor values continuously.",
+    d: "It uploads the code to the board.",
+    correct: "b",
+    explanation: "setup() runs once to configure things like pin modes.",
+    wrongExplanations: {
+      a: "That’s the job of the loop() function.",
+      c: "You usually place sensor reading inside loop().",
+      d: "Uploading code is done through the IDE, not in the sketch."
     },
-    {
-      question:
-        "Which factor does NOT typically affect ultrasonic sensor accuracy?",
-      a: "Angle of object",
-      b: "Material of object",
-      c: "Color of object",
-      d: "Background noise",
-      correct: "c",
-      explanation: "Color has no impact—sound, not light, is used.",
+  },
+  {
+    question: "Which block translates to for (int i = 0; i < 10; i++) { ... } in Arduino?",
+    a: "wait [1] seconds",
+    b: "repeat [10] times { ... }",
+    c: "if [condition] do { ... }",
+    d: "define variable [i] to [0]",
+    correct: "b",
+    explanation: "The block repeat [10] times matches a for loop in code.",
+    wrongExplanations: {
+      a: "That pauses the program but doesn’t repeat actions.",
+      c: "That only runs something once if a condition is true.",
+      d: "This defines a variable, not a loop."
     },
-    {
-      question:
-        "What is one common application of ultrasonic sensors in robotics?",
-      a: "Detecting light",
-      b: "Obstacle avoidance",
-      c: "Reading QR codes",
-      d: "Measuring temperature",
-      correct: "b",
-      explanation: "Robots use these sensors to avoid bumping into things.",
+  },
+  {
+    question: "What does the Verify button (Check Mark) do in the Arduino IDE?",
+    a: "It sends code to the Arduino board.",
+    b: "It reads sensor values from the board.",
+    c: "It checks your code for errors before uploading.",
+    d: "It runs the Serial Monitor.",
+    correct: "c",
+    explanation: "The Verify button compiles your code and highlights errors.",
+    wrongExplanations: {
+      a: "That’s what the Upload button does.",
+      b: "Reading sensor data is done through code, not this button.",
+      d: "The Serial Monitor has its own button."
     },
-  ];
-
-  const intro = document.getElementById("quiz-intro");
-  const quizContainer = document.getElementById("quiz");
-  const startBtn = document.getElementById("start-quiz");
-
-  startBtn.addEventListener("click", () => {
-    intro.style.display = "none";
-    quizContainer.style.display = "block";
-  });
-
-  const quiz = document.getElementById("quiz");
-  const answerEls = document.querySelectorAll(".answer");
-  const questionEl = document.getElementById("question");
-  const a_text = document.getElementById("a_text");
-  const b_text = document.getElementById("b_text");
-  const c_text = document.getElementById("c_text");
-  const d_text = document.getElementById("d_text");
-  const submitBtn = document.getElementById("submit");
-
-  let currentQuiz = 0;
-  let score = 0;
-  let answered = false;
-
-  loadQuiz();
-
-  function loadQuiz() {
-    deselectAnswers();
-    resetStyles();
-    answered = false;
-
-    const currentQuizData = quizData[currentQuiz];
-    questionEl.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
-    submitBtn.innerText = "Submit";
   }
+];
 
-  function getSelected() {
-    let answer = undefined;
-    answerEls.forEach((answerEl) => {
-      if (answerEl.checked) {
-        answer = answerEl.id;
-      }
-    });
-    return answer;
-  }
+const perfectFeedback = "Outstanding! 🌟 You’ve clearly grasped how Tinkercad blocks relate to Arduino code and the structure of real programs. Keep translating those blocks into powerful text code like a pro! 🚀";
+const notPerfectFeedback = "Great effort! 💡 You’re building a solid foundation in translating blocks to code and using the Arduino IDE. Keep practicing, and soon you’ll be coding like a pro! 💪";
 
-  function deselectAnswers() {
-    answerEls.forEach((answerEl) => {
-      answerEl.checked = false;
-    });
-  }
-
-  function resetStyles() {
-    document.querySelectorAll("label").forEach((label) => {
-      label.style.backgroundColor = "";
-      label.style.color = "";
-    });
-  }
-
-  function disableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = true;
-    });
-  }
-
-  function enableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = false;
-    });
-  }
-
-  submitBtn.addEventListener("click", () => {
-    const answer = getSelected();
-
-    if (!answered) {
-      if (answer) {
-        answered = true;
-
-        const currentData = quizData[currentQuiz];
-        const explanation = currentData.explanation;
-        const correct = currentData.correct;
-
-        disableAnswers();
-
-        if (answer === correct) {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#4CAF50"; // Green
-          score++;
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
-        } else {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#F44336"; // Red
-          document.getElementById(`${correct}_text`).style.backgroundColor =
-            "#4CAF50"; // Highlight correct
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${explanation}</p>`;
-        }
-
-        submitBtn.innerText =
-          currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
-      }
-    } else {
-      currentQuiz++;
-      if (currentQuiz < quizData.length) {
-        enableAnswers();
-        loadQuiz();
-      } else {
-        showFinalScore();
-      }
-    }
-  });
-
-  function showFinalScore() {
-    const percent = (score / quizData.length) * 100;
-
-    quiz.innerHTML = `
-    <h2>You got ${score} out of ${quizData.length} correct (${percent}%).</h2>
-    <div id="quiz-feedback" class="quiz-feedback"></div>
-    <button class="quiz-retry" onclick="location.reload()">Try Again</button>
-  `;
-
-    // show feedback based on score
-    const feedbackEl = document.getElementById("quiz-feedback");
-
-    if (score === quizData.length) {
-      feedbackEl.textContent =
-        "Awesome work! You really get how sensors make robots smart. Keep it up!";
-      feedbackEl.className = "quiz-feedback perfect-score";
-    } else {
-      feedbackEl.textContent =
-        "Nice try! Review what you missed — you're learning and improving!";
-      feedbackEl.className = "quiz-feedback review-needed";
-    }
-  }
 </script>
+
+<script src="../../../js/lesson-quiz.js"></script>
