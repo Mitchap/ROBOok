@@ -41,14 +41,14 @@
         class="d-flex align-items-center justify-content-center"
         style="height: 100%"
       >
-        <h1 class="text-light banner-text">Sensor Types</h1>
+        <h1 class="text-light banner-text">Programming</h1>
       </div>
     </section>
 
     <div class="mt-5 ms-3 ms-md-5">
       <a
         class="btn btn-primary"
-        href="../../../modules/sensors/sensor_types.html"
+        href="../../../modules/mcu_and_coding/programming.html"
       >
         <i class="fa-solid fa-chevron-left"></i> Back
       </a>
@@ -69,122 +69,488 @@
           <!-- Lessons -->
           <a
             class="my-1 "
-            href="../../../lessons/sensors/sensor_types/seeing_with_sound.html"
+            href="../../..//lessons/mcu_and_coding/programming/language_of_robots.html"
             >Lesson<span class="opacity-0">_</span>1</a
           >
-          <a class="my-1 active" href="../../../lessons/sensors/sensor_types/sensing_light_color.html">Lesson<span class="opacity-0">_</span>2</a>
-          <a class="my-1 " href="../../../lessons/sensors/sensor_types/power_of_robot_touch.html">Lesson<span class="opacity-0">_</span>3</a>
-          <a class="my-1" href="../../../lessons/sensors/sensor_types/motion_balance_masters.html">Lesson<span class="opacity-0">_</span>4</a>
+          <a class="my-1 " href="../../../lessons/mcu_and_coding/programming/block_based_coding.html">Lesson<span class="opacity-0">_</span>2</a>
+          <a class="my-1 " href="../../../lessons/mcu_and_coding/programming/arduino_code.html">Lesson<span class="opacity-0">_</span>3</a>
+          <a class="my-1 active" href="../../../lessons/mcu_and_coding/programming/variables_and_control.html">Lesson<span class="opacity-0">_</span>4</a>
         
         </div>
 
         <div class="mt-5 lesson-content">
-          <h3 class="fw-bold">Lesson 2</h3>
-          <h5 class="fw-medium">Sensing Light: From Simple Detection to Color Recognition</h5>
+          <section class="lesson-section">
+            <h3 class="fw-bold">📘 Lesson 4</h3>
+            <h5 class="fw-medium">From Blocks to Text: Introducing Arduino Code
+            </h5> 
         
-          <p>
-            Imagine a robot sorting candies by color or following a line across a maze. How does it know where to go or what color it's seeing? That magic comes from light sensors. Just like our eyes respond to light, robots use special sensors to detect brightness and even color. In this lesson, you'll explore how robots use light to see and understand their surroundings.
-          </p>
-        
-          <div class=" text-center my-5 img-fluid">
-            <img class="lesson-media" src="GIF-of-robot-following-line-or-sorting-blocks" alt="Robot sorting candies" />
+            <div class="lesson-section mt-5">
+
+        <div class="d-flex flex-wrap align-items-center justify-content-center my-4">
+          <div class="col-md-5 p-3">
+            <p class="lh-base fs-5">
+              To make robots truly useful, we need to give them the ability to make decisions and repeat actions. This is where variables and control structures come in. Variables are like containers that hold information, and control structures are the rules that determine how a program flows. In this lesson, we'll explore these fundamental programming concepts using both Tinkercad blocks and Arduino text code, and see how they empower robots to perform complex tasks.
+            </p>
           </div>
-        
-          <h3>What You'll Learn in This Lesson:</h3>
-          <ul>
-            <li>Explain how basic light sensors detect brightness and light levels.</li>
-            <li>Describe how color sensors detect different wavelengths of light.</li>
-            <li>Identify practical uses of light and color sensors in robotics.</li>
-          </ul>
-        
-          <h3>How Light Sensors Work</h3>
-          <p>
-            Light sensors detect the presence and intensity of light. They work by converting light into an electrical signal. The more light hits the sensor, the stronger the signal. Robots use this information to decide what to do.
-          </p>
-        
-          <h4>Photodiodes and LDRs (Light Dependent Resistors)</h4>
-          <p>
-            These are common types of basic light sensors. A Light Dependent Resistor changes its resistance based on the amount of light it receives. It’s like how your eyes squint in bright sunlight.
-          </p>
-        
-          <h4>What Are Color Sensors?</h4>
-          <p>
-            Color sensors go a step further. They can detect different colors by measuring the intensity of light across three channels: Red, Green, and Blue (RGB). By comparing these values, the robot can identify colors like yellow, purple, or green.
-          </p>
-        
-          <div class="text-center">
-            <img class="lesson-media" src="link-to-RGB-sensor-example-image" alt="RGB sensor visual analogy" />
+          <div class=" p-3 text-center">
+    
+            <img src="../../../images/variables_and_control.png" class="lesson-media">
           </div>
+        </div>
+        </div>
         
-          <h4>Where Are These Sensors Used?</h4>
-          <ul>
-            <li><strong>Line Following Robots:</strong> Use basic light sensors to detect the contrast between a dark line and a light background.</li>
-            <li><strong>Sorting Systems:</strong> Robots with color sensors can separate red apples from green ones.</li>
-            <li><strong>Light-Responsive Robots:</strong> Some robots react to changes in light intensity, like solar-powered bots turning toward the sun.</li>
+        <div class="lesson-section">
+          <h4>🎯 What You'll Learn in This Lesson:</h4>
+          <ul class="d-grid gap-3">
+          <li>Define variables and explain their purpose in programming.</li>
+          <li>Introduce fundamental control structures:
+            <ul class="d-grid gap-1">
+              <li>Conditional statements (if/else)</li>
+              <li>Loops (for, while)</li>
+            </ul>
+          </li>
+          <li>Implement variables and control structures using Tinkercad blocks.</li>
+          <li>Implement variables and control structures using Arduino text code.</li>
+          <li>Understand how variables and control structures enable robots to perform more complex behaviors.</li>
           </ul>
-        
-          <h3>Summary and Key Takeaways</h3>
-          <ul>
-            <li>Light sensors help robots detect brightness and light levels.</li>
-            <li>Color sensors can detect specific colors using RGB values.</li>
-            <li>These sensors are essential for tasks like line following, sorting, and environment interaction.</li>
+        </div>
+
+        <div class="lesson-section">
+          <h4>Variables: Storing Information</h4>
+          <ul class="d-grid gap-3">
+            <li>Explain what a variable is: a named storage location in a computer's memory that can hold a value.</li>
+            <li>Use an analogy:
+              <ul class="d-grid gap-1">
+                <li>Compare a variable to a labeled box that can hold different items (data). The label is the variable name, and the items are the values.</li>
+              </ul>
+            </li>
+            <li>Explain the importance of variables:
+              <ul class="d-grid gap-1">
+                <li>They allow programs to store and manipulate data.</li>
+                <li>They make programs more flexible and reusable.</li>
+              </ul>
+            </li>
+            <li>Show how to create and use variables in both Tinkercad blocks and Arduino code:
+              <ul class="d-grid gap-1">
+                <li>Tinkercad: Show the "set variable" and "change variable" blocks.</li>
+                <li>Arduino: Explain how to declare variables with different data types (e.g., int, float, String) and assign values to them.</li>
+              </ul>
+            </li>
           </ul>
         </div>
         
+        <div class="lesson-section">
+          <h4>Conditional Statements: Making Decisions</h4>
+          <ul class="d-grid gap-3">
+            <li>Explain the concept of conditional statements, which allow a program to execute different code blocks based on whether a condition is true or false.</li>
+            <li>Introduce the if and if...else statements.</li>
+            <li>Use a flowchart to illustrate the logic of conditional statements.</li>
+            <li>Show how to implement conditional statements in both Tinkercad blocks and Arduino code:
+              <ul class="d-grid gap-1">
+                <li>Tinkercad: Show the "if...do" and "if...else" blocks.</li>
+                <li>Arduino: Explain the syntax of the if and if...else statements, including the use of comparison operators (e.g., ==, !=, <, >).</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="lesson-section">
+          <h4>Loops: Repeating Actions</h4>
+          <ul class="d-grid gap-3">
+            <li>Explain the concept of loops, which allow a program to execute a block of code repeatedly.</li>
+            <li>Introduce the for and while loops.</li>
+            <li>Use a diagram to illustrate how loops work.</li>
+            <li>Show how to implement loops in both Tinkercad blocks and Arduino code:
+              <ul class="d-grid gap-1">
+                <li>Tinkercad: Show the "repeat" block (which can be used to create a simple for loop) and explain how to create more complex loops.</li>
+                <li>Arduino: Explain the syntax of the for and while loops, including how to initialize a counter, specify a condition, and update the counter.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="lesson-section">
+          <h4>Using Variables and Control Structures in Robot Programming</h4>
+          <ul class="d-grid gap-3">
+            <li>Provide examples of how variables and control structures can be used to program robot behavior:
+              <ul class="d-grid gap-1">
+                <li>Example 1: A robot that moves forward until it detects an obstacle (using a while loop and a distance sensor).</li>
+                <li>Example 2: A robot that turns left or right based on which button is pressed (using an if...else statement and digital input).</li>
+                <li>Example 3: A robot that follows a sequence of steps a specific number of times (using a for loop).</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="lesson-section">
+          <h4>Variables: Your Program's Memory Boxes 📦</h4>
+          <ul class="d-grid gap-3">
+            <li>Imagine you have a bunch of labeled boxes. Each box has a name tag on it, like "score," "temperature," or "robotSpeed." Inside these boxes, you can put different items – numbers, words, or even true/false values.</li>
+            <li>In programming, these labeled boxes are called variables. A variable is a named storage location in the computer's memory that can hold a value. The label on the box is the variable name, and the items inside are the values the variable holds.</li>
+            <li>Why are variables important?
+              <ul class="d-grid gap-1">
+                <li>Storing and Manipulating Data: Variables let your program remember information and change it as needed. For example, you can store the distance read by a sensor in a variable and then use that value to decide what the robot should do.</li>
+                <li>Flexibility and Reusability: Instead of using specific values directly in your code, you can use variables. This makes your programs more flexible. If you need to change a value (like the speed of a motor), you only need to change it in the variable, not everywhere it's used in your code. This makes your code easier to update and reuse for different situations.</li>
+              </ul>
+            </li>
+            <li>Using Variables in Tinkercad Blocks:
+              <ul class="d-grid gap-1">
+                <li>In the Tinkercad Code editor (Blocks mode), click on the "Variables" category.</li>
+                <li>Click the "Create Variable..." button and give your variable a name (e.g., speed, buttonState).</li>
+                <li>You'll now see blocks like:</li>
+                <li><code>set [variable name] to [value]</code>: This block is like putting an item into your labeled box. It assigns a specific value to your variable name.</li>
+                <li><code>change [variable name] by [value]</code>: This block is like adding or removing items from your box. It increases or decreases the current value of your variable name by the specified value.</li>
+                <li>You can also use the variable's name block (e.g., speed) to access the value stored in it within other blocks (like in math calculations or comparisons).</li>
+                <li>(Imagine a screenshot of the Tinkercad Variables blocks category with "set variable" and "change variable" highlighted)</li>
+              </ul>
+            </li>
+            <li>Using Variables in Arduino Code:
+              <ul class="d-grid gap-1">
+                <li>In Arduino (text-based), you need to declare a variable before you can use it. This means telling the computer the variable's name and what type of data it will hold. We use data types to do this:</li>
+                <li><code>int</code> (integer): For whole numbers (e.g., -10, 0, 5).</li>
+                <li><code>float</code> (floating-point): For numbers with decimal points (e.g., 3.14, -0.5).</li>
+                <li><code>String</code>: For sequences of characters (text) (e.g., "Hello", "Robot Name").</li>
+                <li><code>boolean</code> (bool): For true or false values.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-          <br /><br />
+        <div class="lesson-section">
+          <p>To declare a variable, you write the data type, followed by the variable name, and then you can optionally assign an initial value using the = operator:</p>
+            <pre class="p-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+    int score = 0;     // Declares an integer variable named 'score' and sets it to 0
 
-          <section>
-            <div class="d-inline-flex gap-1">
-              <button
-                class="btn btn-outline-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseResources"
-                aria-expanded="false"
-                aria-controls="collapseResources"
-              >
-              <i class="fa-solid fa-link"></i> Sources and Related Content
-                <i class="fa-solid fa-chevron-down"></i>
-              </button>
-            </div>
-            <div class="collapse" id="collapseResources">
-              <div class="card card-body">
-                <ul class="list-unstyled">
-                  <li>
-                    Tinkercad. (n.d.). Line Following Robot Simulation. 
-                    <a href="https://www.tinkercad.com/" target="_blank">https://www.tinkercad.com/</a>
+    float temperature; // Declares a floating-point variable named 'temperature' (no initial value)
+
+    String message = "Starting"; // Declares a String variable and sets it to "Starting"
+
+    boolean isButtonPressed = false; // Declares a boolean variable and sets it to false</pre>
+        </div>
+ 
+        
+        <div class="lesson-section">
+          <p>To change the value of a variable later in your code, you simply use the variable name and the = operator:</p>
+            <pre class="p-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+    score = 10;          // Changes the value of 'score' to 10
+
+    temperature = 25.5;  // Changes the value of 'temperature' to 25.5
+
+    message = "Running"; // Changes the value of 'message' to "Running"
+
+    isButtonPressed = true; // Changes the value of 'isButtonPressed' to true</pre>
+        </div>
+
+        <div class="lesson-section mt-5">
+          <h4>Conditional Statements: Making Decisions 🤔
+          </h4>
+          <div class="d-grid gap-3">
+            <p><strong>Conditional statements</strong> are like asking a question in your program. They allow your program to execute different blocks of code depending on whether a certain condition is true or false. This is how you make your robot behave differently in different situations.</p>
+          <p>The most common conditional statements are <code>if</code> and <code>if...else.</code></p>
+        <p class="fw-bold">Logic Flowchart:
+        </p>
+        <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);">
+            START
+              |
+              V
+          +-------+
+          | Check | <--- Condition (True or False?)
+          | Condition |
+          +-------+
+          /       \
+         True     False
+          |         |
+          V         V
+    +-------+     +-------+
+    | Do    |     | Do    | <--- Code Block (Executed if False)
+    | This  |     | That  |
+    | Code  |     +-------+
+    +-------+
+      |
+      V
+    END (or Continue)</pre>  
+        </div>            
+          <ul class="d-grid gap-3">
+            <li><strong><code>if</code> statement:</strong> If the condition is true, the code inside the if block is executed. If the condition is false, the code inside the if block is skipped.</li>
+            <li><strong><code>if...else</code> statement:</strong> If the condition is true, the code inside the if block is executed. If the condition is false, the code inside the else block is executed. </li>
+          </ul>
+        </div>
+        <section class="lesson-section">
+          <h2>📘 Conditional Statements in Tinkercad Blocks</h2>
+          <p>In the Tinkercad Code editor (Blocks mode), click on the <strong>"Control"</strong> category.</p>
+          <ul>
+            <li>You'll find the <code>if [condition] do</code> and <code>if [condition] do { ... } else { ... }</code> blocks.</li>
+            <li>The <code>[condition]</code> part is where you place blocks that evaluate to true or false (usually using blocks from the <strong>"Math"</strong> or <strong>"Input"</strong> categories to compare values).</li>
+            <li>The blocks you want to execute based on the condition go inside the <code>do</code> (or the <code>if</code> and <code>else</code> sections).</li>
+          </ul>
+          <p><em>(Imagine a screenshot of the Tinkercad Control blocks category with "if...do" and "if...else" highlighted)</em></p>
+        </section>
+        
+        <section class="lesson-section">
+          <h2>📗 Conditional Statements in Arduino Code</h2>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code >if (condition) {
+          // Code to execute if the condition is true
+        }
+        
+        if (condition) {
+          // Code to execute if the condition is true
+        } else {
+          // Code to execute if the condition is false
+        }</code></pre>
+          <p>The <code>(condition)</code> is an expression that evaluates to either true or false. We often use comparison operators to create these conditions:</p>
+          <ul>
+            <li><code>==</code> (equal to)</li>
+            <li><code>!=</code> (not equal to)</li>
+            <li><code>&lt;</code> (less than)</li>
+            <li><code>&gt;</code> (greater than)</li>
+            <li><code>&lt;=</code> (less than or equal to)</li>
+            <li><code>&gt;=</code> (greater than or equal to)</li>
+          </ul>
+          <h3>Examples:</h3>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>int temperature = 22;
+        if (temperature &gt; 25) {
+          // Turn on the fan
+        }
+        
+        int buttonState = digitalRead(7);
+        if (buttonState == HIGH) {
+          // Robot moves forward
+        } else {
+          // Robot stops
+        }</code></pre>
+        </section>
+        
+        <section class="lesson-section">
+          <h2>🔄 Loops: Repeating Actions</h2>
+          <p>Loops are a way to make your program execute a block of code repeatedly without having to write the same instructions over and over again. This is super useful for tasks you want your robot to do multiple times.</p>
+          <p>The most common types of loops are <strong>for</strong> and <strong>while</strong>.</p>
+        
+          <h3>Loop Diagram (General Concept):</h3>
+          <p><em>(Diagram Description)</em></p>
+          <ul>
+            <li>START → Initialize Counter/Condition → Check Condition</li>
+            <li>→ If True: Do Code → Update Counter → (Loop)</li>
+            <li>→ If False: Exit</li>
+          </ul>
+        
+          <h3>for loop</h3>
+          <p>Used when you know how many times you want to repeat a block of code. It usually involves a counter that starts at a certain value, increases (or decreases) each time the loop runs, and stops when it reaches a certain condition.</p>
+        
+          <h3>while loop</h3>
+          <p>Used when you want to repeat a block of code as long as a certain condition is true. The loop continues to run until the condition becomes false.</p>
+        </section>
+        
+        <section class="lesson-section">
+          <h2>🧱 Loops in Tinkercad Blocks</h2>
+          <p>In the Tinkercad Code editor (Blocks mode), click on the <strong>"Control"</strong> category.</p>
+          <ul>
+            <li>The <code>repeat [number] times</code> block is a simple form of a <code>for</code> loop.</li>
+            <li>You can use the <code>repeat until [condition]</code> block for <code>while</code>-like behavior.</li>
+          </ul>
+          <p><em>(Imagine a screenshot of the Tinkercad Control blocks category with "repeat" and "repeat until" highlighted)</em></p>
+        </section>
+        
+        <section class="lesson-section">
+          <h2>💻 Loops in Arduino Code</h2>
+          <h3>for loop:</h3>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>for (initialization; condition; increment/decrement) {
+          // Code to be repeated
+        }</code></pre>
+          <ul>
+            <li><strong><code>initialization</code></strong>: Sets up a counter variable (runs once at the beginning).</li>
+            <li><strong><code>condition</code></strong>: Checked before each iteration. The loop continues as long as it's true.</li>
+            <li><strong><code>increment/decrement</code></strong>: Changes the counter variable after each iteration.</li>
+          </ul>
+          <p><strong>Example:</strong></p>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>for (int i = 0; i &lt; 5; i++) { // Repeat 5 times
+          digitalWrite(13, HIGH);
+          delay(500);
+          digitalWrite(13, LOW);
+          delay(500);
+        }</code></pre>
+        
+          <h3>while loop:</h3>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>while (condition) {
+          // Code to be repeated as long as the condition is true
+          // Make sure something inside the loop changes the condition eventually!
+        }</code></pre>
+          <ul>
+            <li><strong><code>condition</code></strong>: Checked before each iteration. It's crucial to have something inside the loop that will eventually make the condition false.</li>
+          </ul>
+          <p><strong>Example:</strong></p>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>int distance = 100;
+        while (distance &gt; 50) {
+          // Move forward
+          delay(100);
+          distance = readDistanceSensor(); // Assume this function reads the distance
+        }
+        // Stop moving</code></pre>
+        </section>
+        
+        <section class="lesson-section">
+          <h2>🤖🧠 Using Variables and Control Structures in Robot Programming</h2>
+        
+          <h3>Example 1: Robot Moves Until Obstacle</h3>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>// Assume 'distanceSensorPin' is connected to a distance sensor
+        int obstacleDistance = 30; // Threshold distance in cm
+        
+        void loop() {
+          int currentDistance = analogRead(distanceSensorPin); // Read distance
+        
+          while (currentDistance &gt; obstacleDistance) {
+            // Move robot forward (control motors here)
+            delay(50);
+            currentDistance = analogRead(distanceSensorPin); // Keep updating distance
+          }
+          // Stop robot (stop motors here)
+        }</code></pre>
+          <p><em>(Tinkercad Blocks equivalent would involve a 'while' loop using the 'repeat until' block with a comparison of the analog sensor reading to a value.)</em></p>
+        
+          <h3 class="mt-5">Example 2: Robot Turns Based on Button Press</h3>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>int leftButtonPin = 2;
+        int rightButtonPin = 3;
+        int leftMotorPin = 9;
+        int rightMotorPin = 10;
+        
+        void setup() {
+          pinMode(leftButtonPin, INPUT_PULLUP);
+          pinMode(rightButtonPin, INPUT_PULLUP);
+          pinMode(leftMotorPin, OUTPUT);
+          pinMode(rightMotorPin, OUTPUT);
+        }
+        
+        void loop() {
+          if (digitalRead(leftButtonPin) == LOW) {
+            digitalWrite(leftMotorPin, HIGH);
+            digitalWrite(rightMotorPin, LOW);
+            delay(500);
+            digitalWrite(leftMotorPin, LOW);
+            digitalWrite(rightMotorPin, LOW);
+          } else if (digitalRead(rightButtonPin) == LOW) {
+            digitalWrite(leftMotorPin, LOW);
+            digitalWrite(rightMotorPin, HIGH);
+            delay(500);
+            digitalWrite(leftMotorPin, LOW);
+            digitalWrite(rightMotorPin, LOW);
+          } else {
+            // Move robot forward (or do nothing)
+          }
+          delay(100);
+        }</code></pre>
+          <p><em>(Tinkercad Blocks equivalent would use 'if...else if...else' blocks with digital input readings and 'set pin' blocks for motor control.)</em></p>
+        
+          <h3 class="mt-5">Example 3: Robot Follows Steps</h3>
+          <pre class="p-2 mt-2" style="background-color: #1b1b1b; color: rgb(135, 201, 36);"><code>int steps = 4;
+        int forwardTime = 1000; // Milliseconds
+        
+        void setup() {
+          // Configure motor control pins as OUTPUTs
+        }
+        
+        void loop() {
+          for (int i = 0; i &lt; steps; i++) {
+            // Move robot forward
+            delay(forwardTime);
+            // Stop robot
+            delay(500);
+          }
+          delay(5000); // Wait before repeating
+        }</code></pre>
+          <p><em>(Tinkercad Blocks equivalent would use a 'repeat [steps] times' block with blocks for motor control and delays inside.)</em></p>
+        </section>
+        
+      <!-- explore and egage zone -->
+            <div class="lesson-content">
+              <h4>🚀 Explore & Engage Zone</h4>
+            
+              <h5 class="ms-4">🎮 Interactive Elements and Activities</h5>
+              <p class="my-4">
+                Embedded mini-tasks or digital tools (if available) to apply the concept.
+              </p>
+              <ul class="d-grid gap-3">
+                <li>A Tinkercad simulation with a pre-built circuit where students can modify the block-based code to change the behavior of the circuit.</li>
+                <li>A drag-and-drop activity where students arrange blocks to create a program that controls a virtual robot to perform a simple task.</li>
+              </ul>
+            
+              <h4 class="mt-5">🧰 Supplementary Resources</h4>
+            
+              <h5 class="ms-5">📺 Additional Materials</h5>
+              <p class="my-4">
+                Extra materials like videos, simulators, reference links (e.g., Tinkercad, YouTube).
+              </p>
+              <ul class="d-grid gap-3">
+                <li>A video tutorial on using the Tinkercad block-based editor.</li>
+                <li>Links to Tinkercad tutorials and example projects.</li>
+                <li>A resource explaining basic programming concepts for beginners.</li>
+              </ul>
+
+              <div class="lesson-section">
+
+                <hr>
+                <h4>🤔 Reflection Prompt & Local Connection</h4>
+                <p>Think about the everyday tasks you do at home—like turning off a fan when it’s too cold, checking if the rice cooker is done, or repeating chores daily. These actions often depend on conditions (“if the fan is on and it’s cold, turn it off”) or routines (“repeat until everything is clean”).  </p>
+                <br>
+                <p class="fw-medium">How do you think these everyday decisions and repeated tasks relate to how a robot uses variables, conditionals, and loops to make decisions and take actions? Can you think of a local appliance or project that could be improved with these programming concepts?</p>
+                <hr>
+              </div>
+              
+              <div class="lesson-section mt-5">
+                <h4>📝 Summary and Key Takeaways</h4>
+                <p>
+                  Block-based programming is like building with digital LEGO bricks 🧱💡—each block is a command that tells the robot what to do. Instead of writing code, you drag and snap these visual blocks together to create programs. It’s fun, easy, and a perfect way to start your coding journey!
+                </p>        
+                <ul class="d-grid gap-3">
+                  <li>Variables are like memory boxes 📦 that store information your program needs to use and change, such as speed, distance, or status.
                   </li>
-                  <li class="mt-2">
-                    Arduino. (n.d.). Analog Input – Arduino Reference. 
-                    <a href="https://www.arduino.cc/" target="_blank">https://www.arduino.cc/</a>
-                  </li>
-                  <li class="mt-2">
-                    SparkFun. (n.d.). How Color Sensors Work. 
-                    <a href="https://learn.sparkfun.com/tutorials" target="_blank">https://learn.sparkfun.com/tutorials</a>
-                  </li>
-                  <li class="mt-2">
-                    APA Style: Arduino. (n.d.). Analog Read Serial. 
-                    <a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial" target="_blank">https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogReadSerial</a>
-                  </li>
-                  <li class="mt-2">
-                    SparkFun. (n.d.). How to Use a Color Sensor. 
-                    <a href="https://learn.sparkfun.com/tutorials" target="_blank">https://learn.sparkfun.com/tutorials</a>
-                  </li>
+                  <li>Conditionals (like if and if...else) allow your robot to make decisions based on sensor input or data—just like choosing what to do based on the weather!</li>
+                  <li>Loops (like for and while) let your robot repeat actions without writing code over and over—perfect for tasks that happen many times.</li>
+                  <li>In Tinkercad Blocks, variables and control structures are visual and beginner-friendly. You can easily set, change, and use conditions and loops.</li>
+                  <li>In Arduino Code, you declare variables with data types (int, float, boolean, etc.) and write control structures in a structured syntax.</li>
+                  <li>Together, these tools let you build smarter, more responsive robots that interact with their environment and follow sequences—just like a mini helper with a plan! 🤖</li>
                 </ul>
               </div>
             </div>
           </section>
-          
+        </div>
+        <br /><br />
+        
+        <section>
+          <div class="d-inline-flex gap-1">
+            <button
+              class="btn btn-outline-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseRelatedMCU"
+              aria-expanded="false"
+              aria-controls="collapseRelatedMCU"
+            >
+              <i class="fa-solid fa-link"></i> Sources and Related Content
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="collapse" id="collapseRelatedMCU">
+            <div class="card card-body">
+              <ul class="d-grid gap-3">
+                <li><a href="https://www.arduino.cc/" target="_blank">Arduino Official Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+
+          <br /><br />
           
           <!-- quiz -->
           <hr />
-          <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
-          <h4>
-            Test Your Understanding of Sensors!
-          </h4>
+          <div class="mt-5 lesson-section">
+            <h3 class="fw-bold">🚦 QUICK QUIZ:</h3>
+            <h4>
+              Test Your Understanding of Variables and Control
+              
+            </h4>
+          </div>
           <div id="quiz-intro">
-            <h2 class="">Think You Got It? Let's Find Out!</h2>
+            <h2>Think You Got It? Let's Find Out!</h2>
             <p>Try this quick challenge to see what you’ve learned!</p>
             <button id="start-quiz">
               Launch the Interactive Quiz Challenge
@@ -214,10 +580,16 @@
               </ul>
             </div>
             <button id="submit">Submit</button>
+            <div id="quiz-progress" class="quiz-progress mt-2">Question 1 / 5</div>
+
           </div>
 
-          <h5>Check out the other lessons here</h5>
+
+          <h5>You've completed this topic, but you can still check out the other lessons here</h5>
           <button class="btn btn-primary" onclick="openNav()">Lessons</button>
+
+          <h5 class="mt-5">Next Topic: Code Actions</h5>
+          <a class="btn btn-info" href="../../../modules/mcu_and_coding/code_actions.html">Go now!</a>  
         </div>
       </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -246,7 +618,7 @@
         rgba(23, 23, 23, 0.986),
         rgba(107, 107, 107, 0.87)
       ),
-      url(../../../images/sensors.jpg);
+      url(../../../images/mcu_coding.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -261,190 +633,84 @@
   }
 </style>
 
-<!-- quiz script -->
 
 <script>
 const quizData = [
   {
-    question: "What does a light-dependent resistor do?",
-    a: "Emits light when powered",
-    b: "Changes resistance based on light",
-    c: "Measures temperature",
-    d: "Detects sound waves",
+    question: "What is the BEST description of a variable in programming?",
+    a: "A robot’s physical component that moves",
+    b: "A named storage location in a computer’s memory",
+    c: "A special kind of loop that never ends",
+    d: "A signal from a sensor",
     correct: "b",
-    explanation: "LDRs respond to light by changing resistance.",
+    explanation: "A variable is like a labeled box in your program where data is stored and can be changed when needed.",
+    wrongExplanations: {
+      a: "That describes an actuator.",
+      c: "That’s a description of an infinite loop.",
+      d: "Sensor signals are inputs, not variables themselves."
+    },
   },
   {
-    question: "What type of light does a color sensor detect?",
-    a: "Ultraviolet only",
-    b: "White light only",
-    c: "Red, Green, and Blue",
-    d: "Infrared only",
-    correct: "c",
-    explanation: "Color sensors detect RGB light to identify colors.",
-  },
-  {
-    question: "A robot following a black line uses which sensor?",
-    a: "Sound Sensor",
-    b: "Light Sensor",
-    c: "Gyroscope",
-    d: "Touch Sensor",
+    question: "Which block in Tinkercad would you use to change the value of a variable?",
+    a: "set [variable] to [value]",
+    b: "change [variable] by [value]",
+    c: "if [condition] do",
+    d: "repeat [number] times",
     correct: "b",
-    explanation: "Light sensors help robots follow paths based on contrast.",
+    explanation: "The change [variable] by [value] block modifies the current value of a variable by adding or subtracting from it.",
+    wrongExplanations: {
+      a: "Assigns a new value, but doesn’t increment or change based on the previous value.",
+      c: "Used for conditionals, not changing variable values.",
+      d: "Used for loops, not variable changes."
+    },
   },
   {
-    question: "Which application uses a color sensor?",
-    a: "Measuring distance",
-    b: "Following a path",
-    c: "Sorting objects by color",
-    d: "Detecting gas",
-    correct: "c",
-    explanation: "Color sensors help robots sort colored objects.",
+    question: "In Arduino, which data type would be most suitable for storing true/false values?",
+    a: "int",
+    b: "float",
+    c: "String",
+    d: "boolean",
+    correct: "d",
+    explanation: "boolean stores values that are either true or false, perfect for decisions.",
+    wrongExplanations: {
+      a: "int is for whole numbers.",
+      b: "float is for decimals.",
+      c: "String is for text."
+    },
   },
   {
-    question: "What does RGB stand for?",
-    a: "Red, Gray, Blue",
-    b: "Round, Green, Black",
-    c: "Red, Green, Blue",
-    d: "Rainbow, Glow, Bright",
+    question: "What is the purpose of a loop in a program?",
+    a: "To end the program immediately",
+    b: "To make the robot randomly perform tasks",
+    c: "To repeat a block of code multiple times",
+    d: "To create sensor inputs",
     correct: "c",
-    explanation: "RGB = Red, Green, Blue — the primary colors detected.",
+    explanation: "Loops let your code run the same instructions over and over—great for repeated actions like blinking lights or checking a sensor.",
+    wrongExplanations: {
+      a: "That stops things, not repeats them.",
+      b: "That is not how randomness works in programming.",
+      d: "That describes a sensor’s job, not a loop."
+    },
   },
+  {
+    question: "Which conditional statement will execute one block of code if the condition is true, and a different block if it’s false?",
+    a: "if",
+    b: "loop",
+    c: "if...else",
+    d: "repeat until",
+    correct: "c",
+    explanation: "if...else lets the robot choose between two actions based on whether the condition is true or false.",
+    wrongExplanations: {
+      a: "Only runs one block if the condition is true and does nothing otherwise.",
+      b: "Not a conditional statement.",
+      d: "A looping structure, not a conditional."
+    },
+  }
 ];
 
-  const intro = document.getElementById("quiz-intro");
-  const quizContainer = document.getElementById("quiz");
-  const startBtn = document.getElementById("start-quiz");
+const perfectFeedback = "Outstanding! 🌟 You’ve mastered how robots think and act with variables, conditionals, and loops. You’re programming like a pro—keep up the great work! 🚀";
+const notPerfectFeedback = "Great effort! 💡 You’re building a solid foundation in programming logic. Take a moment to review the parts you found tricky, then give it another shot—you’re getting better every step of the way! 💪";
 
-  startBtn.addEventListener("click", () => {
-    intro.style.display = "none";
-    quizContainer.style.display = "block";
-  });
-
-  const quiz = document.getElementById("quiz");
-  const answerEls = document.querySelectorAll(".answer");
-  const questionEl = document.getElementById("question");
-  const a_text = document.getElementById("a_text");
-  const b_text = document.getElementById("b_text");
-  const c_text = document.getElementById("c_text");
-  const d_text = document.getElementById("d_text");
-  const submitBtn = document.getElementById("submit");
-
-  let currentQuiz = 0;
-  let score = 0;
-  let answered = false;
-
-  loadQuiz();
-
-  function loadQuiz() {
-    deselectAnswers();
-    resetStyles();
-    answered = false;
-
-    const currentQuizData = quizData[currentQuiz];
-    questionEl.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
-    submitBtn.innerText = "Submit";
-  }
-
-  function getSelected() {
-    let answer = undefined;
-    answerEls.forEach((answerEl) => {
-      if (answerEl.checked) {
-        answer = answerEl.id;
-      }
-    });
-    return answer;
-  }
-
-  function deselectAnswers() {
-    answerEls.forEach((answerEl) => {
-      answerEl.checked = false;
-    });
-  }
-
-  function resetStyles() {
-    document.querySelectorAll("label").forEach((label) => {
-      label.style.backgroundColor = "";
-      label.style.color = "";
-    });
-  }
-
-  function disableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = true;
-    });
-  }
-
-  function enableAnswers() {
-    answerEls.forEach((el) => {
-      el.disabled = false;
-    });
-  }
-
-  submitBtn.addEventListener("click", () => {
-    const answer = getSelected();
-
-    if (!answered) {
-      if (answer) {
-        answered = true;
-
-        const currentData = quizData[currentQuiz];
-        const explanation = currentData.explanation;
-        const correct = currentData.correct;
-
-        disableAnswers();
-
-        if (answer === correct) {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#4CAF50"; // Green
-          score++;
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: green;">Correct! ${explanation}</p>`;
-        } else {
-          document.getElementById(`${answer}_text`).style.backgroundColor =
-            "#F44336"; // Red
-          document.getElementById(`${correct}_text`).style.backgroundColor =
-            "#4CAF50"; // Highlight correct
-          questionEl.innerHTML += `<p class="h5 h4-md mt-2" style="color: red;">Incorrect! ${explanation}</p>`;
-        }
-
-        submitBtn.innerText =
-          currentQuiz < quizData.length - 1 ? "Next Question" : "Show Score";
-      }
-    } else {
-      currentQuiz++;
-      if (currentQuiz < quizData.length) {
-        enableAnswers();
-        loadQuiz();
-      } else {
-        showFinalScore();
-      }
-    }
-  });
-
-  function showFinalScore() {
-    const percent = (score / quizData.length) * 100;
-
-    quiz.innerHTML = `
-    <h2>You got ${score} out of ${quizData.length} correct (${percent}%).</h2>
-    <div id="quiz-feedback" class="quiz-feedback"></div>
-    <button class="quiz-retry" onclick="location.reload()">Try Again</button>
-  `;
-
-    // show feedback based on score
-    const feedbackEl = document.getElementById("quiz-feedback");
-
-    if (score === quizData.length) {
-      feedbackEl.textContent =
-        "Awesome job! You’ve mastered how robots sense light and color!";
-      feedbackEl.className = "quiz-feedback perfect-score";
-    } else {
-      feedbackEl.textContent =
-        "Great effort! Review the key points above and try again to boost your score!";
-      feedbackEl.className = "quiz-feedback review-needed";
-    }
-  }
 </script>
+
+<script src="../../../js/lesson-quiz.js"></script>
